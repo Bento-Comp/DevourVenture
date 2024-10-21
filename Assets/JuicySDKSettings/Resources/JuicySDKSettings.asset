@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634c6ba3c8912954db960feb0cdb144a, type: 3}
+  m_Name: JuicySDKSettings
+  m_EditorClassIdentifier: 
+  appConfigFileName: Street Food Master
+  overrideDefaultMediationParameters: 1
+  bannerPosition: 1
+  noInterstitialAfterRewarded: 1
+  delayBetweenInterstitial: 0
+  overrideDefaultPrivacyParameters: 0
+  disableGDPRManagement: 0
+  displayIosTrackingAuthorization: 1
+  displayJuicyIosTrackingPopUp: 0
+  restorePurchaseAvailableInEditor: 1
+  forcePurchaseCancelInEditor: 0
+  removeAdsProductID: removeads
+  otherProducts:
+  - productId: gems_1
+    type: 0
+  - productId: gems_2
+    type: 0
+  - productId: gems_3
+    type: 0
+  - productId: gems_4
+    type: 0
+  - productId: gems_5
+    type: 0
+  - productId: gems_6
+    type: 0
+  - productId: lootbox_gem_1
+    type: 0
+  - productId: lootbox_gem_2
+    type: 0
+  - productId: lootbox_gem_3
+    type: 0
+  - productId: lootbox_gem_4
+    type: 0
+  skipAdsInEditor: 0
+  showJuicySDKLogInEditor: 1
+  enableAbTest: 0
+  abTestType: 1
+  abTestKeepVariantIndex: 0
+  abTestVariantAmount: 1
+  forceAbTestVariantInEditor: 0
+  abTestVariantToForce: 1
+  overrideDefaultAbTestParameters: 0
+  abTestVariantPopulation: 5
+  verboseLogs: 0
+  debugForceRemoveAds: 0
+  debugRating: 0
+  forceAbTestVariantInBuild: 0

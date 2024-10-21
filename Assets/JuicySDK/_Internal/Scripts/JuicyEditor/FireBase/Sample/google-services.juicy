@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "393453516885",
+    "firebase_url": "https://juicy-sdk-sample.firebaseio.com",
+    "project_id": "juicy-sdk-sample",
+    "storage_bucket": "juicy-sdk-sample.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393453516885:android:9c376f408a0efe63",
+        "android_client_info": {
+          "package_name": "com.juicy.juicysdksample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393453516885-g1sojn8oucoufpgg0b7i0de69hmrp0el.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "393453516885-g1sojn8oucoufpgg0b7i0de69hmrp0el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc4rzcxzaueWoliOKdV8EqT5HMLmWkqeU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

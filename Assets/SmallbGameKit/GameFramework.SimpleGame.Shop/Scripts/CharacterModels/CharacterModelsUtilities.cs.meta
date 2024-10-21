@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: fb7df3ce8c3c0488ca6bde8d7616663f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - pushCharacterPrefab: {fileID: 5914981930501298888, guid: 0b06f591d17404aecb0519bfbbfa7ade,
+      type: 3}
+  - animator: {instanceID: 0}
+  - rigidbodyRoot: {instanceID: 0}
+  - pushCharacter: {instanceID: 0}
+  - character: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

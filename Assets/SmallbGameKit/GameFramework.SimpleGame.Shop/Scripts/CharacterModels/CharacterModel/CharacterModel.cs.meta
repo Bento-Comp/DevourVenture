@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 1bd4f5f1a09104e68a6d0bf9fb4f4509
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - modelToSetup: {instanceID: 0}
+  - animatorController: {fileID: 9100000, guid: 9b969f81561734ce9b6f6670584d7d4d,
+      type: 2}
+  - animator: {instanceID: 0}
+  - animatorActivationController: {instanceID: 0}
+  - modelIconSkinUser: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

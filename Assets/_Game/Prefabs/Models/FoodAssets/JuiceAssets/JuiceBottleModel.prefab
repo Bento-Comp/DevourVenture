@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3693877952431704501
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7450912937324471985}
+  m_Layer: 0
+  m_Name: JuiceBottleModel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7450912937324471985
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3693877952431704501}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6166554181168752280}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &718889813899346195
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7450912937324471985}
+    m_Modifications:
+    - target: {fileID: 474595987506274594, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04a94f795d00c49daafe8f098970342d, type: 2}
+    - target: {fileID: 858175175369473938, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8ade1a49d5f0b4d8eb905fc0dcbe54af, type: 2}
+    - target: {fileID: 3229475354071174830, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 8df952de02eb84bb4b91a45057dd3312, type: 2}
+    - target: {fileID: 6279656761363086641, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_Name
+      value: Juice_Bottle_Apple
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660263240605198219, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660263240605198219, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660263240605198219, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660263240605198219, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660263240605198219, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660263240605198219, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660263240605198219, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660263240605198219, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660263240605198219, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660263240605198219, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6660263240605198219, guid: c2c9eedb632663a4a90e4ab623b671af,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c2c9eedb632663a4a90e4ab623b671af, type: 3}
+--- !u!4 &6166554181168752280 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6660263240605198219, guid: c2c9eedb632663a4a90e4ab623b671af,
+    type: 3}
+  m_PrefabInstance: {fileID: 718889813899346195}
+  m_PrefabAsset: {fileID: 0}

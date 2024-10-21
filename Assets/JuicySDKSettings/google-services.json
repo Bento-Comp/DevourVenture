@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "322427485212",
+    "firebase_url": "https://street-food-master-android-default-rtdb.firebaseio.com",
+    "project_id": "street-food-master-android",
+    "storage_bucket": "street-food-master-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322427485212:android:1d2649a6541d17eae833d9",
+        "android_client_info": {
+          "package_name": "com.smallbeautiful.streetfoodmaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322427485212-mgt79se4aimca8m9r6bhkbkc72rutt06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwbXfm6tzuqc6f1T9FDWlsYkgE9xYvpUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322427485212-mgt79se4aimca8m9r6bhkbkc72rutt06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

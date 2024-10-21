@@ -1,0 +1,90 @@
+===================== JUICYSDK LOG START ====================
+--Build--
+Platform: Android
+Unity version: 2020.3.47f1
+Date: 7/12/2023 2:01:14 PM
+Scripting Backend: IL2CPP
+Api compatibility level: NET_4_6
+Minimum API level: AndroidApiLevel21
+--JuicySDK--
+JuicySDK: 4.0_Applovin_3.3
+Facebook: 14.0.0
+Firebase: 10.1.1
+AppsFlyer: 
+UnityIAP: 3.0.1
+MAX: 5.5.8
+--Settings--
+Ads
+Default delay between interstitial: 30
+No interstitial after rewarded: True
+AB Test
+Enabled: False
+Keep Variant: False
+Type: Custom
+Name: None
+Variant amount: 1
+Variant population: 5
+--Config--
+Infos
+Bundle ID: com.smallbeautiful.streetfoodmaster
+Privacy Policy Link: https://docs.google.com/document/d/1r2FdMTJc925igf_cmlvFPYUhLn39f9mD-RaUiowgRvA/edit
+AppStore ID: 1454537375
+Analytics
+Facebook App Name: Street Food Master
+Facebook App ID: 699216548233555
+Facebook Client Token: 0cd91430809673d3cf880342d0fb0cba
+Mediation
+Banner ID: b5194a2b5492505f
+Interstiatial ID: 79455f5095dbb1b5
+Rewarded ID: c1f870864675df67
+Admob App ID: ca-app-pub-4927390499037808~3380218133
+--Dependencies--
+AppsFlyer
+spec: com.appsflyer:adrevenue:6.9.1 
+spec: com.appsflyer:unity-adrevenue-generic-wrapper:6.9.1 
+spec: com.appsflyer:af-android-sdk:6.9.4 
+spec: com.appsflyer:unity-wrapper:6.9.4 
+spec: com.android.installreferrer:installreferrer:2.1 
+AudienceNetwork
+spec: com.android.support:support-annotations:28.0.0 
+spec: com.facebook.android:audience-network-sdk:6.8.0 
+FacebookSDK
+spec: com.parse.bolts:bolts-android:1.4.0 
+spec: com.facebook.android:facebook-core:[14.0, 15) 
+spec: com.facebook.android:facebook-applinks:[14.0, 15) 
+spec: com.facebook.android:facebook-login:[14.0, 15) 
+spec: com.facebook.android:facebook-share:[14.0, 15) 
+spec: com.facebook.android:facebook-gamingservices:[14.0, 15) 
+Firebase
+spec: com.google.firebase:firebase-analytics:21.2.0 
+spec: com.google.firebase:firebase-analytics-unity:10.1.1 
+spec: com.google.firebase:firebase-common:20.2.0 
+spec: com.google.firebase:firebase-analytics:21.2.0 
+spec: com.google.android.gms:play-services-base:18.1.0 
+spec: com.google.firebase:firebase-app-unity:10.1.1 
+spec: com.google.firebase:firebase-crashlytics-ndk:18.3.2 
+spec: com.google.firebase:firebase-analytics:21.2.0 
+spec: com.google.firebase:firebase-crashlytics-unity:10.1.1 
+MaxSdk
+spec: com.applovin:applovin-sdk:11.5.5 
+spec: com.applovin.mediation:adcolony-adapter:4.8.0.2 
+spec: com.applovin.mediation:bytedance-adapter:4.8.0.5.0 
+spec: com.applovin.mediation:chartboost-adapter:9.1.1.1 
+spec: com.google.android.gms:play-services-base:16.1.0 
+spec: com.applovin.mediation:facebook-adapter:[6.12.0.0] 
+spec: com.applovin.mediation:fyber-adapter:8.2.1.0 
+spec: com.applovin.mediation:google-adapter:[21.3.0.2] 
+spec: com.applovin.mediation:inmobi-adapter:10.1.1.0 
+spec: com.squareup.picasso:picasso:2.71828 
+spec: com.android.support:recyclerview-v7:28.+ 
+spec: com.android.support:customtabs:28.+ 
+spec: com.applovin.mediation:ironsource-adapter:7.2.5.0.1 
+spec: com.applovin.mediation:line-adapter:2022.2.16.2 
+spec: com.applovin.mediation:mintegral-adapter:16.2.61.1 
+spec: androidx.recyclerview:recyclerview:1.2.1 
+spec: com.applovin.mediation:smaato-adapter:21.8.5.0 
+spec: com.applovin.mediation:tapjoy-adapter:12.11.0.0 
+spec: com.applovin.mediation:unityads-adapter:4.4.1.0 
+spec: com.applovin.mediation:verizonads-adapter:2.2.0.2 
+spec: com.applovin.mediation:vungle-adapter:6.12.0.3 
+===================== JUICYSDK LOG END ====================

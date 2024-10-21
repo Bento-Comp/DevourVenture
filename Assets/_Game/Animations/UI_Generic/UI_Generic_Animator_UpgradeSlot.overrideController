@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI_Generic_Animator_UpgradeSlot
+  m_Controller: {fileID: 9100000, guid: 83542a08adadf46e7989009a90aabb35, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: f3e3d5725e7164e7397502bf3cb339a0, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f3e3d5725e7164e7397502bf3cb339a0, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: a39f4bbf7555d478f8036a541e380f8c, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 03fd8c7b6b5a04b448e3fcc58d9adefd, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 46e9fd42bb8e247bbb5cdfcc0904a5b3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 46e9fd42bb8e247bbb5cdfcc0904a5b3, type: 2}

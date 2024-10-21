@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Settings>
+    <Mediation>
+        <Android>
+            <AdMobAppID>ca-app-pub-4927390499037808~7372225811</AdMobAppID>
+            <IronSourceAppID>c7e6b89d</IronSourceAppID>
+            <ApplovinBannerID>88f1baad43fb36bd</ApplovinBannerID>
+            <ApplovinInterstitialID>f628ce1eb442805e</ApplovinInterstitialID>
+            <ApplovinRewardedID>12506be0c54133bc</ApplovinRewardedID>
+        </Android>
+        <iOS>
+            <AdMobAppID>ca-app-pub-4927390499037808~3743848289</AdMobAppID>
+            <IronSourceAppID>8465ff25</IronSourceAppID>
+            <ApplovinBannerID>9d4d0c044e1cf676</ApplovinBannerID>
+            <ApplovinInterstitialID>a9de7fcbe8920ff9</ApplovinInterstitialID>
+            <ApplovinRewardedID>cbb8ea797ba1e4d7</ApplovinRewardedID>
+        </iOS>
+    </Mediation>
+    <Analytics>
+        <Facebook>
+            <AppID>244950659599718</AppID>
+            <AppName>SDK Sample</AppName>
+            <ClientToken>6cc59fa87ad3ec447fab376d90cb7e20</ClientToken>
+        </Facebook>
+        <Firebase>
+            <Android>
+                <![CDATA[{
+  "project_info": {
+    "project_number": "393453516885",
+    "firebase_url": "https://juicy-sdk-sample.firebaseio.com",
+    "project_id": "juicy-sdk-sample",
+    "storage_bucket": "juicy-sdk-sample.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:393453516885:android:9c376f408a0efe63",
+        "android_client_info": {
+          "package_name": "com.juicy.juicysdksample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "393453516885-g1sojn8oucoufpgg0b7i0de69hmrp0el.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBc4rzcxzaueWoliOKdV8EqT5HMLmWkqeU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "393453516885-g1sojn8oucoufpgg0b7i0de69hmrp0el.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "393453516885-0s8kk40jdcb4277k41mc332fu4unum28.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.juicy.juicysdksample"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}]]>
+            </Android>
+            <iOS>
+                <![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>393453516885-0s8kk40jdcb4277k41mc332fu4unum28.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.393453516885-0s8kk40jdcb4277k41mc332fu4unum28</string>
+	<key>API_KEY</key>
+	<string>AIzaSyANKSWLMj1fJFyexEWWAi5bKC2GbL27SZ4</string>
+	<key>GCM_SENDER_ID</key>
+	<string>393453516885</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.juicy.juicysdksample</string>
+	<key>PROJECT_ID</key>
+	<string>juicy-sdk-sample</string>
+	<key>STORAGE_BUCKET</key>
+	<string>juicy-sdk-sample.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:393453516885:ios:9c376f408a0efe63</string>
+	<key>DATABASE_URL</key>
+	<string>https://juicy-sdk-sample.firebaseio.com</string>
+	<key>ADMOB_APP_ID</key>
+	<string>ca-app-pub-4927390499037808~3743848289</string>
+</dict>
+</plist>]]>
+            </iOS>
+        </Firebase>
+    </Analytics>
+    <Infos>
+        <AppStoreID>1454537375</AppStoreID>
+        <BundleID>com.juicy.juicysdksample</BundleID>
+        <PrivacyPolicyLink>https://docs.google.com/document/d/13ih_Re1s6PHwfPuL6Lnx1G96tAl-yHgDX83RL4ECsEg/edit?usp=sharing</PrivacyPolicyLink>
+    </Infos>
+</Settings>

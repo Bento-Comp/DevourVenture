@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cff2977e9b6f9427d92fb3ef80a2426b, type: 3}
+  m_Name: FoodStats_Level1
+  m_EditorClassIdentifier: 
+  m_foodStatList:
+  - m_foodType: 2
+    m_name: HotDog
+    m_productionTime: 5
+    m_maxLevel: 25
+    m_unlockCost_IdleNumber:
+      m_value: 5
+      m_exp: 0
+    m_standRankBonusList:
+    - m_requiredRankToUnlockBonus: 0
+      m_levelThreshold: 10
+      m_rankBonus: 1
+    - m_requiredRankToUnlockBonus: 0
+      m_levelThreshold: 10
+      m_rankBonus: 2
+    - m_requiredRankToUnlockBonus: 1
+      m_levelThreshold: 25
+      m_rankBonus: 2
+    m_costLinearFactor:
+      m_value: 2.5
+      m_exp: 0
+    m_costExponentialFactor: 0.182
+    m_gainLinearFactor:
+      m_value: 6
+      m_exp: 0
+    m_gainExponentialFactor: 0.077

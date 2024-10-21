@@ -1,0 +1,141 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a5d20bafb8864b0d9302022e5e9b238, type: 3}
+  m_Name: FoodVisualAssets
+  m_EditorClassIdentifier: 
+  m_foodVisualAssetsList:
+  - foodType: 0
+    name: Lemonade
+    foodModel: {fileID: 9005599231485124009, guid: e017c46807e694eb28d0b2088f69df1b,
+      type: 3}
+    machineModel: {fileID: 6042710423559805424, guid: f66dddd5adc58413ba6e5b2649474595,
+      type: 3}
+    spriteModel: {fileID: 2229358725045101393, guid: cd22207350e8844a1a4566cf6a579f18,
+      type: 3}
+    spriteImage: {fileID: 21300000, guid: 957c9432f701543fcac24356da03cb25, type: 3}
+  - foodType: 1
+    name: Donut
+    foodModel: {fileID: 3202482026106135689, guid: 1965703b0636a4f0ea1bcb743b98f488,
+      type: 3}
+    machineModel: {fileID: 2643795381468970533, guid: 3e4dea7b8c5a841b38ef3cbe5f6c839e,
+      type: 3}
+    spriteModel: {fileID: 7795106336291312286, guid: 72ba93b3fa65c4ea386567f098c76be9,
+      type: 3}
+    spriteImage: {fileID: 21300000, guid: ae26075566ba7439c8a332d02ab78937, type: 3}
+  - foodType: 2
+    name: Hot dog
+    foodModel: {fileID: 7356881171971982538, guid: b0b803f1f2e054981b48a35760a1bc7c,
+      type: 3}
+    machineModel: {fileID: 7400433490458231812, guid: 2c1ca4ae7e2ef460a82ef39f542ff415,
+      type: 3}
+    spriteModel: {fileID: 2832382442275727228, guid: 6ecdbf32d043447b1a071aede5f2347c,
+      type: 3}
+    spriteImage: {fileID: 21300000, guid: 4732a38c275c942b78ac0c15c5ef079f, type: 3}
+  - foodType: 3
+    name: Coffee
+    foodModel: {fileID: 2966015574899513185, guid: 9288485a3c1be4fb0a7ead9063c5a5fd,
+      type: 3}
+    machineModel: {fileID: 6638784027545941160, guid: f4491c98ce0bb4ef38f90e945040c5a7,
+      type: 3}
+    spriteModel: {fileID: 1573923438133092822, guid: b3124014cdaf24170b6aaee7d0be5d07,
+      type: 3}
+    spriteImage: {fileID: 21300000, guid: b1dfbb6f06160496baefe81f6c0e67ca, type: 3}
+  - foodType: 4
+    name: Bagel
+    foodModel: {fileID: 4491210442366196382, guid: 9b07043d33905410b8c3076105c1ed36,
+      type: 3}
+    machineModel: {fileID: 7017718279885237877, guid: a49da358fc45946b8920ed6074706f6e,
+      type: 3}
+    spriteModel: {fileID: 5404960980114855748, guid: 8386a1b19c04f406b849bd2711180a6f,
+      type: 3}
+    spriteImage: {fileID: 21300000, guid: 8303465b54a7c4b09845c74d3f600783, type: 3}
+  - foodType: 5
+    name: Cake
+    foodModel: {fileID: 1443720968674407851, guid: 23fe07511e1664a119251c2bc5b3c426,
+      type: 3}
+    machineModel: {fileID: 5893215410503777515, guid: 80841b78815404fcda28bc65474dc739,
+      type: 3}
+    spriteModel: {fileID: 8053565072008073152, guid: 1193892ca3e3747deb1f006b8cb9d3e5,
+      type: 3}
+    spriteImage: {fileID: 21300000, guid: 4d558260f009340ac98b4bb263838fa1, type: 3}
+  - foodType: 6
+    name: Juice
+    foodModel: {fileID: 3693877952431704501, guid: 117fa21aa186247a7aabdd7703383cd0,
+      type: 3}
+    machineModel: {fileID: 5423381590010008576, guid: cad664b9025e14db69a92ba700743aca,
+      type: 3}
+    spriteModel: {fileID: 6431537247266801972, guid: 047f5368088fb4460adae980f9074999,
+      type: 3}
+    spriteImage: {fileID: 21300000, guid: d477f032a683a45bd98c934804c5afbb, type: 3}
+  - foodType: 7
+    name: Noodles
+    foodModel: {fileID: 2355093965153279726, guid: 2ba6fc1f545ce4d49bb0929d28a29244,
+      type: 3}
+    machineModel: {fileID: 4640976094556908302, guid: b66e021db2a0c466e98a40b5db9ce38a,
+      type: 3}
+    spriteModel: {fileID: 6290885261460617994, guid: b35bf598f07ce4a6f9806bb0175468d4,
+      type: 3}
+    spriteImage: {fileID: 21300000, guid: 3f4f56b4d479e4439baa61c4e43bde89, type: 3}
+  - foodType: 8
+    name: Orange
+    foodModel: {fileID: 7545336512242725525, guid: c542bef23804e46a7bb8e09dbebe3a38,
+      type: 3}
+    machineModel: {fileID: 5372656437966764940, guid: b98a0edf2ceb94901a31a62730410eb9,
+      type: 3}
+    spriteModel: {fileID: 733011041922757760, guid: 912a7630ef79e40b49dbea000dff5c06,
+      type: 3}
+    spriteImage: {fileID: 21300000, guid: 865f01624ff214958aa4c5e9c412e843, type: 3}
+  - foodType: 9
+    name: Rice Ball
+    foodModel: {fileID: 8115289152505959610, guid: 385812d6778224f5d95a16f33b1bae32,
+      type: 3}
+    machineModel: {fileID: 3694487227895537599, guid: 93fd720c28d2c4cd287fe89e679ce59d,
+      type: 3}
+    spriteModel: {fileID: 3719439034633443459, guid: c8afbfe633508408f921436a3b5edba9,
+      type: 3}
+    spriteImage: {fileID: 21300000, guid: ba7cf0dfcbb8d4e1a8077b68355dbd9e, type: 3}
+  - foodType: 10
+    name: Salad
+    foodModel: {fileID: 7646526860912557386, guid: 19af7771525594199a0b27536d7f29c8,
+      type: 3}
+    machineModel: {fileID: 7327002764528387234, guid: ae340c6b5383f43db8484a1c11c4fa93,
+      type: 3}
+    spriteModel: {fileID: 4209243523133072410, guid: c1ffabd36c528416b8600402fc273e24,
+      type: 3}
+    spriteImage: {fileID: 21300000, guid: 13f06444571de48ef889987b03eefa49, type: 3}
+  - foodType: 11
+    name: Sandwich
+    foodModel: {fileID: 552629661460301612, guid: 3e90cffc6917e4c7297cb50a89bcd5ea,
+      type: 3}
+    machineModel: {fileID: 1829848575461027434, guid: a5d6743aa72644cd8b6e9f3e5c4e886e,
+      type: 3}
+    spriteModel: {fileID: 4749045353136642710, guid: b7df420fa07ca4c42b2f6b1dc465554e,
+      type: 3}
+    spriteImage: {fileID: 21300000, guid: 7815d398f6ad546a2bed11990a221e53, type: 3}
+  - foodType: 12
+    name: Soda
+    foodModel: {fileID: 7686554094422042615, guid: 051f154af345d464cb16fee4a5bdcb91,
+      type: 3}
+    machineModel: {fileID: 789412843499558727, guid: bd50ba6dd97c14c55b15d1748511da4d,
+      type: 3}
+    spriteModel: {fileID: 4931127848020085853, guid: 80811e9166a41437298e76f6e273320f,
+      type: 3}
+    spriteImage: {fileID: 21300000, guid: 77f533c9d298e48c2be38c30318ea63d, type: 3}
+  - foodType: 13
+    name: Soup
+    foodModel: {fileID: 7975715253412345392, guid: 57bf792e42c46469bb1b63e48f06f008,
+      type: 3}
+    machineModel: {fileID: 788401023244771365, guid: cbf1f851d2ba841d48acb296d3647f3b,
+      type: 3}
+    spriteModel: {fileID: 7339866904406609309, guid: ebe864ba616f6436db240b1535f96c53,
+      type: 3}
+    spriteImage: {fileID: 21300000, guid: 3b555c6f7951e43078be26334364604f, type: 3}

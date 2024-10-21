@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 21c4b2b4dbd284bcd98210b2bb63f3c1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_rootObject: {instanceID: 0}
+  - m_equipmentIcon: {instanceID: 0}
+  - m_outline: {instanceID: 0}
+  - m_equipmentRarityText: {instanceID: 0}
+  - m_equipmentRarityInfoData: {fileID: 11400000, guid: 065a7a60dc6be4ef3b803e9a42fcc927,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

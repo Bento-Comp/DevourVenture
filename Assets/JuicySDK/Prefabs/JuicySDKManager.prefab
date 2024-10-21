@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1000243774741328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4676737807870368}
+  - component: {fileID: 114436491299333666}
+  m_Layer: 0
+  m_Name: JuicySDKManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4676737807870368
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000243774741328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114436491299333666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000243774741328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4503101b10b34e3469e9bea02aab45a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  privacyManager: {fileID: 2341624276472510811, guid: 63e97551a508f43f88085515813b500b,
+    type: 3}
+  analyticsManager: {fileID: 114195431933347398, guid: 9f8803c530c48724c897a108b12a9179,
+    type: 3}
+  adsManager: {fileID: 114354825351701152, guid: 9fbe2d5e91ebe0c4b97cf00f94efb9ae,
+    type: 3}
+  abTestManager: {fileID: 114105541516430970, guid: bd267b209dd30074c884608c75a037c4,
+    type: 3}
+  purchaseManager: {fileID: 114806095224603290, guid: daf87d67a04f34e5bb8ab6220fae54f9,
+    type: 3}
+  removeAdsManager: {fileID: 114170079223679706, guid: 94c31e53a7fb142d8ab3aaab1da14034,
+    type: 3}
+  purchaseRemoveAdsManager: {fileID: 114384237143374292, guid: 58a9d7c4fc04d4ed7a6a8aa27734c912,
+    type: 3}
+  ratingManager: {fileID: 114713126319177328, guid: 698c18513d2c88e469d67717bd93bed4,
+    type: 3}
+  firebaseManager: {fileID: 5430757402426166458, guid: b1a1ff365afcc457ea1e8d1f9a5fa82a,
+    type: 3}
+  bannerInsert: {fileID: 1124719409419876503, guid: 7c877fa5037ff42508b633756516829f,
+    type: 3}
+  adsEmulation: {fileID: 5432334858060049664, guid: 69d1a9dec9c2946bf92b0699af6348fe,
+    type: 3}

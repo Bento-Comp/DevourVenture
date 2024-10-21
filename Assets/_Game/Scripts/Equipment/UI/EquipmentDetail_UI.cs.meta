@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: cf40f0729306b457b930ed8bed1b9e1a
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - m_ui: {instanceID: 0}
+  - m_animator: {instanceID: 0}
+  - m_equipmentNameText: {instanceID: 0}
+  - m_equipmentRarityText: {instanceID: 0}
+  - m_equipmentEffectText: {instanceID: 0}
+  - m_equipmentIcon: {instanceID: 0}
+  - m_outline: {instanceID: 0}
+  - m_equipEquipmentButton: {instanceID: 0}
+  - m_removeEquipmentButton: {instanceID: 0}
+  - m_equipmentRarityInfoData: {fileID: 11400000, guid: 065a7a60dc6be4ef3b803e9a42fcc927,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,75 @@
+<Settings>
+	<Infos>
+		<BundleID>com.smallbeautiful.streetfoodmaster</BundleID>
+		<AppStoreID>1454537375</AppStoreID>
+		<PrivacyPolicyLink>https://docs.google.com/document/d/1r2FdMTJc925igf_cmlvFPYUhLn39f9mD-RaUiowgRvA/edit</PrivacyPolicyLink>
+	</Infos>
+	<Analytics>
+		<Facebook>
+			<AppID>699216548233555</AppID>
+			<AppName>Street Food Master</AppName>
+			<ClientToken>0cd91430809673d3cf880342d0fb0cba</ClientToken>
+		</Facebook>
+		<Firebase>
+			<iOS/>
+			<Android>
+				<![CDATA[{
+  "project_info": {
+    "project_number": "322427485212",
+    "firebase_url": "https://street-food-master-android-default-rtdb.firebaseio.com",
+    "project_id": "street-food-master-android",
+    "storage_bucket": "street-food-master-android.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:322427485212:android:1d2649a6541d17eae833d9",
+        "android_client_info": {
+          "package_name": "com.smallbeautiful.streetfoodmaster"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "322427485212-mgt79se4aimca8m9r6bhkbkc72rutt06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwbXfm6tzuqc6f1T9FDWlsYkgE9xYvpUs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "322427485212-mgt79se4aimca8m9r6bhkbkc72rutt06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}]]>
+			</Android>
+		</Firebase>
+	</Analytics>
+	<Mediation>
+		<iOS>
+			<AdMobAppID>ca-app-pub-4927390499037808~3743848289</AdMobAppID>
+			<IronSourceAppID/>
+			<ApplovinBannerID>9d4d0c044e1cf676</ApplovinBannerID>
+			<ApplovinRewardedID>cbb8ea797ba1e4d7</ApplovinRewardedID>
+			<ApplovinInterstitialID>a9de7fcbe8920ff9</ApplovinInterstitialID>
+		</iOS>
+		<Android>
+			<AdMobAppID>ca-app-pub-4927390499037808~3380218133</AdMobAppID>
+			<IronSourceAppID/>
+			<ApplovinBannerID>b5194a2b5492505f</ApplovinBannerID>
+			<ApplovinRewardedID>c1f870864675df67</ApplovinRewardedID>
+			<ApplovinInterstitialID>79455f5095dbb1b5</ApplovinInterstitialID>
+		</Android>
+	</Mediation>
+</Settings>

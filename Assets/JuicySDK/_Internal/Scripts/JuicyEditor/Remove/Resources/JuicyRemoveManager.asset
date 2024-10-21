@@ -1,0 +1,3203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b157018fe79547eaafdb5a58fd2ca6d, type: 3}
+  m_Name: JuicyRemoveManager
+  m_EditorClassIdentifier: 
+  JuicyAssets:
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1
+    guid: 8b532914c3c6b475286b574b66227543
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1
+    guid: 0bc85d004fef047e39a4c116e92c1158
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1
+    guid: df487609636984fc2b41a8af64a6f214
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1
+    guid: 20fd4375fcbad4c01af0300f45c2affc
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1
+    guid: 8709aebfc095d42a69ccc04945c9fb30
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1
+    guid: 76d254eb617f947738d92e067d21664a
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity
+    guid: 701b8382466cd411f85f37c61d7bd8ae
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity
+    guid: 328c9bb6377434498a6ed4b7bfb9a5fa
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity
+    guid: af1e2ea994d114935948a98a1a643b80
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity
+    guid: 50844922101974b138da2f3de562517b
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity
+    guid: bd05f6a0ed40e41e6b9644accf2d1360
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity
+    guid: d695a4e4fc4f5485ea797c2f8de83298
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase
+    guid: 653afcc46b9494059be84333f7301eac
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/FireBase/Sample
+    guid: 8c097bf8f99694efe9afb625531fcb94
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor
+    guid: b051d2ba84c824e128c8e1ae06c38da4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Editor
+    guid: af8e005667b0d430d83bb402fdf7f1e0
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Resources
+    guid: a937f861be10a4e12a7bbb800eb7d59e
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor
+    guid: 1d731503a879e4bf0bad36a4c7febd34
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/MacOS
+    guid: 218a2e7ff5a4c461981bc41f7d7bfeba
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/_CodeSignature
+    guid: 16068f30788004029bd487756623799b
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift
+    guid: f517260d3e09841fcb7c1a61f2533c33
+  - originPath: Assets/Firebase/m2repository/com/google/firebase
+    guid: 496c635307f7447ddb5efecfa67fd6b6
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google
+    guid: bd24b8f0884294d5b88cbf7ccc8e22b4
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads
+    guid: b70f266dea2ed4327a1b55712764c761
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation
+    guid: cbccf39695f5e4d4a977c45e44f423ea
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/AppsFlyer
+    guid: 954f851acf5957242bf57c3d0ed881ce
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Emulation
+    guid: da570937ae96c45a0b39db70fc89e60f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Facebook
+    guid: c1a9477775c6e7945931bab89135fe1d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/FirebaseAnalytics
+    guid: ed7cf8f59510c45eeb075804812c640b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Unity
+    guid: d8db7c8206cb34542a29506137eb83fc
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/Editor
+    guid: 83a0dbe28009841b1b44c34552a44d62
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/FireBase
+    guid: 088396b8c5d9544d4908cdb76163fac0
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration
+    guid: 3fe79be7b7faa497a9b2ec58bd29aaf3
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove
+    guid: 9c3d406cdcbbe40c389890d2b4303dda
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings
+    guid: f6e25578aee05457dba4269451e9f6c5
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/Editor
+    guid: bf4dd84164602437286d098a277cb15f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/Unity
+    guid: 1f299acb7a35246e1895cb011b7b062d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/Resources
+    guid: daba6b9dbcba04133b6fb8e12b4cfacd
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/Editor
+    guid: f27a18597c159422ea182b9ab577eb71
+  - originPath: Assets/Plugins/Android/FirebaseApp.androidlib/res/values
+    guid: c462e8201d47f414fb78e6ffeddc971e
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values
+    guid: 46c6768d92e664801b35b35221408267
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents
+    guid: 28175da64865f4e398b3b9ddfbe97b24
+  - originPath: Assets/FacebookSDK/Plugins/Android/libs
+    guid: 5255d1fee9e554f86815a7ba04556e48
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS
+    guid: 2437b38c795034a5c9f0b62a64f9ae87
+  - originPath: Assets/Firebase/m2repository/com/google
+    guid: e015ebd999f804cef8a21f231ac41bd6
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com
+    guid: 0aa58a65050af4ebea13d68ff0a939f5
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons
+    guid: 4d134e1a9e2ba9a4f93faeda5de15c6f
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation
+    guid: c1113f0b4d6ea4ddd9904d6e08951c0c
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy
+    guid: 9aa181dc37619c94db86f4dfcd9e2862
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/UI
+    guid: a9a272c48d74b45f5bbf9122ca13546d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/ABTest
+    guid: b6a454c517123c34b9fe6783163dab04
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads
+    guid: 3df7472b697e9f14fa180a59cf55495d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics
+    guid: af018a7471981ee4f8aea09723c41105
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug
+    guid: 5c90925eb3a715e43ae7cd6637eb5613
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Editor
+    guid: 177d8a9c0d40f4387b39084e427fdc65
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor
+    guid: 6fb76e63cc2c5460b861c2d783ceb309
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyPlugins
+    guid: a5f7baf1074214cecb0d283029112b06
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation
+    guid: 4ab3e624b08e34e5099acb95d5abca26
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy
+    guid: 571c6a1ff6b5e5749bfcb7d2e4b1c6ee
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase
+    guid: 4aea4c9840027e64887dafa262101a50
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase.RemoveAds
+    guid: af2bc6546af3c4bd9abbc4c4bec5f5b2
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Rating
+    guid: 47d04d35e6612f9449bd57d6b6e367ff
+  - originPath: Assets/JuicySDK/_Internal/Scripts/RemoveAds
+    guid: 783bca371edd3a34cb846660b3eecc5b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings
+    guid: 1b810f9a389f749a1a9b15d6000c383e
+  - originPath: Assets/JuicySDK/_Internal/Scripts/UI
+    guid: 648dbf176e5844d75beb7a09223b7ae0
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility
+    guid: d5db2ff4f68634a4a8886acefca85012
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/Android
+    guid: c1dbde07a81114adaba2da4e74595a98
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/iOS
+    guid: 88ea4d43b8d044155a5954609171b635
+  - originPath: Assets/MaxSdk/Mediation/AdColony/Editor
+    guid: 780819632c7324fe4aa48674fca743de
+  - originPath: Assets/MaxSdk/Mediation/ByteDance/Editor
+    guid: ef8467ffb0e4447b79a8804884a7520a
+  - originPath: Assets/MaxSdk/Mediation/Chartboost/Editor
+    guid: a90f13141c35746f5a2996c8ad068fe9
+  - originPath: Assets/MaxSdk/Mediation/Facebook/Editor
+    guid: 28880992a399a48b7abe95b66649d711
+  - originPath: Assets/MaxSdk/Mediation/Fyber/Editor
+    guid: e076e4ef7e2874ba69b108cc7a346c2a
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor
+    guid: e8015bd045cea462c8f39c8a05867d08
+  - originPath: Assets/MaxSdk/Mediation/InMobi/Editor
+    guid: a141703acd55a48c2a3e6e6599f90c64
+  - originPath: Assets/MaxSdk/Mediation/IronSource/Editor
+    guid: 531d860cac61f47d19e32f526470ae43
+  - originPath: Assets/MaxSdk/Mediation/Line/Editor
+    guid: 75bae5f4cc1f94969969f0d1b7741ecb
+  - originPath: Assets/MaxSdk/Mediation/Mintegral/Editor
+    guid: db1de4066dc4e4290b3879b34fa87de2
+  - originPath: Assets/MaxSdk/Mediation/Smaato/Editor
+    guid: d6ab91d259c064997b6b26c1739ef87d
+  - originPath: Assets/MaxSdk/Mediation/Tapjoy/Editor
+    guid: 6b21a711d751f4e1d9c77b5fb984e112
+  - originPath: Assets/MaxSdk/Mediation/TencentGDT/Editor
+    guid: d6426078e0de84613b2be5ba250dcdc7
+  - originPath: Assets/MaxSdk/Mediation/UnityAds/Editor
+    guid: 30751f2dc322a40e588edfb7c978c9c0
+  - originPath: Assets/MaxSdk/Mediation/VerizonAds/Editor
+    guid: 6a529737deccd44af8a3139b59fd7ed3
+  - originPath: Assets/MaxSdk/Mediation/Vungle/Editor
+    guid: 77b6ea05736a9458f8ef8762ee9b64bb
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor
+    guid: 67d8e63aa88f040a5a06f5416ea4a1b8
+  - originPath: Assets/Plugins/Android/FirebaseApp.androidlib/res
+    guid: 3484b71cd8dc64444b27b7022ed04b20
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res
+    guid: 5c23ea13ad56040deba1a51e11deafda
+  - originPath: Assets/Plugins/UDP/Editor/Analytics
+    guid: a874fc03625594195b682deef5bc1278
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle
+    guid: 682114f7790724ab3b9410e89bbc076c
+  - originPath: Assets/AppsFlyer/Plugins/iOS
+    guid: d8325c12a80ff4323b82e2833a8fc287
+  - originPath: Assets/AudienceNetwork/Scenes/Banner
+    guid: add9d2dab81c344fe97da6591d3665fb
+  - originPath: Assets/AudienceNetwork/Scenes/Interstitial
+    guid: 8c9f390ad7e3c4ac0a32a1479c44f14b
+  - originPath: Assets/AudienceNetwork/Scenes/RewardedVideo
+    guid: c8a0e5fbf02754ed683a9a2e34059b8c
+  - originPath: Assets/AudienceNetwork/Scenes/Settings
+    guid: fe8cf484a03ff40ffa517b7d74fb82e9
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175
+    guid: 01fd53ea621eb40a0a37ea5e8499cb3f
+  - originPath: Assets/FacebookSDK/Plugins/Android
+    guid: 5b5bb2bc0deae45788c76ea6dc85b02f
+  - originPath: Assets/FacebookSDK/Plugins/Editor
+    guid: 69c1a1701e3b64a6abd38e4e98952c5c
+  - originPath: Assets/FacebookSDK/Plugins/Settings
+    guid: 206e4007f4e254c0ab4703e0de5521a1
+  - originPath: Assets/FacebookSDK/Plugins/iOS
+    guid: 3bb671414ea424d2cbe8cae6ea9db8cf
+  - originPath: Assets/FacebookSDK/SDK/Editor
+    guid: e649401dcf3874198a4b982543dd7956
+  - originPath: Assets/FacebookSDK/SDK/Resources
+    guid: 11570ef1693324ec1b2226a4c92a5822
+  - originPath: Assets/Firebase/Plugins/iOS
+    guid: c96f6c542af044ce9b14375fc4c106db
+  - originPath: Assets/Firebase/Plugins/x86_64
+    guid: b3e2a8c74c10d4a8ab21f94010db0e15
+  - originPath: Assets/Firebase/m2repository/com
+    guid: d2ef5d5e72752467e8085b8643fc0b27
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository
+    guid: 2e3d587cb0df34589946e8c813aee27f
+  - originPath: Assets/JuicySDK/Sample/Scenes
+    guid: dda008ae509b7b544877f012e8d41b96
+  - originPath: Assets/JuicySDK/Sample/Scripts
+    guid: 2649d0bf43a922b4284bb6b160655575
+  - originPath: Assets/JuicySDK/Script/Analytics
+    guid: 9ee1058b6064f88439bf56a6467fb32e
+  - originPath: Assets/JuicySDK/Script/Purchase
+    guid: 07de899e1844a4446b656719c65df077
+  - originPath: Assets/JuicySDK/_Internal/Prefabs
+    guid: 7a86df2d7e0d0e247b2b3ebd38aa37c6
+  - originPath: Assets/JuicySDK/_Internal/Resources
+    guid: 751c5ea6b55f14ee0bf7978568c01d8b
+  - originPath: Assets/JuicySDK/_Internal/Scripts
+    guid: 1b7ea1cc035c56b4e8f4fd1b57ffdd46
+  - originPath: Assets/JuicySDK/_Internal/Sprites
+    guid: a3672a744539bd84fa2e050c5a7b44f8
+  - originPath: Assets/MaxSdk/AppLovin/Editor
+    guid: 2799bf1d2e027441da4a4eef4321123a
+  - originPath: Assets/MaxSdk/AppLovin/Plugins
+    guid: f6356717a330641c192704e9815b549b
+  - originPath: Assets/MaxSdk/Mediation/AdColony
+    guid: 8dbff8f5f19f84a3786d46c84373f9fb
+  - originPath: Assets/MaxSdk/Mediation/ByteDance
+    guid: bff38af90d2874f7eaf9324f4a3cddf9
+  - originPath: Assets/MaxSdk/Mediation/Chartboost
+    guid: def446f69df7b4dc49f70aec88fbf133
+  - originPath: Assets/MaxSdk/Mediation/Facebook
+    guid: 165998c074b8c4c9daa8a0c962e86a13
+  - originPath: Assets/MaxSdk/Mediation/Fyber
+    guid: c252be8c33e594a1b9cb6d087a70b01f
+  - originPath: Assets/MaxSdk/Mediation/Google
+    guid: 743159f27602145d6b6b03527161b7bc
+  - originPath: Assets/MaxSdk/Mediation/InMobi
+    guid: f7e90e84895ea4c29bd7087171acc273
+  - originPath: Assets/MaxSdk/Mediation/IronSource
+    guid: 240b0266a48d14661809f33d564143c1
+  - originPath: Assets/MaxSdk/Mediation/Line
+    guid: 0b2da924c3b6549289131bc36363b055
+  - originPath: Assets/MaxSdk/Mediation/Mintegral
+    guid: 7b7fc95b7ef4c44f2ae21f3f600c2fba
+  - originPath: Assets/MaxSdk/Mediation/Smaato
+    guid: 40f5718882c824ee3bb4c5bd8c9bac54
+  - originPath: Assets/MaxSdk/Mediation/Tapjoy
+    guid: 70d315f3fcdaf4142b3652561f900ec8
+  - originPath: Assets/MaxSdk/Mediation/TencentGDT
+    guid: cf85fe175e1304c7bbd1821c9a6254f4
+  - originPath: Assets/MaxSdk/Mediation/UnityAds
+    guid: 3db55a3dd5be744b3adbebe418538132
+  - originPath: Assets/MaxSdk/Mediation/VerizonAds
+    guid: 9fdbba63588744a68ac6fdf8ff8b6823
+  - originPath: Assets/MaxSdk/Mediation/Vungle
+    guid: 24896cffc3e0b43dc9278e5882f7dfb6
+  - originPath: Assets/MaxSdk/Resources/Images
+    guid: 9bb1bfedfa5c948baa3f2f00bcd413b0
+  - originPath: Assets/MaxSdk/Scripts/Editor
+    guid: 300cf3eb4f1de4d5889ef582fd269f2e
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager
+    guid: f5fe1bdf2156b4ccb929d56dd780d6a4
+  - originPath: Assets/MaxSdk/Scripts/ThirdParty
+    guid: 68fc43fe05dea4106bb4b376720d6708
+  - originPath: Assets/Parse/Plugins/dotNet45
+    guid: e12c7c7e2bb8745d7808fdeb10a5c187
+  - originPath: Assets/Plugins/Android/FirebaseApp.androidlib
+    guid: 9d2f4f440001c46ffa2a553f1a45323d
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib
+    guid: 7fbe6585d8b9b4a2fa646214a0db3413
+  - originPath: Assets/Plugins/Android/MaxMediationGoogle.androidlib
+    guid: b6dd87c91562b46aa955d62597ab2815
+  - originPath: Assets/Plugins/UDP/Android
+    guid: 787abbf0358e3455290d9b4a88ad645f
+  - originPath: Assets/Plugins/UDP/Editor
+    guid: 97ccb67a296be4aaa984fc5994af9c8d
+  - originPath: Assets/Plugins/UDP/Resources
+    guid: 6dbc16c7ccb2f4e589ff3191b0e25557
+  - originPath: Assets/Plugins/iOS/Firebase
+    guid: bba1fb06b9369465188f2c8bf7081245
+  - originPath: Assets/Plugins/x86_64/Firebase
+    guid: add994d1720fe4ca5bec07c90a1ecd02
+  - originPath: Assets/AppsFlyer/Editor
+    guid: 9f84c02aa78da4ac9b444d98d97f7cc4
+  - originPath: Assets/AppsFlyer/Mac
+    guid: 96a328019e42349aabc478b546b8605e
+  - originPath: Assets/AppsFlyer/Plugins
+    guid: 66297743248ab4e47abdc371a59f1111
+  - originPath: Assets/AppsFlyer/Tests
+    guid: 1f19f272c71674582bed1d93925da003
+  - originPath: Assets/AppsFlyer/Windows
+    guid: 1fbfcb6aeaa7f40e69a0daff450a2450
+  - originPath: Assets/AudienceNetwork/Editor
+    guid: 07842ad4a92814a3b80d63d5bda584fc
+  - originPath: Assets/AudienceNetwork/Library
+    guid: a033615a8b9d9480392002260025f399
+  - originPath: Assets/AudienceNetwork/Scenes
+    guid: e9232d61943e74d6daf42157201fcaa0
+  - originPath: Assets/Editor Default Resources/Firebase
+    guid: 47e1be5fba1e94623a2b3add9d3b5eb8
+  - originPath: Assets/ExternalDependencyManager/Editor
+    guid: 94c0a58f1a3524842a402910c49281b7
+  - originPath: Assets/FacebookSDK/Plugins
+    guid: b78e4c99579bdbb448891f376427290b
+  - originPath: Assets/FacebookSDK/SDK
+    guid: 778d81f679b694f2da7f33723171f326
+  - originPath: Assets/Firebase/Editor
+    guid: 0353857f076874bf4a95d9256b378af9
+  - originPath: Assets/Firebase/Plugins
+    guid: f92310ad5402344108f7a8fdc5d93264
+  - originPath: Assets/Firebase/m2repository
+    guid: 5e40d0f2e4f2f48adafe20a4668c5bcd
+  - originPath: Assets/GeneratedLocalRepo/Firebase
+    guid: 8b99148074cd8467c9b5414b81551b9a
+  - originPath: Assets/JuicySDK/Prefabs
+    guid: c695bf992743f3f4885c19a8d82af2b2
+  - originPath: Assets/JuicySDK/Sample
+    guid: 86a5a07b7996db342b768c8a528c0ae2
+  - originPath: Assets/JuicySDK/Script
+    guid: 251fe66095d665042bcc16a54d70f14d
+  - originPath: Assets/JuicySDK/_Internal
+    guid: 6a142034998ada04a8c04e4942d8835c
+  - originPath: Assets/MaxSdk/AppLovin
+    guid: 975abab9e356a45be99ca5903f5f439b
+  - originPath: Assets/MaxSdk/Mediation
+    guid: e8e1b65b566d0427f97f7a06bb8097bd
+  - originPath: Assets/MaxSdk/Prefabs
+    guid: 6772a90a88acd49398b2b8bc342822d6
+  - originPath: Assets/MaxSdk/Resources
+    guid: 0f58a209aa9574bb191ee039f8466ad8
+  - originPath: Assets/MaxSdk/Scripts
+    guid: 2583f69a718214b8eba6eca407edf9c8
+  - originPath: Assets/Parse/Plugins
+    guid: 433beb4d7ba7a47b8a4f0631d73bc6d7
+  - originPath: Assets/Plugins/Android
+    guid: 2f5d736f7c4cb4c1e80d0816d0e81625
+  - originPath: Assets/Plugins/UDP
+    guid: 823e62b1e45614dd6a39a7c6d4110275
+  - originPath: Assets/Plugins/iOS
+    guid: da135550add3c4abca622bda5280d204
+  - originPath: Assets/Plugins/x86_64
+    guid: bca85f6fe8be2423eba93a6c3ec1aef2
+  - originPath: Assets/AppsFlyer
+    guid: 7863556d88b814e09ba9cfc75a91d655
+  - originPath: Assets/AudienceNetwork
+    guid: bbaa99a7e4be14aee98635ce9f81dab0
+  - originPath: Assets/Editor Default Resources
+    guid: 5bdc1c9d28ba542519ce4c92deb54279
+  - originPath: Assets/ExternalDependencyManager
+    guid: 2d3fecfaac6174f79b7c3b7d59028473
+  - originPath: Assets/FacebookSDK
+    guid: 4052e5a6efa074b3cba2adc3568ce4ce
+  - originPath: Assets/Firebase
+    guid: a3ac0d57513254d95ad8056f4530bc2c
+  - originPath: Assets/GeneratedLocalRepo
+    guid: 6bc5bb8598cf64fe0b37b1222d1baa0b
+  - originPath: Assets/JuicySDK
+    guid: c717a852a9f73ad44b04f5fe4c200e23
+  - originPath: Assets/MaxSdk
+    guid: 883bd05b0762449f5ae0a4ab5e410c8e
+  - originPath: Assets/Parse
+    guid: 22d7f960fffd74176af6bf7987e567c4
+  - originPath: Assets/Plugins
+    guid: cbde64d36fd994c458fffca9e931b232
+  - originPath: Assets/Resources
+    guid: b8fdef0a176da458e8f090572d1b6c05
+  - originPath: Assets/StreamingAssets
+    guid: 789b4a279194442d3bc1faee473da95e
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.aar
+    guid: b3b270a181c4641e7bba1147126c2682
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 11e903485b94441a39ebf17e56216e02
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.aar
+    guid: 5b91cd7ff905b45bbb6d6e6fa19c9689
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: c14c08f1af331418985bfb8aadc4be9a
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.aar
+    guid: 6274fe7511d7e4b0bb2397e213c40808
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: 9392aefea146d4ad6b80772916dbf730
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 242fa90834b74efaa4029261ba91550a
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.srcaar
+    guid: 1a366edb56aa43d6a7b5bd1b556af446
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: 68ae9f2dc5154a6aa9e98a8ebcd0add0
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.srcaar
+    guid: 1cd402452cf04f8f95061a3b873c50ff
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: c314e5dd47954ed2a0bc65020316c776
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.srcaar
+    guid: dfdffd1552eb46529284864ad15078bd
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.aar
+    guid: b3b270a181c4641e7bba1147126c2682
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 11e903485b94441a39ebf17e56216e02
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.aar
+    guid: 5b91cd7ff905b45bbb6d6e6fa19c9689
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: c14c08f1af331418985bfb8aadc4be9a
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.aar
+    guid: 6274fe7511d7e4b0bb2397e213c40808
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: 9392aefea146d4ad6b80772916dbf730
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/maven-metadata.xml
+    guid: 291f81d8ae2745cf913a96d116f2e3f7
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 242fa90834b74efaa4029261ba91550a
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.srcaar
+    guid: 1a366edb56aa43d6a7b5bd1b556af446
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml
+    guid: 96337775a7c941d88ea15f8026ad6f8e
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: 68ae9f2dc5154a6aa9e98a8ebcd0add0
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.srcaar
+    guid: 1cd402452cf04f8f95061a3b873c50ff
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/maven-metadata.xml
+    guid: eda65244fc1b407e8948b25b31c17991
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: c314e5dd47954ed2a0bc65020316c776
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.srcaar
+    guid: dfdffd1552eb46529284864ad15078bd
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.aar
+    guid: b3b270a181c4641e7bba1147126c2682
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 11e903485b94441a39ebf17e56216e02
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.aar
+    guid: 5b91cd7ff905b45bbb6d6e6fa19c9689
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: c14c08f1af331418985bfb8aadc4be9a
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.aar
+    guid: 6274fe7511d7e4b0bb2397e213c40808
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: 9392aefea146d4ad6b80772916dbf730
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/FireBase/Sample/GoogleService-Info.juicy
+    guid: 7ab4a0392514d4983bbc0d12c172b70b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/FireBase/Sample/google-services.juicy
+    guid: 0e9a0834fc0b74697ae398e52eb2ad92
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyConfigIntegrationReport.cs
+    guid: 33a0d6f93857042b9b7a290ebc3b9c39
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyIntegrationReport.cs
+    guid: 15d521eaa9bc547a3ac959a1e0741908
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyIntegrationWindow.cs
+    guid: 59ca814baac774ff393f6d34ad1aa67b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyProjectIntegrationReport.cs
+    guid: 4f74873b193734a568e91625e17267ba
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicySettingsIntegrationReport.cs
+    guid: 3a623ce001df34b5ab72160c781eae44
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Editor/JuicyRemoveManager.cs
+    guid: 7b157018fe79547eaafdb5a58fd2ca6d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Editor/JuicyRemoveWindow.cs
+    guid: 80a1d6bffd0344ccf96d35175e6e58e9
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Resources/JuicyRemoveManager.asset
+    guid: 793b0388a53df4a489cef07888ec8387
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyEditorSettings.cs
+    guid: b8ee3296ae8d64e14bc6d9c3b5ad7766
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyEditorSettings_Inspector.cs
+    guid: 0216df0a1520848aea779a4a9c901d50
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyFirstImport.cs
+    guid: abcb48ab7044042648a638de5b9111ec
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicySDKSettingsWindow.cs
+    guid: 626c3a76d305f4bdd959ba5560565518
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicySDKSettings_Inspector.cs
+    guid: 2b553d7d27c814d7cab6c6df297dceca
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/MacOS/AppsFlyerBundle
+    guid: 0889edee891d84a8eb0b7cc87071b91e
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/_CodeSignature/CodeResources
+    guid: 724b52b308e9a4a6d889d7bf3945a2ca
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKShareTournamentDialog.swift
+    guid: e8b68c3227d0545b0baf196182ca495c
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournament.swift
+    guid: 40782e83ff8774bfb8280e20c134e6c2
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentFetcher.swift
+    guid: a2bf9c24f7d8f4c83b760043d97deadf
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentUpdater.swift
+    guid: aa01d6bdb7c7f4c52bf29c7adbee61fd
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/maven-metadata.xml
+    guid: 291f81d8ae2745cf913a96d116f2e3f7
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 242fa90834b74efaa4029261ba91550a
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.srcaar
+    guid: 1a366edb56aa43d6a7b5bd1b556af446
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml
+    guid: 96337775a7c941d88ea15f8026ad6f8e
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: 68ae9f2dc5154a6aa9e98a8ebcd0add0
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.srcaar
+    guid: 1cd402452cf04f8f95061a3b873c50ff
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/maven-metadata.xml
+    guid: eda65244fc1b407e8948b25b31c17991
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: c314e5dd47954ed2a0bc65020316c776
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.srcaar
+    guid: dfdffd1552eb46529284864ad15078bd
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.aar
+    guid: b3b270a181c4641e7bba1147126c2682
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 11e903485b94441a39ebf17e56216e02
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.aar
+    guid: 5b91cd7ff905b45bbb6d6e6fa19c9689
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: c14c08f1af331418985bfb8aadc4be9a
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.aar
+    guid: 6274fe7511d7e4b0bb2397e213c40808
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: 9392aefea146d4ad6b80772916dbf730
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulation.prefab
+    guid: 69d1a9dec9c2946bf92b0699af6348fe
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationBanner.prefab
+    guid: 8404ca66c62b041ac9dfa149940bc7bc
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationInterstitial.prefab
+    guid: 0f5e9d39ab8be44a3a596f49ef605834
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationRewarded.prefab
+    guid: d17fcfd6d7a3b4c8d8900bbc633698f7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyAdsEmulation.cs
+    guid: 17b4a6a45b00940e5803c00fbd691b1f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyAdsEmulationManager.cs
+    guid: 915c98f6f815240498ca53a3bf7ca258
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedBanner.cs
+    guid: 4c6349185e517462fb96813199041ebf
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedElement.cs
+    guid: 33f776dfacd0043b2ad0583dd52c14db
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedInterstitial.cs
+    guid: f1a1aa0ad76e741719c83a7a797ac02c
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedRewarded.cs
+    guid: a5326e060192648dc80e9e99c0722f7f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/AppsFlyer/AppsFlyerManager.cs
+    guid: b463c01ebeabf85448af79350b9c00b7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Emulation/JuicyAnalyticsEmulationManager.cs
+    guid: 712505b7b558a474991910af7abcb8ce
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Facebook/FacebookSDKManager.cs
+    guid: 110b6c0de183b2c4e872e43347c3bb45
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/FirebaseAnalytics/FirebaseAnalyticsManager.cs
+    guid: 0c28f4884c26940e0b98432fe34eb439
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/FirebaseAnalytics/FirebaseManager.cs
+    guid: 580246c6b969f44f7a360853bce8046f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Unity/UnityAnalyticsManager.cs
+    guid: 353235b168c284d7283d2ca3deb06e34
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/Editor/JuicySDKInternalTestEditor.cs
+    guid: d9c22172be2b14cd6bb7b835f42b4f76
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/FireBase/Sample/GoogleService-Info.juicy
+    guid: 7ab4a0392514d4983bbc0d12c172b70b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/FireBase/Sample/google-services.juicy
+    guid: 0e9a0834fc0b74697ae398e52eb2ad92
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyConfigIntegrationReport.cs
+    guid: 33a0d6f93857042b9b7a290ebc3b9c39
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyIntegrationReport.cs
+    guid: 15d521eaa9bc547a3ac959a1e0741908
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyIntegrationWindow.cs
+    guid: 59ca814baac774ff393f6d34ad1aa67b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyProjectIntegrationReport.cs
+    guid: 4f74873b193734a568e91625e17267ba
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicySettingsIntegrationReport.cs
+    guid: 3a623ce001df34b5ab72160c781eae44
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Editor/JuicyRemoveManager.cs
+    guid: 7b157018fe79547eaafdb5a58fd2ca6d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Editor/JuicyRemoveWindow.cs
+    guid: 80a1d6bffd0344ccf96d35175e6e58e9
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Resources/JuicyRemoveManager.asset
+    guid: 793b0388a53df4a489cef07888ec8387
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyEditorSettings.cs
+    guid: b8ee3296ae8d64e14bc6d9c3b5ad7766
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyEditorSettings_Inspector.cs
+    guid: 0216df0a1520848aea779a4a9c901d50
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyFirstImport.cs
+    guid: abcb48ab7044042648a638de5b9111ec
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicySDKSettingsWindow.cs
+    guid: 626c3a76d305f4bdd959ba5560565518
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicySDKSettings_Inspector.cs
+    guid: 2b553d7d27c814d7cab6c6df297dceca
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/Editor/JuicyMediationIntegrationReport.cs
+    guid: 9994d3df10e1d48859cc0c1bf5cff1f4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/Editor/JuicyMediationProcessBuildManager.cs
+    guid: 8d390aba8643d47188536d7d26a88ac4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/Unity/UnityPurchaseManager.cs
+    guid: ffb1f19c9464e449cb84b3e603a5ae92
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/Resources/JuicySDKSampleAppConfig.xml
+    guid: 4dbe14f7edef94ccb86782de5a49fcde
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/Editor/PBXProjectUtility.cs
+    guid: be0b19e2eec0a4523a89ff5b8ea76a30
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/Editor/PlistUtility.cs
+    guid: 2e4441fc19ba6427d98da7cc3ac640f3
+  - originPath: Assets/Plugins/Android/FirebaseApp.androidlib/res/values/google-services.xml
+    guid: 960f9cb89dc694f38aa1713e003099e9
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml
+    guid: c388863e22f0e40c399c8161a948e7aa
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_unity_version.xml
+    guid: f668be5f2cb944e718aeff65e28ec6b8
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/Info.plist
+    guid: 58a86b0b376564c06bf8ce29e1dbfb04
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/MacOS/AppsFlyerBundle
+    guid: 0889edee891d84a8eb0b7cc87071b91e
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/_CodeSignature/CodeResources
+    guid: 724b52b308e9a4a6d889d7bf3945a2ca
+  - originPath: Assets/FacebookSDK/Plugins/Android/libs/facebook-android-wrapper-14.0.0.aar
+    guid: 06a06c5fe53c44ca08d35e31bd5f9136
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBSDK+Internal.h
+    guid: 66952bdb75cae4c348f3d0521da59bfd
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.h
+    guid: 511e95bcdad89425999ccbb3e315246a
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.mm
+    guid: 4c29c5d59509848c4bc24c13ac976932
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.h
+    guid: 7461bcc2e2c714a03a3f60d68ec79369
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.m
+    guid: fbc51482e3ca248329707d61959f9d9d
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.h
+    guid: b4469d6625a664618b68231ee0dcc093
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.mm
+    guid: 5cafb2af7ca9641f58022a816236d1ad
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/fixup.projmods
+    guid: aead30834362b490ea67fdd7fd0351c5
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKShareTournamentDialog.swift
+    guid: e8b68c3227d0545b0baf196182ca495c
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournament.swift
+    guid: 40782e83ff8774bfb8280e20c134e6c2
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentFetcher.swift
+    guid: a2bf9c24f7d8f4c83b760043d97deadf
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentUpdater.swift
+    guid: aa01d6bdb7c7f4c52bf29c7adbee61fd
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/maven-metadata.xml
+    guid: 291f81d8ae2745cf913a96d116f2e3f7
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 242fa90834b74efaa4029261ba91550a
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.srcaar
+    guid: 1a366edb56aa43d6a7b5bd1b556af446
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml
+    guid: 96337775a7c941d88ea15f8026ad6f8e
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: 68ae9f2dc5154a6aa9e98a8ebcd0add0
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.srcaar
+    guid: 1cd402452cf04f8f95061a3b873c50ff
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/maven-metadata.xml
+    guid: eda65244fc1b407e8948b25b31c17991
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: c314e5dd47954ed2a0bc65020316c776
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.srcaar
+    guid: dfdffd1552eb46529284864ad15078bd
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.aar
+    guid: b3b270a181c4641e7bba1147126c2682
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 11e903485b94441a39ebf17e56216e02
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.aar
+    guid: 5b91cd7ff905b45bbb6d6e6fa19c9689
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: c14c08f1af331418985bfb8aadc4be9a
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.aar
+    guid: 6274fe7511d7e4b0bb2397e213c40808
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: 9392aefea146d4ad6b80772916dbf730
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/ButtonBase.cs
+    guid: 58d7b3ca5a1931d42afda51058d648c9
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_BestScore.cs
+    guid: 69ba3e8308e9b3d4c96fcf90ec8d6213
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_BuyProduct.cs
+    guid: 924c5b5c53024a2428c9a03f46633e0c
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_HideBanner.cs
+    guid: 5b9a778ae78b2b34fbb93089c36503c7
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_NotifyGameEnd.cs
+    guid: 70dfa05ffc0b1404390e604f16636aee
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_NotifyGameStart.cs
+    guid: 7a75db8aa98e001448e3e87377d225ee
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_NotifyInterstitialOpportunity.cs
+    guid: 0386d1e49f603eb4aad84c7153aeb33f
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_Reload.cs
+    guid: d5cf5934c5771ef4eb83e076eb3971d6
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_RemoveAds.cs
+    guid: 76e87138f37ba4f86bcd5b5bef6052d8
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_RestorePurchases.cs
+    guid: 1944d4051c33f70498f78fd9e1795c6f
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowBanner.cs
+    guid: 23eb1e02cd0afca4c8be5a2cb051922c
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowMediationTestSuite.cs
+    guid: ce1772a2fd0974a0bbfbc4579fdf7138
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowPrivacySettings.cs
+    guid: 7cd43a2d2be7eb24b80655d193c1a258
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowRewarded.cs
+    guid: 0dde16f19153e0141a993db58a1fbfb6
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_SimulateCrash.cs
+    guid: 90adf677aa6d14d4ea6eb48d301931d7
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulation.prefab
+    guid: 69d1a9dec9c2946bf92b0699af6348fe
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationBanner.prefab
+    guid: 8404ca66c62b041ac9dfa149940bc7bc
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationInterstitial.prefab
+    guid: 0f5e9d39ab8be44a3a596f49ef605834
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationRewarded.prefab
+    guid: d17fcfd6d7a3b4c8d8900bbc633698f7
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyPreIOS14PopUp.prefab
+    guid: df02ccc47b64545a98b139ce413fa83d
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyUpdatePrivacyPopUpV1.prefab
+    guid: 7af791eac64894aa99559a07f57a8236
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyUpdatePrivacyPopUpV2.prefab
+    guid: 96350323dc9504f739f82ad5e9313fe1
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyWelcomePrivacyPopUpV1.prefab
+    guid: a5b9377ce9c774711b6be805adefc839
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyWelcomePrivacyPopUpV2.prefab
+    guid: ab901b65491b442618097781ff3c8434
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/PartnerPrivacyPolicyLink.prefab
+    guid: 54cf39b2b8ae9ad488ca506d06bc9bc3
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/PrivacyPolicyLink.prefab
+    guid: 329a842afbf6843608f876e4b7675ef0
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/PrivacyPopUpsInputMask.prefab
+    guid: 565661d75995741b99e47959d0cc7ad3
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/UI/PrivacyToggle.prefab
+    guid: 133f369ed90644462b99b592e77f241d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/ABTest/JuicyABTestManager.cs
+    guid: cd0858e20c9813046b4621e7f993b653
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/AdsManagerBase.cs
+    guid: 906ee059216e7c849abc2eb7bd675be6
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/BannerInsert.cs
+    guid: b4931d176bb754f50b2384cd1576ecf4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/JuicyAdsManager.cs
+    guid: 62996c513cb3a3446b8aa7b6379b61c2
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyAdsEmulation.cs
+    guid: 17b4a6a45b00940e5803c00fbd691b1f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyAdsEmulationManager.cs
+    guid: 915c98f6f815240498ca53a3bf7ca258
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedBanner.cs
+    guid: 4c6349185e517462fb96813199041ebf
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedElement.cs
+    guid: 33f776dfacd0043b2ad0583dd52c14db
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedInterstitial.cs
+    guid: f1a1aa0ad76e741719c83a7a797ac02c
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedRewarded.cs
+    guid: a5326e060192648dc80e9e99c0722f7f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/JuicyAnalyticsManager.cs
+    guid: aefe79ede448efb49b64238ef3811a0c
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/JuicySnapshot.cs
+    guid: 8b1d733c36f19484589f3f4d447d1ead
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/JuicyStoredEvent.cs
+    guid: ed0258ad5dc9141a5a6d7f29756ed673
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/AppsFlyer/AppsFlyerManager.cs
+    guid: b463c01ebeabf85448af79350b9c00b7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Emulation/JuicyAnalyticsEmulationManager.cs
+    guid: 712505b7b558a474991910af7abcb8ce
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Facebook/FacebookSDKManager.cs
+    guid: 110b6c0de183b2c4e872e43347c3bb45
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/FirebaseAnalytics/FirebaseAnalyticsManager.cs
+    guid: 0c28f4884c26940e0b98432fe34eb439
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/FirebaseAnalytics/FirebaseManager.cs
+    guid: 580246c6b969f44f7a360853bce8046f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Unity/UnityAnalyticsManager.cs
+    guid: 353235b168c284d7283d2ca3deb06e34
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicyCheatCode.cs
+    guid: 5b20387f458f345ed84bae11533a23b0
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKDebug.cs
+    guid: 3177e1d168c668143805022fb8060b4b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKInternalTest.cs
+    guid: 910dc297ca42b4b75900cabb917d10df
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKLaunchLog.cs
+    guid: e3705286be9bc45dab82da7393451306
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKLog.cs
+    guid: 2881aad025b9c465289c4fa4c5a97d96
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/Editor/JuicySDKInternalTestEditor.cs
+    guid: d9c22172be2b14cd6bb7b835f42b4f76
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Editor/JuicyBaseProcessBuildManager.cs
+    guid: 442dc78083fae4d17b7cefc31e840008
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/FireBase/Sample/GoogleService-Info.juicy
+    guid: 7ab4a0392514d4983bbc0d12c172b70b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/FireBase/Sample/google-services.juicy
+    guid: 0e9a0834fc0b74697ae398e52eb2ad92
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyConfigIntegrationReport.cs
+    guid: 33a0d6f93857042b9b7a290ebc3b9c39
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyIntegrationReport.cs
+    guid: 15d521eaa9bc547a3ac959a1e0741908
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyIntegrationWindow.cs
+    guid: 59ca814baac774ff393f6d34ad1aa67b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyProjectIntegrationReport.cs
+    guid: 4f74873b193734a568e91625e17267ba
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicySettingsIntegrationReport.cs
+    guid: 3a623ce001df34b5ab72160c781eae44
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Editor/JuicyRemoveManager.cs
+    guid: 7b157018fe79547eaafdb5a58fd2ca6d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Editor/JuicyRemoveWindow.cs
+    guid: 80a1d6bffd0344ccf96d35175e6e58e9
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Resources/JuicyRemoveManager.asset
+    guid: 793b0388a53df4a489cef07888ec8387
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyEditorSettings.cs
+    guid: b8ee3296ae8d64e14bc6d9c3b5ad7766
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyEditorSettings_Inspector.cs
+    guid: 0216df0a1520848aea779a4a9c901d50
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyFirstImport.cs
+    guid: abcb48ab7044042648a638de5b9111ec
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicySDKSettingsWindow.cs
+    guid: 626c3a76d305f4bdd959ba5560565518
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicySDKSettings_Inspector.cs
+    guid: 2b553d7d27c814d7cab6c6df297dceca
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyPlugins/JuicyAndroidPlugin.cs
+    guid: f35cf1e39e946404f9444a870dbb9dcb
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyPlugins/JuicyIOSPlugin.cs
+    guid: ba1c9378309e043d98cfe058c637fe86
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/JuicyMediationPrivacyDatas.cs
+    guid: 1f7980fd242c842edb68fc48e237c737
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/JuicySDKMediationConfig.cs
+    guid: 9e9646acfd1e14e328b356ab8fdc0955
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/JuicySDKMediationLaunchLog.cs
+    guid: c4eb03b66e2974a28b1de3e7ea1f9527
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/MediationManager.cs
+    guid: 86b29b03c587948e7ad4f3cbe47606f1
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/Editor/JuicyMediationIntegrationReport.cs
+    guid: 9994d3df10e1d48859cc0c1bf5cff1f4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/Editor/JuicyMediationProcessBuildManager.cs
+    guid: 8d390aba8643d47188536d7d26a88ac4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/Button_PartnerPrivacyPolicyLink.cs
+    guid: 5433e76daa9c3ce43a27adb31de45282
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/Button_PrivacyPolicyLink.cs
+    guid: 0fb7c40b13a6c427183ee56bcf302671
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/GeolocalisationUtility.cs
+    guid: f27152e53a2858447b968096e4cd97b6
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/JuicyBasePrivacyDatas.cs
+    guid: 2dd497a58287649d48fc3db30458ba1f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/JuicyMailTo.cs
+    guid: 9f9e7de3ab16a407b97c3a1f224c5347
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/JuicyPrivacyManager.cs
+    guid: b667be4c80b37184885d4fd1bdadc48e
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PreIOSIDFATrackingPopUp.cs
+    guid: ae290b2bf68ed4d42a837f3f72b83a45
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PrivacyButtonBase.cs
+    guid: 7a0e087296844d346af114c118e10ff5
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PrivacySettingsPopUp.cs
+    guid: f4568949306e59345b20fc1579bee23d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PrivacySettingsPopUp_ScreenController.cs
+    guid: cd7a8a5cedb385b48b7e5f7bbe96e026
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/UpdatePrivacySettingsPopUpV1.cs
+    guid: f9e0dd765d88e4760993b96e8bc399d7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/UpdatePrivacySettingsPopUpV2.cs
+    guid: b65a3c831d08644f8a09c84731a2c8ed
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/WelcomePrivacySettingsPopUpV1.cs
+    guid: 2dcde601c5120455392be16340e812cd
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/WelcomePrivacySettingsPopUpV2.cs
+    guid: f7d0cfc6481774153976ab033007daa7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/JuicyPurchaseManager.cs
+    guid: fbf728fa4a1c041d4a7c8bed5502c5fc
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/ProductInfos.cs
+    guid: 297f030fa4ab2461280e36ff7f66f975
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/PurchaseManagerBase.cs
+    guid: 60ec39339330840b4ba350ede148d1bb
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/Unity/UnityPurchaseManager.cs
+    guid: ffb1f19c9464e449cb84b3e603a5ae92
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase.RemoveAds/JuicyPurchaseRemoveAdsManager.cs
+    guid: 663650723770e499899598271cd22d97
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Rating/JuicyRatingManager.cs
+    guid: 9ac01d16284079e4aa0fb310bcb72f71
+  - originPath: Assets/JuicySDK/_Internal/Scripts/RemoveAds/JuicyRemoveAdsManager.cs
+    guid: a89e8dc62c7ca49f78a511aca8fe8808
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/JuicyConfigFileManager.cs
+    guid: f64e1ee517e344126a3bfba462b4798a
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/JuicySDKConfig.cs
+    guid: 24be9e55b782a409db83e559826da9cd
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/JuicySDKSettings.cs
+    guid: 634c6ba3c8912954db960feb0cdb144a
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/Resources/JuicySDKSampleAppConfig.xml
+    guid: 4dbe14f7edef94ccb86782de5a49fcde
+  - originPath: Assets/JuicySDK/_Internal/Scripts/UI/JuicyToggleVisual.cs
+    guid: 67b2fae66eb04446481ffd49011f9cfd
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/BitUtility.cs
+    guid: 6bb65d217778e4bcfa3cf05fd7902771
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/JuicyFileSaver.cs
+    guid: 96ada553e6a1b4e2c97d3c1ca49e9147
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/JuicyPlayerPrefs.cs
+    guid: 6214db662c02a4dfa9440aaa49a2e96f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/JuicyUtility.cs
+    guid: cc7f26d69ac6cb846ba16c59c4fd92e1
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/RectTransformExtension.cs
+    guid: 1220d9af1a76542088e663368e48b0c7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/ScreenUtility.cs
+    guid: 5abd0c345afcd41deb488c8b463a51fe
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/UnityThread.cs
+    guid: 48a9e3e37bd054c01ac4eaa19ff0e918
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/XmlUtility.cs
+    guid: b85978c832a92405299a1911f4bc589b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/Editor/PBXProjectUtility.cs
+    guid: be0b19e2eec0a4523a89ff5b8ea76a30
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/Editor/PlistUtility.cs
+    guid: 2e4441fc19ba6427d98da7cc3ac640f3
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/Android/applovin-max-unity-plugin.aar
+    guid: 1db980bd612824d2097f78fd779e6051
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/iOS/MAUnityAdManager.h
+    guid: 4209563f82b8a4f7dabf03705ab761c6
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/iOS/MAUnityAdManager.m
+    guid: 2973e70bd2fa74984b35aea07ae9db52
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/iOS/MAUnityPlugin.mm
+    guid: 7e373ed7168b243e6b706e991ab5a643
+  - originPath: Assets/MaxSdk/Mediation/AdColony/Editor/Dependencies.xml
+    guid: a351b114cfc11494ba8c131833b1bf74
+  - originPath: Assets/MaxSdk/Mediation/ByteDance/Editor/Dependencies.xml
+    guid: 0828555cb1ce94702a4af6f3dce3d735
+  - originPath: Assets/MaxSdk/Mediation/Chartboost/Editor/Dependencies.xml
+    guid: 93b0a4618bd884871af0981a7867bb2f
+  - originPath: Assets/MaxSdk/Mediation/Facebook/Editor/Dependencies.xml
+    guid: aea9bdf974328420db5ae118ef0d2b87
+  - originPath: Assets/MaxSdk/Mediation/Fyber/Editor/Dependencies.xml
+    guid: 5e123cdc08e804dffb2c40c4fbc83caf
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/Dependencies.xml
+    guid: 053b810d3594744e38b6fd0fa378fb57
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/MaxGoogleInitialize.cs
+    guid: 2376824a26af1414bbc62440698ccc89
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/MaxMediationGoogleUtils.cs
+    guid: 6de4e4d420b14431a7d169724e23361e
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/MaxSdk.Mediation.Google.Editor.asmdef
+    guid: 91c204b831b394f9e8639dcc4f11403a
+  - originPath: Assets/MaxSdk/Mediation/InMobi/Editor/Dependencies.xml
+    guid: bc66a0ef4503843ee9b1bf1b1e867367
+  - originPath: Assets/MaxSdk/Mediation/IronSource/Editor/Dependencies.xml
+    guid: 19262406303f04f05b14b31b3c734d35
+  - originPath: Assets/MaxSdk/Mediation/Line/Editor/Dependencies.xml
+    guid: 1358f87478e994c0fba75cf98eb06e3f
+  - originPath: Assets/MaxSdk/Mediation/Mintegral/Editor/Dependencies.xml
+    guid: 221b2a20a58a04f2cb4afb0779587206
+  - originPath: Assets/MaxSdk/Mediation/Smaato/Editor/Dependencies.xml
+    guid: f6c345cc57a514902ba5fb68436f852f
+  - originPath: Assets/MaxSdk/Mediation/Tapjoy/Editor/Dependencies.xml
+    guid: c5268a136291a461aad1c0175bccb266
+  - originPath: Assets/MaxSdk/Mediation/TencentGDT/Editor/Dependencies.xml
+    guid: 1c83d361e01b448b39d25eb389f62359
+  - originPath: Assets/MaxSdk/Mediation/UnityAds/Editor/Dependencies.xml
+    guid: 9950f1cb0da1e43efbeca604db142076
+  - originPath: Assets/MaxSdk/Mediation/VerizonAds/Editor/Dependencies.xml
+    guid: 7eff54117fa2e411d8d9e599e6f5de02
+  - originPath: Assets/MaxSdk/Mediation/Vungle/Editor/Dependencies.xml
+    guid: 0d8ad3a6ddc4f44fab2efe607fe14f26
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinAutoUpdater.cs
+    guid: 8bcdd5226273242c5bd9ec79568202e6
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinCommandLine.cs
+    guid: 2d0aa55f9a7d2440f871dfb256372a33
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinDownloadHandler.cs
+    guid: c85c3812a13e04838951767c1285e4da
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinEditorCoroutine.cs
+    guid: 95747c688378548eeb92aeb528ac96ff
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinIntegrationManager.cs
+    guid: c5b874c1e65274159bcc0dc15d9458cc
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinIntegrationManagerWindow.cs
+    guid: 84c61b4c05e114cec91df447d1b585f8
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinMenuItems.cs
+    guid: 02c2d277874f649d18a59d382420bf65
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinPostProcessAndroidGradle.cs
+    guid: f75e54e2eb78f427ca8643c97684387b
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinPostProcessiOS.cs
+    guid: d5d209f90444f4a90830b48b5f3f3ff4
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinPreProcessAndroid.cs
+    guid: 8ccaf444d0d4f4cadb5debe7c41b20c4
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinProcessGradleBuildFile.cs
+    guid: 732b7510bc9c94aafb3fd3b8c0dc5d2d
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinSettings.cs
+    guid: ebc0ba1b5ef6b4a6b9dd53d7eadfea16
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/MaxSdk.IntegrationManager.Editor.asmdef
+    guid: a10a05a8449c42519fd80f2b8b580de3
+  - originPath: Assets/Plugins/Android/FirebaseApp.androidlib/res/values/google-services.xml
+    guid: 960f9cb89dc694f38aa1713e003099e9
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml
+    guid: c388863e22f0e40c399c8161a948e7aa
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_unity_version.xml
+    guid: f668be5f2cb944e718aeff65e28ec6b8
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/Common.cs
+    guid: 8064d28ca363a42f993da5d4593c51fb
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/EditorAnalytcisApi.cs
+    guid: a09e9a78b014e48e3b1c41fed70c3739
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/ProjectBuildEvent.cs
+    guid: a5ea10438fa7c47eba46e35cdda214ec
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/ProjectOpenEvent.cs
+    guid: f94d6ce17cf4c479497f9ca7c086ef65
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/SdkImportEvent.cs
+    guid: f87e6952333e546c1be3df821f9d2fcb
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/WebRequestQueue.cs
+    guid: 6c89af2274de94b7e9288dcddcf0265d
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/Info.plist
+    guid: 58a86b0b376564c06bf8ce29e1dbfb04
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/MacOS/AppsFlyerBundle
+    guid: 0889edee891d84a8eb0b7cc87071b91e
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/_CodeSignature/CodeResources
+    guid: 724b52b308e9a4a6d889d7bf3945a2ca
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AFUnityUtils.mm
+    guid: 18a03931864e84d86bedcc99c440e060
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyer+AppController.m
+    guid: 6ae9e1f7daef2427588fab2fbf8d35d5
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAdRevenueWrapper.h
+    guid: 7fa891a95d71c459daa1e92ee7a653ab
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAdRevenueWrapper.mm
+    guid: 84d99cf0f930e4c80b4bc1858e042b70
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAppController.mm
+    guid: 2d1497a1493b24fecaa58bd3a7b707f9
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAttribution.h
+    guid: 8544dc3b3c7bb40d397b2de568df1058
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAttribution.m
+    guid: 1060e47d7b9e2453ba575f0b455b2bf8
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyeriOSWrapper.h
+    guid: 147104b04b5794eaa92b4195cc328e13
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyeriOSWrapper.mm
+    guid: 2bff3788f3d8747fe9679bd3818e1d76
+  - originPath: Assets/AppsFlyer/Plugins/iOS/SwiftForUnity.swift
+    guid: a631431c30cca4ac2bb4b40fc67e4005
+  - originPath: Assets/AudienceNetwork/Scenes/Banner/AdViewScene.cs
+    guid: 905b751bb63e44191a5363d3ed3d31d0
+  - originPath: Assets/AudienceNetwork/Scenes/Banner/AdViewScene.unity
+    guid: cb29e86fb3daa461f8da1a6d755fe9ce
+  - originPath: Assets/AudienceNetwork/Scenes/Interstitial/InterstitialAdScene.cs
+    guid: 00d288c1305fc494882c5c1d674f6779
+  - originPath: Assets/AudienceNetwork/Scenes/Interstitial/InterstitialAdScene.unity
+    guid: f72b5a1d5965144f795ee32584534444
+  - originPath: Assets/AudienceNetwork/Scenes/RewardedVideo/RewardedVideoAdScene.cs
+    guid: 84bf87db85e7a4d18bf8422eb54ac837
+  - originPath: Assets/AudienceNetwork/Scenes/RewardedVideo/RewardedVideoAdScene.unity
+    guid: 0079f98ce8e504ce0b9d7c937e331b03
+  - originPath: Assets/AudienceNetwork/Scenes/Settings/SettingsScene.cs
+    guid: 12a33cb7aa8f042ef8bc6a44c91eed4d
+  - originPath: Assets/AudienceNetwork/Scenes/Settings/SettingsScene.unity
+    guid: d88663653ebb24580ac0c753bb4f140c
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.IOSResolver.dll
+    guid: 8b333f9c2c3c4d5c94788fa0722edc5c
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.IOSResolver.dll.mdb
+    guid: 40c95e810ae744be90cd10e34487fb0b
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.JarResolver.dll
+    guid: af3ced639768447f9ece45f038c5ee35
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.JarResolver.dll.mdb
+    guid: 1a83ae0712954d449d6b500769245b70
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.PackageManagerResolver.dll
+    guid: 64763f5d36d84f789a31f8dbcc26cac9
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.PackageManagerResolver.dll.mdb
+    guid: 05f38fc976de49d0a8bac11b0591b35c
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.VersionHandlerImpl.dll
+    guid: 9e005ad5be4449918b55dae042a3b4b0
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.VersionHandlerImpl.dll.mdb
+    guid: 87e3f1c0087b4dcb96128c54eeba905c
+  - originPath: Assets/FacebookSDK/Plugins/Android/Facebook.Unity.Android.dll
+    guid: 68e44ed084bbd4f04b624895f5638a32
+  - originPath: Assets/FacebookSDK/Plugins/Android/libs/facebook-android-wrapper-14.0.0.aar
+    guid: 06a06c5fe53c44ca08d35e31bd5f9136
+  - originPath: Assets/FacebookSDK/Plugins/Editor/Dependencies.xml
+    guid: 1543e5f9bab73423c96b42cab90363ab
+  - originPath: Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll
+    guid: 9a99583abb89745ad8fd4e048c8cf091
+  - originPath: Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll
+    guid: 6abda14e0211045ac9a37fef71208602
+  - originPath: Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll
+    guid: e0db24ad3974947d8a17eea7e1f764e9
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBSDK+Internal.h
+    guid: 66952bdb75cae4c348f3d0521da59bfd
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.h
+    guid: 511e95bcdad89425999ccbb3e315246a
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.mm
+    guid: 4c29c5d59509848c4bc24c13ac976932
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.h
+    guid: 7461bcc2e2c714a03a3f60d68ec79369
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.m
+    guid: fbc51482e3ca248329707d61959f9d9d
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.h
+    guid: b4469d6625a664618b68231ee0dcc093
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.mm
+    guid: 5cafb2af7ca9641f58022a816236d1ad
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/fixup.projmods
+    guid: aead30834362b490ea67fdd7fd0351c5
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKShareTournamentDialog.swift
+    guid: e8b68c3227d0545b0baf196182ca495c
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournament.swift
+    guid: 40782e83ff8774bfb8280e20c134e6c2
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentFetcher.swift
+    guid: a2bf9c24f7d8f4c83b760043d97deadf
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentUpdater.swift
+    guid: aa01d6bdb7c7f4c52bf29c7adbee61fd
+  - originPath: Assets/FacebookSDK/SDK/Resources/FacebookSettings.asset
+    guid: 97cc5c2c440894aca8637dcb8d0a780a
+  - originPath: Assets/Firebase/Plugins/iOS/Firebase.Analytics.dll
+    guid: 52718a3a80d44aacb368bcc9d62dd804
+  - originPath: Assets/Firebase/Plugins/iOS/Firebase.App.dll
+    guid: 5f3feda1a91343759b7eb58a29b492b7
+  - originPath: Assets/Firebase/Plugins/iOS/Firebase.Crashlytics.dll
+    guid: 3c83c9a9845245cfbbab5a52932b5045
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.bundle
+    guid: 35bfcced25264151bd76b628a1dfa989
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.dll
+    guid: c48626ae27ed478483ba85fd7c81c04b
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.so
+    guid: 590090df30d142acba7e7be939fd2988
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppApp-10_1_1.bundle
+    guid: 99cd54d74cc1488f95742016fa58e0b0
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppApp-10_1_1.dll
+    guid: 79f863a70f9a4dc9b51058fe3e1324e4
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppApp-10_1_1.so
+    guid: 566c89bae6ce4c85843fe691acf785c7
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/maven-metadata.xml
+    guid: 291f81d8ae2745cf913a96d116f2e3f7
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 242fa90834b74efaa4029261ba91550a
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.srcaar
+    guid: 1a366edb56aa43d6a7b5bd1b556af446
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml
+    guid: 96337775a7c941d88ea15f8026ad6f8e
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: 68ae9f2dc5154a6aa9e98a8ebcd0add0
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.srcaar
+    guid: 1cd402452cf04f8f95061a3b873c50ff
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/maven-metadata.xml
+    guid: eda65244fc1b407e8948b25b31c17991
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: c314e5dd47954ed2a0bc65020316c776
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.srcaar
+    guid: dfdffd1552eb46529284864ad15078bd
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.aar
+    guid: b3b270a181c4641e7bba1147126c2682
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 11e903485b94441a39ebf17e56216e02
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.aar
+    guid: 5b91cd7ff905b45bbb6d6e6fa19c9689
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: c14c08f1af331418985bfb8aadc4be9a
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.aar
+    guid: 6274fe7511d7e4b0bb2397e213c40808
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: 9392aefea146d4ad6b80772916dbf730
+  - originPath: Assets/JuicySDK/Sample/Scenes/scene_juicySDKMediationDebugger.unity
+    guid: d0e12be19cb1c44fbac0700ba1125e3a
+  - originPath: Assets/JuicySDK/Sample/Scenes/scene_juicySDKSample.unity
+    guid: 3b608082ffaf3d64b8022840d73b7f8a
+  - originPath: Assets/JuicySDK/Sample/Scenes/scene_juicySDKSampleSettings.lighting
+    guid: 03afe6f8197f0415ba1c507b6b8471f1
+  - originPath: Assets/JuicySDK/Sample/Scripts/MediationDebuggerScene.cs
+    guid: 72288043dd7054f0f9e6621bc276e638
+  - originPath: Assets/JuicySDK/Sample/Scripts/Rotate.cs
+    guid: 2802e9fdf45edc34f9febe6fc96c6330
+  - originPath: Assets/JuicySDK/Sample/Scripts/SampleABTestVariantIDDisplay.cs
+    guid: 70f37bdf29d1f4c279e77af66a7fa3f6
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/ButtonBase.cs
+    guid: 58d7b3ca5a1931d42afda51058d648c9
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_BestScore.cs
+    guid: 69ba3e8308e9b3d4c96fcf90ec8d6213
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_BuyProduct.cs
+    guid: 924c5b5c53024a2428c9a03f46633e0c
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_HideBanner.cs
+    guid: 5b9a778ae78b2b34fbb93089c36503c7
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_NotifyGameEnd.cs
+    guid: 70dfa05ffc0b1404390e604f16636aee
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_NotifyGameStart.cs
+    guid: 7a75db8aa98e001448e3e87377d225ee
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_NotifyInterstitialOpportunity.cs
+    guid: 0386d1e49f603eb4aad84c7153aeb33f
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_Reload.cs
+    guid: d5cf5934c5771ef4eb83e076eb3971d6
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_RemoveAds.cs
+    guid: 76e87138f37ba4f86bcd5b5bef6052d8
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_RestorePurchases.cs
+    guid: 1944d4051c33f70498f78fd9e1795c6f
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowBanner.cs
+    guid: 23eb1e02cd0afca4c8be5a2cb051922c
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowMediationTestSuite.cs
+    guid: ce1772a2fd0974a0bbfbc4579fdf7138
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowPrivacySettings.cs
+    guid: 7cd43a2d2be7eb24b80655d193c1a258
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowRewarded.cs
+    guid: 0dde16f19153e0141a993db58a1fbfb6
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_SimulateCrash.cs
+    guid: 90adf677aa6d14d4ea6eb48d301931d7
+  - originPath: Assets/JuicySDK/Script/Analytics/EventProperty.cs
+    guid: 44d33c92f2db5754fbf7213ea77923bd
+  - originPath: Assets/JuicySDK/Script/Purchase/ProductSummary.cs
+    guid: 0eee8994ae0027941b2f4632b2408853
+  - originPath: Assets/JuicySDK/Script/Purchase/ProductType.cs
+    guid: 5f18884abfb694dfd810afbe2819114a
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/BannerInsert.prefab
+    guid: 7c877fa5037ff42508b633756516829f
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/FireBaseManager.prefab
+    guid: b1a1ff365afcc457ea1e8d1f9a5fa82a
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyABTestManager.prefab
+    guid: bd267b209dd30074c884608c75a037c4
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyAdsManager.prefab
+    guid: 9fbe2d5e91ebe0c4b97cf00f94efb9ae
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyAnalyticsManager.prefab
+    guid: 9f8803c530c48724c897a108b12a9179
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyPrivacyManager.prefab
+    guid: 63e97551a508f43f88085515813b500b
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyPurchaseManager.prefab
+    guid: daf87d67a04f34e5bb8ab6220fae54f9
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyPurchaseRemoveAdsManager.prefab
+    guid: 58a9d7c4fc04d4ed7a6a8aa27734c912
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyRatingManager.prefab
+    guid: 698c18513d2c88e469d67717bd93bed4
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyRemoveAdsManager.prefab
+    guid: 94c31e53a7fb142d8ab3aaab1da14034
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulation.prefab
+    guid: 69d1a9dec9c2946bf92b0699af6348fe
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationBanner.prefab
+    guid: 8404ca66c62b041ac9dfa149940bc7bc
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationInterstitial.prefab
+    guid: 0f5e9d39ab8be44a3a596f49ef605834
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationRewarded.prefab
+    guid: d17fcfd6d7a3b4c8d8900bbc633698f7
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyPreIOS14PopUp.prefab
+    guid: df02ccc47b64545a98b139ce413fa83d
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyUpdatePrivacyPopUpV1.prefab
+    guid: 7af791eac64894aa99559a07f57a8236
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyUpdatePrivacyPopUpV2.prefab
+    guid: 96350323dc9504f739f82ad5e9313fe1
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyWelcomePrivacyPopUpV1.prefab
+    guid: a5b9377ce9c774711b6be805adefc839
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyWelcomePrivacyPopUpV2.prefab
+    guid: ab901b65491b442618097781ff3c8434
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/PartnerPrivacyPolicyLink.prefab
+    guid: 54cf39b2b8ae9ad488ca506d06bc9bc3
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/PrivacyPolicyLink.prefab
+    guid: 329a842afbf6843608f876e4b7675ef0
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/PrivacyPopUpsInputMask.prefab
+    guid: 565661d75995741b99e47959d0cc7ad3
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/UI/PrivacyToggle.prefab
+    guid: 133f369ed90644462b99b592e77f241d
+  - originPath: Assets/JuicySDK/_Internal/Resources/JuicySDKLaunchLog.txt
+    guid: 971ac19ae95c3485a91815fd7b87729a
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicySDKManager.cs
+    guid: 4503101b10b34e3469e9bea02aab45a5
+  - originPath: Assets/JuicySDK/_Internal/Scripts/ABTest/JuicyABTestManager.cs
+    guid: cd0858e20c9813046b4621e7f993b653
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/AdsManagerBase.cs
+    guid: 906ee059216e7c849abc2eb7bd675be6
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/BannerInsert.cs
+    guid: b4931d176bb754f50b2384cd1576ecf4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/JuicyAdsManager.cs
+    guid: 62996c513cb3a3446b8aa7b6379b61c2
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyAdsEmulation.cs
+    guid: 17b4a6a45b00940e5803c00fbd691b1f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyAdsEmulationManager.cs
+    guid: 915c98f6f815240498ca53a3bf7ca258
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedBanner.cs
+    guid: 4c6349185e517462fb96813199041ebf
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedElement.cs
+    guid: 33f776dfacd0043b2ad0583dd52c14db
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedInterstitial.cs
+    guid: f1a1aa0ad76e741719c83a7a797ac02c
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedRewarded.cs
+    guid: a5326e060192648dc80e9e99c0722f7f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/JuicyAnalyticsManager.cs
+    guid: aefe79ede448efb49b64238ef3811a0c
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/JuicySnapshot.cs
+    guid: 8b1d733c36f19484589f3f4d447d1ead
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/JuicyStoredEvent.cs
+    guid: ed0258ad5dc9141a5a6d7f29756ed673
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/AppsFlyer/AppsFlyerManager.cs
+    guid: b463c01ebeabf85448af79350b9c00b7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Emulation/JuicyAnalyticsEmulationManager.cs
+    guid: 712505b7b558a474991910af7abcb8ce
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Facebook/FacebookSDKManager.cs
+    guid: 110b6c0de183b2c4e872e43347c3bb45
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/FirebaseAnalytics/FirebaseAnalyticsManager.cs
+    guid: 0c28f4884c26940e0b98432fe34eb439
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/FirebaseAnalytics/FirebaseManager.cs
+    guid: 580246c6b969f44f7a360853bce8046f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Unity/UnityAnalyticsManager.cs
+    guid: 353235b168c284d7283d2ca3deb06e34
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicyCheatCode.cs
+    guid: 5b20387f458f345ed84bae11533a23b0
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKDebug.cs
+    guid: 3177e1d168c668143805022fb8060b4b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKInternalTest.cs
+    guid: 910dc297ca42b4b75900cabb917d10df
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKLaunchLog.cs
+    guid: e3705286be9bc45dab82da7393451306
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKLog.cs
+    guid: 2881aad025b9c465289c4fa4c5a97d96
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/Editor/JuicySDKInternalTestEditor.cs
+    guid: d9c22172be2b14cd6bb7b835f42b4f76
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Editor/JuicyBaseProcessBuildManager.cs
+    guid: 442dc78083fae4d17b7cefc31e840008
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/FireBase/Sample/GoogleService-Info.juicy
+    guid: 7ab4a0392514d4983bbc0d12c172b70b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/FireBase/Sample/google-services.juicy
+    guid: 0e9a0834fc0b74697ae398e52eb2ad92
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyConfigIntegrationReport.cs
+    guid: 33a0d6f93857042b9b7a290ebc3b9c39
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyIntegrationReport.cs
+    guid: 15d521eaa9bc547a3ac959a1e0741908
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyIntegrationWindow.cs
+    guid: 59ca814baac774ff393f6d34ad1aa67b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyProjectIntegrationReport.cs
+    guid: 4f74873b193734a568e91625e17267ba
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicySettingsIntegrationReport.cs
+    guid: 3a623ce001df34b5ab72160c781eae44
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Editor/JuicyRemoveManager.cs
+    guid: 7b157018fe79547eaafdb5a58fd2ca6d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Editor/JuicyRemoveWindow.cs
+    guid: 80a1d6bffd0344ccf96d35175e6e58e9
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Resources/JuicyRemoveManager.asset
+    guid: 793b0388a53df4a489cef07888ec8387
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyEditorSettings.cs
+    guid: b8ee3296ae8d64e14bc6d9c3b5ad7766
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyEditorSettings_Inspector.cs
+    guid: 0216df0a1520848aea779a4a9c901d50
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyFirstImport.cs
+    guid: abcb48ab7044042648a638de5b9111ec
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicySDKSettingsWindow.cs
+    guid: 626c3a76d305f4bdd959ba5560565518
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicySDKSettings_Inspector.cs
+    guid: 2b553d7d27c814d7cab6c6df297dceca
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyPlugins/JuicyAndroidPlugin.cs
+    guid: f35cf1e39e946404f9444a870dbb9dcb
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyPlugins/JuicyIOSPlugin.cs
+    guid: ba1c9378309e043d98cfe058c637fe86
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/JuicyMediationPrivacyDatas.cs
+    guid: 1f7980fd242c842edb68fc48e237c737
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/JuicySDKMediationConfig.cs
+    guid: 9e9646acfd1e14e328b356ab8fdc0955
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/JuicySDKMediationLaunchLog.cs
+    guid: c4eb03b66e2974a28b1de3e7ea1f9527
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/MediationManager.cs
+    guid: 86b29b03c587948e7ad4f3cbe47606f1
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/Editor/JuicyMediationIntegrationReport.cs
+    guid: 9994d3df10e1d48859cc0c1bf5cff1f4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/Editor/JuicyMediationProcessBuildManager.cs
+    guid: 8d390aba8643d47188536d7d26a88ac4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/Button_PartnerPrivacyPolicyLink.cs
+    guid: 5433e76daa9c3ce43a27adb31de45282
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/Button_PrivacyPolicyLink.cs
+    guid: 0fb7c40b13a6c427183ee56bcf302671
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/GeolocalisationUtility.cs
+    guid: f27152e53a2858447b968096e4cd97b6
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/JuicyBasePrivacyDatas.cs
+    guid: 2dd497a58287649d48fc3db30458ba1f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/JuicyMailTo.cs
+    guid: 9f9e7de3ab16a407b97c3a1f224c5347
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/JuicyPrivacyManager.cs
+    guid: b667be4c80b37184885d4fd1bdadc48e
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PreIOSIDFATrackingPopUp.cs
+    guid: ae290b2bf68ed4d42a837f3f72b83a45
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PrivacyButtonBase.cs
+    guid: 7a0e087296844d346af114c118e10ff5
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PrivacySettingsPopUp.cs
+    guid: f4568949306e59345b20fc1579bee23d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PrivacySettingsPopUp_ScreenController.cs
+    guid: cd7a8a5cedb385b48b7e5f7bbe96e026
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/UpdatePrivacySettingsPopUpV1.cs
+    guid: f9e0dd765d88e4760993b96e8bc399d7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/UpdatePrivacySettingsPopUpV2.cs
+    guid: b65a3c831d08644f8a09c84731a2c8ed
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/WelcomePrivacySettingsPopUpV1.cs
+    guid: 2dcde601c5120455392be16340e812cd
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/WelcomePrivacySettingsPopUpV2.cs
+    guid: f7d0cfc6481774153976ab033007daa7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/JuicyPurchaseManager.cs
+    guid: fbf728fa4a1c041d4a7c8bed5502c5fc
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/ProductInfos.cs
+    guid: 297f030fa4ab2461280e36ff7f66f975
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/PurchaseManagerBase.cs
+    guid: 60ec39339330840b4ba350ede148d1bb
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/Unity/UnityPurchaseManager.cs
+    guid: ffb1f19c9464e449cb84b3e603a5ae92
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase.RemoveAds/JuicyPurchaseRemoveAdsManager.cs
+    guid: 663650723770e499899598271cd22d97
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Rating/JuicyRatingManager.cs
+    guid: 9ac01d16284079e4aa0fb310bcb72f71
+  - originPath: Assets/JuicySDK/_Internal/Scripts/RemoveAds/JuicyRemoveAdsManager.cs
+    guid: a89e8dc62c7ca49f78a511aca8fe8808
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/JuicyConfigFileManager.cs
+    guid: f64e1ee517e344126a3bfba462b4798a
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/JuicySDKConfig.cs
+    guid: 24be9e55b782a409db83e559826da9cd
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/JuicySDKSettings.cs
+    guid: 634c6ba3c8912954db960feb0cdb144a
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/Resources/JuicySDKSampleAppConfig.xml
+    guid: 4dbe14f7edef94ccb86782de5a49fcde
+  - originPath: Assets/JuicySDK/_Internal/Scripts/UI/JuicyToggleVisual.cs
+    guid: 67b2fae66eb04446481ffd49011f9cfd
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/BitUtility.cs
+    guid: 6bb65d217778e4bcfa3cf05fd7902771
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/JuicyFileSaver.cs
+    guid: 96ada553e6a1b4e2c97d3c1ca49e9147
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/JuicyPlayerPrefs.cs
+    guid: 6214db662c02a4dfa9440aaa49a2e96f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/JuicyUtility.cs
+    guid: cc7f26d69ac6cb846ba16c59c4fd92e1
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/RectTransformExtension.cs
+    guid: 1220d9af1a76542088e663368e48b0c7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/ScreenUtility.cs
+    guid: 5abd0c345afcd41deb488c8b463a51fe
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/UnityThread.cs
+    guid: 48a9e3e37bd054c01ac4eaa19ff0e918
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/XmlUtility.cs
+    guid: b85978c832a92405299a1911f4bc589b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/Editor/PBXProjectUtility.cs
+    guid: be0b19e2eec0a4523a89ff5b8ea76a30
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/Editor/PlistUtility.cs
+    guid: 2e4441fc19ba6427d98da7cc3ac640f3
+  - originPath: Assets/JuicySDK/_Internal/Sprites/LinkIcon.png
+    guid: 8b46152ed30714aad980bc26635b502c
+  - originPath: Assets/JuicySDK/_Internal/Sprites/RoundedSquare.png
+    guid: 0313685188079f14ab827d7c288a86ec
+  - originPath: Assets/JuicySDK/_Internal/Sprites/ToggleBackground.png
+    guid: 7c3fdc128f7db43c58ba343e15ec000b
+  - originPath: Assets/JuicySDK/_Internal/Sprites/WhiteCircle.png
+    guid: eb15ca428fbc041529ae126529ce7413
+  - originPath: Assets/JuicySDK/_Internal/Sprites/checkMark.png
+    guid: 8a9a5b400d1c7422ca2f144b4bfe93b9
+  - originPath: Assets/JuicySDK/_Internal/Sprites/juicyWS_Logo.png
+    guid: 80fba24613c8647028de447b5e735511
+  - originPath: Assets/JuicySDK/_Internal/Sprites/ring.png
+    guid: 6b42e24732772484bb577c8afead736a
+  - originPath: Assets/MaxSdk/AppLovin/Editor/Dependencies.xml
+    guid: 746da98302dc0402aaa37e8f7bd97e77
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/Android/applovin-max-unity-plugin.aar
+    guid: 1db980bd612824d2097f78fd779e6051
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/iOS/MAUnityAdManager.h
+    guid: 4209563f82b8a4f7dabf03705ab761c6
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/iOS/MAUnityAdManager.m
+    guid: 2973e70bd2fa74984b35aea07ae9db52
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/iOS/MAUnityPlugin.mm
+    guid: 7e373ed7168b243e6b706e991ab5a643
+  - originPath: Assets/MaxSdk/Mediation/AdColony/Editor/Dependencies.xml
+    guid: a351b114cfc11494ba8c131833b1bf74
+  - originPath: Assets/MaxSdk/Mediation/ByteDance/Editor/Dependencies.xml
+    guid: 0828555cb1ce94702a4af6f3dce3d735
+  - originPath: Assets/MaxSdk/Mediation/Chartboost/Editor/Dependencies.xml
+    guid: 93b0a4618bd884871af0981a7867bb2f
+  - originPath: Assets/MaxSdk/Mediation/Facebook/Editor/Dependencies.xml
+    guid: aea9bdf974328420db5ae118ef0d2b87
+  - originPath: Assets/MaxSdk/Mediation/Fyber/Editor/Dependencies.xml
+    guid: 5e123cdc08e804dffb2c40c4fbc83caf
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/Dependencies.xml
+    guid: 053b810d3594744e38b6fd0fa378fb57
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/MaxGoogleInitialize.cs
+    guid: 2376824a26af1414bbc62440698ccc89
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/MaxMediationGoogleUtils.cs
+    guid: 6de4e4d420b14431a7d169724e23361e
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/MaxSdk.Mediation.Google.Editor.asmdef
+    guid: 91c204b831b394f9e8639dcc4f11403a
+  - originPath: Assets/MaxSdk/Mediation/InMobi/Editor/Dependencies.xml
+    guid: bc66a0ef4503843ee9b1bf1b1e867367
+  - originPath: Assets/MaxSdk/Mediation/IronSource/Editor/Dependencies.xml
+    guid: 19262406303f04f05b14b31b3c734d35
+  - originPath: Assets/MaxSdk/Mediation/Line/Editor/Dependencies.xml
+    guid: 1358f87478e994c0fba75cf98eb06e3f
+  - originPath: Assets/MaxSdk/Mediation/Mintegral/Editor/Dependencies.xml
+    guid: 221b2a20a58a04f2cb4afb0779587206
+  - originPath: Assets/MaxSdk/Mediation/Smaato/Editor/Dependencies.xml
+    guid: f6c345cc57a514902ba5fb68436f852f
+  - originPath: Assets/MaxSdk/Mediation/Tapjoy/Editor/Dependencies.xml
+    guid: c5268a136291a461aad1c0175bccb266
+  - originPath: Assets/MaxSdk/Mediation/TencentGDT/Editor/Dependencies.xml
+    guid: 1c83d361e01b448b39d25eb389f62359
+  - originPath: Assets/MaxSdk/Mediation/UnityAds/Editor/Dependencies.xml
+    guid: 9950f1cb0da1e43efbeca604db142076
+  - originPath: Assets/MaxSdk/Mediation/VerizonAds/Editor/Dependencies.xml
+    guid: 7eff54117fa2e411d8d9e599e6f5de02
+  - originPath: Assets/MaxSdk/Mediation/Vungle/Editor/Dependencies.xml
+    guid: 0d8ad3a6ddc4f44fab2efe607fe14f26
+  - originPath: Assets/MaxSdk/Resources/Images/alert_icon.png
+    guid: 572fee4574afa4f6dbf2846e0c152fe8
+  - originPath: Assets/MaxSdk/Resources/Images/uninstall_icon.png
+    guid: d24994f48fdd0430692e3d49279cd782
+  - originPath: Assets/MaxSdk/Resources/Images/warning_icon.png
+    guid: b504c956e7ed744b6b0e7f014e1cac5a
+  - originPath: Assets/MaxSdk/Scripts/Editor/MaxInitialization.cs
+    guid: bc0c5693335e0408a95293c0d7b61137
+  - originPath: Assets/MaxSdk/Scripts/Editor/MaxPostProcessBuildAndroid.cs
+    guid: 75fed160a41749d4990cee871ee618a4
+  - originPath: Assets/MaxSdk/Scripts/Editor/MaxPostProcessBuildiOS.cs
+    guid: 29959b3cd36c484a9d57d6b7ca7f7bfa
+  - originPath: Assets/MaxSdk/Scripts/Editor/MaxSdk.Scripts.Editor.asmdef
+    guid: 691e0eb4b7a542dba2219d48c3254f1c
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinAutoUpdater.cs
+    guid: 8bcdd5226273242c5bd9ec79568202e6
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinCommandLine.cs
+    guid: 2d0aa55f9a7d2440f871dfb256372a33
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinDownloadHandler.cs
+    guid: c85c3812a13e04838951767c1285e4da
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinEditorCoroutine.cs
+    guid: 95747c688378548eeb92aeb528ac96ff
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinIntegrationManager.cs
+    guid: c5b874c1e65274159bcc0dc15d9458cc
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinIntegrationManagerWindow.cs
+    guid: 84c61b4c05e114cec91df447d1b585f8
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinMenuItems.cs
+    guid: 02c2d277874f649d18a59d382420bf65
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinPostProcessAndroidGradle.cs
+    guid: f75e54e2eb78f427ca8643c97684387b
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinPostProcessiOS.cs
+    guid: d5d209f90444f4a90830b48b5f3f3ff4
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinPreProcessAndroid.cs
+    guid: 8ccaf444d0d4f4cadb5debe7c41b20c4
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinProcessGradleBuildFile.cs
+    guid: 732b7510bc9c94aafb3fd3b8c0dc5d2d
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinSettings.cs
+    guid: ebc0ba1b5ef6b4a6b9dd53d7eadfea16
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/MaxSdk.IntegrationManager.Editor.asmdef
+    guid: a10a05a8449c42519fd80f2b8b580de3
+  - originPath: Assets/MaxSdk/Scripts/ThirdParty/MiniJSON.cs
+    guid: 52789a1d5a5754d46816fd9ed114a375
+  - originPath: Assets/Parse/Plugins/dotNet45/Unity.Compat.dll
+    guid: 3db0783b58c2429b9bc1f560ba323d05
+  - originPath: Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll
+    guid: bd18eee30834e4f71bded96fd14033a9
+  - originPath: Assets/Plugins/Android/FirebaseApp.androidlib/AndroidManifest.xml
+    guid: 764e4e5af956d4b6982ebd567d1b7c11
+  - originPath: Assets/Plugins/Android/FirebaseApp.androidlib/project.properties
+    guid: 55de9a07fa20e4c649ae326982ab03e3
+  - originPath: Assets/Plugins/Android/FirebaseApp.androidlib/res/values/google-services.xml
+    guid: 960f9cb89dc694f38aa1713e003099e9
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/AndroidManifest.xml
+    guid: 46580f2ae8aa94f97930b76546787781
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/project.properties
+    guid: 98bb78435b8c74821b8727c2a72f9947
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml
+    guid: c388863e22f0e40c399c8161a948e7aa
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_unity_version.xml
+    guid: f668be5f2cb944e718aeff65e28ec6b8
+  - originPath: Assets/Plugins/Android/MaxMediationGoogle.androidlib/AndroidManifest.xml
+    guid: cf61ddd9f6ac647d4accf8a1a1d2a690
+  - originPath: Assets/Plugins/Android/MaxMediationGoogle.androidlib/project.properties
+    guid: ccb8f1abd84ed4fa497d596a0e65ca25
+  - originPath: Assets/Plugins/UDP/Android/udp.aar
+    guid: f601a629aee2545569c9921a07bb8002
+  - originPath: Assets/Plugins/UDP/Android/udpsandbox.aar
+    guid: 241214004108d45f29a106fd8fcde269
+  - originPath: Assets/Plugins/UDP/Android/utils.aar
+    guid: a9b73fc5405a44ed3b2b33f2f8276efc
+  - originPath: Assets/Plugins/UDP/Editor/AppStoreModel.cs
+    guid: 3da9878c9a6b342f2908cbdaa03514ff
+  - originPath: Assets/Plugins/UDP/Editor/AppStoreOnboardApi.cs
+    guid: bc499e152aef74f319a5bf855dcdd1ca
+  - originPath: Assets/Plugins/UDP/Editor/AppStoreSettingsEditor.cs
+    guid: e202e3d0c7dcd4c4baa6083fd591d883
+  - originPath: Assets/Plugins/UDP/Editor/BuildConfig.cs
+    guid: aaad67932b67e4cde83abb2e0d74f02a
+  - originPath: Assets/Plugins/UDP/Editor/Utils.cs
+    guid: df087e420b0724202951d2fd29d385b0
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/Common.cs
+    guid: 8064d28ca363a42f993da5d4593c51fb
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/EditorAnalytcisApi.cs
+    guid: a09e9a78b014e48e3b1c41fed70c3739
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/ProjectBuildEvent.cs
+    guid: a5ea10438fa7c47eba46e35cdda214ec
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/ProjectOpenEvent.cs
+    guid: f94d6ce17cf4c479497f9ca7c086ef65
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/SdkImportEvent.cs
+    guid: f87e6952333e546c1be3df821f9d2fcb
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/WebRequestQueue.cs
+    guid: 6c89af2274de94b7e9288dcddcf0265d
+  - originPath: Assets/Plugins/UDP/Resources/UDP Settings.asset
+    guid: 98d27448b8b7d4f6c94cba221e0f13cd
+  - originPath: Assets/Plugins/iOS/Firebase/libCrashlyticsiOSWrapper.a
+    guid: 18fb07a8bd0b437c827b544b21591360
+  - originPath: Assets/Plugins/iOS/Firebase/libFirebaseCppAnalytics.a
+    guid: bf523cc64d194963aa7661e7d2944feb
+  - originPath: Assets/Plugins/iOS/Firebase/libFirebaseCppApp.a
+    guid: 601e8e1d2d2744929ede33676cbeccc0
+  - originPath: Assets/Plugins/iOS/Firebase/libFirebaseCppCrashlytics.a
+    guid: c9a5f5c47ed44459ae2c09b918d44344
+  - originPath: Assets/Plugins/x86_64/Firebase/FirebaseCppApp-5.4.1.dll
+    guid: 725aa9fcd30048daba58947fad7e7d23
+  - originPath: Assets/AppsFlyer/Editor/AppsFlyer.Editor.asmdef
+    guid: d008146f00dea44d38752b4289e5f65b
+  - originPath: Assets/AppsFlyer/Editor/AppsFlyerAdRevenueDependencies.xml
+    guid: 6110ce30bf7674268814dc9e0395f8b0
+  - originPath: Assets/AppsFlyer/Editor/AppsFlyerDependencies.xml
+    guid: a03558dbbfeac45db9afe9e9c2df5a85
+  - originPath: Assets/AppsFlyer/Editor/AppsFlyerObjectEditor.cs
+    guid: d248a134cf494486fb1d6a2e95a05d87
+  - originPath: Assets/AppsFlyer/Editor/appsflyer_logo.png
+    guid: bc7fa5a6b64b944a4b2900fd877acb8b
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/Info.plist
+    guid: 58a86b0b376564c06bf8ce29e1dbfb04
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/MacOS/AppsFlyerBundle
+    guid: 0889edee891d84a8eb0b7cc87071b91e
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/_CodeSignature/CodeResources
+    guid: 724b52b308e9a4a6d889d7bf3945a2ca
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AFUnityUtils.mm
+    guid: 18a03931864e84d86bedcc99c440e060
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyer+AppController.m
+    guid: 6ae9e1f7daef2427588fab2fbf8d35d5
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAdRevenueWrapper.h
+    guid: 7fa891a95d71c459daa1e92ee7a653ab
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAdRevenueWrapper.mm
+    guid: 84d99cf0f930e4c80b4bc1858e042b70
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAppController.mm
+    guid: 2d1497a1493b24fecaa58bd3a7b707f9
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAttribution.h
+    guid: 8544dc3b3c7bb40d397b2de568df1058
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAttribution.m
+    guid: 1060e47d7b9e2453ba575f0b455b2bf8
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyeriOSWrapper.h
+    guid: 147104b04b5794eaa92b4195cc328e13
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyeriOSWrapper.mm
+    guid: 2bff3788f3d8747fe9679bd3818e1d76
+  - originPath: Assets/AppsFlyer/Plugins/iOS/SwiftForUnity.swift
+    guid: a631431c30cca4ac2bb4b40fc67e4005
+  - originPath: Assets/AppsFlyer/Tests/Castle.Core.dll
+    guid: 7b5b4579db85b4cfd8395bfb19aa309e
+  - originPath: Assets/AppsFlyer/Tests/NSubstitute.dll
+    guid: 642cf65ed2573419bab7e7d44fc73181
+  - originPath: Assets/AppsFlyer/Tests/System.Runtime.CompilerServices.Unsafe.dll
+    guid: 3a5ccbd864ba94a9a9ba47895ff14922
+  - originPath: Assets/AppsFlyer/Tests/System.Threading.Tasks.Extensions.dll
+    guid: ee45ae2608f3c44d08fc6e21a94d133f
+  - originPath: Assets/AppsFlyer/Tests/Tests.asmdef
+    guid: 1f155a0e4c9ab48eeb4b54b2dc0aeba7
+  - originPath: Assets/AppsFlyer/Tests/Tests_Suite.cs
+    guid: 1b1a24aa01166451d804d7c03c14a3db
+  - originPath: Assets/AppsFlyer/Windows/AppsFlyerLib.pri
+    guid: c621896ec81267f478e98555031271ef
+  - originPath: Assets/AppsFlyer/Windows/AppsFlyerLib.winmd
+    guid: 5186898c6f4665f438e46763d4cff3ae
+  - originPath: Assets/AppsFlyer/Windows/AppsFlyerWindows.cs
+    guid: 034d11e52b599954181d7f08c0d89ca8
+  - originPath: Assets/AudienceNetwork/Editor/AudienceNetworkDependencies.xml
+    guid: 53e2520257ee14884b66cb776c6a5600
+  - originPath: Assets/AudienceNetwork/Library/AdHandler.cs
+    guid: d47bb3b71586b48dd954f5cdb11b8d19
+  - originPath: Assets/AudienceNetwork/Library/AdSettings.cs
+    guid: 2c6dc3140db0d40609e64d86ea8038bc
+  - originPath: Assets/AudienceNetwork/Library/AdUtility.cs
+    guid: 50f6966ab7c694899a9a6ec5bfe13ce7
+  - originPath: Assets/AudienceNetwork/Library/AdView.cs
+    guid: ea40c685492bb4a8c8ecc98f34c52ed2
+  - originPath: Assets/AudienceNetwork/Library/AudienceNetworkAds.cs
+    guid: 4f7b3f57160c342918af28e4b32686e8
+  - originPath: Assets/AudienceNetwork/Library/ExtraHints.cs
+    guid: 327a6820e37284d458d23d5528ef137c
+  - originPath: Assets/AudienceNetwork/Library/InterstitialAd.cs
+    guid: aed5d3283123b47e9a5780a385f4e6ed
+  - originPath: Assets/AudienceNetwork/Library/RewardedVideoAd.cs
+    guid: 111ff137d27be424584e4e2160d44e80
+  - originPath: Assets/AudienceNetwork/Library/SdkVersion.cs
+    guid: 766cc4756a404418f86a9625e15090fc
+  - originPath: Assets/AudienceNetwork/Scenes/BaseScene.cs
+    guid: f8b448fe9f60a4883aa9907cc3236629
+  - originPath: Assets/AudienceNetwork/Scenes/Banner/AdViewScene.cs
+    guid: 905b751bb63e44191a5363d3ed3d31d0
+  - originPath: Assets/AudienceNetwork/Scenes/Banner/AdViewScene.unity
+    guid: cb29e86fb3daa461f8da1a6d755fe9ce
+  - originPath: Assets/AudienceNetwork/Scenes/Interstitial/InterstitialAdScene.cs
+    guid: 00d288c1305fc494882c5c1d674f6779
+  - originPath: Assets/AudienceNetwork/Scenes/Interstitial/InterstitialAdScene.unity
+    guid: f72b5a1d5965144f795ee32584534444
+  - originPath: Assets/AudienceNetwork/Scenes/RewardedVideo/RewardedVideoAdScene.cs
+    guid: 84bf87db85e7a4d18bf8422eb54ac837
+  - originPath: Assets/AudienceNetwork/Scenes/RewardedVideo/RewardedVideoAdScene.unity
+    guid: 0079f98ce8e504ce0b9d7c937e331b03
+  - originPath: Assets/AudienceNetwork/Scenes/Settings/SettingsScene.cs
+    guid: 12a33cb7aa8f042ef8bc6a44c91eed4d
+  - originPath: Assets/AudienceNetwork/Scenes/Settings/SettingsScene.unity
+    guid: d88663653ebb24580ac0c753bb4f140c
+  - originPath: Assets/Editor Default Resources/Firebase/fb_analytics.png
+    guid: dc218b335b1d14cd5ae532f65042d829
+  - originPath: Assets/Editor Default Resources/Firebase/fb_analytics_dark.png
+    guid: 9fe4b3bd3b7d2477dac92fb7429d1d1b
+  - originPath: Assets/Editor Default Resources/Firebase/fb_auth.png
+    guid: 394b3ec4d60c24476a12e4ba696d9e5d
+  - originPath: Assets/Editor Default Resources/Firebase/fb_auth_dark.png
+    guid: 3a9e1ef6287664c389bb09e2ac1b23b7
+  - originPath: Assets/Editor Default Resources/Firebase/fb_cloud_messaging.png
+    guid: 837e8e1f35e334e81931d0857680cebf
+  - originPath: Assets/Editor Default Resources/Firebase/fb_cloud_messaging_dark.png
+    guid: 20c5b8a1f82cb4aadb77ca20683d2a6e
+  - originPath: Assets/Editor Default Resources/Firebase/fb_config.png
+    guid: 415eaec414af14d11955222a282aca08
+  - originPath: Assets/Editor Default Resources/Firebase/fb_config_dark.png
+    guid: 0ad9ef5fff5524355a9670c90a99cbba
+  - originPath: Assets/Editor Default Resources/Firebase/fb_crashlytics.png
+    guid: 008a5e76206e49f9b06d8ba144aabb38
+  - originPath: Assets/Editor Default Resources/Firebase/fb_crashlytics_dark.png
+    guid: 214009068900439da4a9cded17d58090
+  - originPath: Assets/Editor Default Resources/Firebase/fb_database.png
+    guid: 3eea7b558c67b48e18acf3c278392e3d
+  - originPath: Assets/Editor Default Resources/Firebase/fb_database_dark.png
+    guid: 9f6bfa9d8aefb40dc92461c372c73b0f
+  - originPath: Assets/Editor Default Resources/Firebase/fb_dynamic_links.png
+    guid: df6f219c396f4ad9b5048bae6944cb8e
+  - originPath: Assets/Editor Default Resources/Firebase/fb_dynamic_links_dark.png
+    guid: 9355a4671cfe4eef90879863318d1a4b
+  - originPath: Assets/Editor Default Resources/Firebase/fb_functions.png
+    guid: 953367231f9e3e22e70e5d1c91a40fe5
+  - originPath: Assets/Editor Default Resources/Firebase/fb_functions_dark.png
+    guid: b5aa3e4f7432e1c5698417cc13f85271
+  - originPath: Assets/Editor Default Resources/Firebase/fb_invites.png
+    guid: 741b269777f30488482ef4937b456b28
+  - originPath: Assets/Editor Default Resources/Firebase/fb_invites_dark.png
+    guid: a734ad7414926404e90f8b5be37b7e23
+  - originPath: Assets/Editor Default Resources/Firebase/fb_storage.png
+    guid: 573eb851c99f948f4bf2de49322bfd53
+  - originPath: Assets/Editor Default Resources/Firebase/fb_storage_dark.png
+    guid: 2955864b938094f579ea9902b65ac10c
+  - originPath: Assets/Editor Default Resources/Firebase/firebase_lockup.png
+    guid: 9f058f25e8e2d47cfb894951d4d7e48a
+  - originPath: Assets/Editor Default Resources/Firebase/firebase_lockup_dark.png
+    guid: b93330fc8ea08407dbc514b5101afa14
+  - originPath: Assets/ExternalDependencyManager/Editor/CHANGELOG.md
+    guid: 3d9f779dd5e74fcc9e05e0c450716999
+  - originPath: Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll
+    guid: 2010dfbbc3ff4f499e6892f6681a37df
+  - originPath: Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll.mdb
+    guid: c3f725ddd3494ddf9818ee51153c40da
+  - originPath: Assets/ExternalDependencyManager/Editor/LICENSE
+    guid: b5a2636858c0483bab69644a94d03b42
+  - originPath: Assets/ExternalDependencyManager/Editor/README.md
+    guid: 8899dd41fdfd4ebc88ca6ef5951c6eb1
+  - originPath: Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.175_manifest.txt
+    guid: 3e27eb74b8d448cd9aa7688085c8ad76
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.IOSResolver.dll
+    guid: 8b333f9c2c3c4d5c94788fa0722edc5c
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.IOSResolver.dll.mdb
+    guid: 40c95e810ae744be90cd10e34487fb0b
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.JarResolver.dll
+    guid: af3ced639768447f9ece45f038c5ee35
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.JarResolver.dll.mdb
+    guid: 1a83ae0712954d449d6b500769245b70
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.PackageManagerResolver.dll
+    guid: 64763f5d36d84f789a31f8dbcc26cac9
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.PackageManagerResolver.dll.mdb
+    guid: 05f38fc976de49d0a8bac11b0591b35c
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.VersionHandlerImpl.dll
+    guid: 9e005ad5be4449918b55dae042a3b4b0
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.VersionHandlerImpl.dll.mdb
+    guid: 87e3f1c0087b4dcb96128c54eeba905c
+  - originPath: Assets/FacebookSDK/Plugins/Facebook.Unity.dll
+    guid: 32ac168169845443ea64cc9b98cdb544
+  - originPath: Assets/FacebookSDK/Plugins/Android/Facebook.Unity.Android.dll
+    guid: 68e44ed084bbd4f04b624895f5638a32
+  - originPath: Assets/FacebookSDK/Plugins/Android/libs/facebook-android-wrapper-14.0.0.aar
+    guid: 06a06c5fe53c44ca08d35e31bd5f9136
+  - originPath: Assets/FacebookSDK/Plugins/Editor/Dependencies.xml
+    guid: 1543e5f9bab73423c96b42cab90363ab
+  - originPath: Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll
+    guid: 9a99583abb89745ad8fd4e048c8cf091
+  - originPath: Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll
+    guid: 6abda14e0211045ac9a37fef71208602
+  - originPath: Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll
+    guid: e0db24ad3974947d8a17eea7e1f764e9
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBSDK+Internal.h
+    guid: 66952bdb75cae4c348f3d0521da59bfd
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.h
+    guid: 511e95bcdad89425999ccbb3e315246a
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.mm
+    guid: 4c29c5d59509848c4bc24c13ac976932
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.h
+    guid: 7461bcc2e2c714a03a3f60d68ec79369
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.m
+    guid: fbc51482e3ca248329707d61959f9d9d
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.h
+    guid: b4469d6625a664618b68231ee0dcc093
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.mm
+    guid: 5cafb2af7ca9641f58022a816236d1ad
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/fixup.projmods
+    guid: aead30834362b490ea67fdd7fd0351c5
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKShareTournamentDialog.swift
+    guid: e8b68c3227d0545b0baf196182ca495c
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournament.swift
+    guid: 40782e83ff8774bfb8280e20c134e6c2
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentFetcher.swift
+    guid: a2bf9c24f7d8f4c83b760043d97deadf
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentUpdater.swift
+    guid: aa01d6bdb7c7f4c52bf29c7adbee61fd
+  - originPath: Assets/FacebookSDK/SDK/Resources/FacebookSettings.asset
+    guid: 97cc5c2c440894aca8637dcb8d0a780a
+  - originPath: Assets/Firebase/Editor/AnalyticsDependencies.xml
+    guid: 1e3c2da79be842cd838a9ddd70d20fa9
+  - originPath: Assets/Firebase/Editor/AppDependencies.xml
+    guid: 9b63af95d9364af4a3d8ce58738b6223
+  - originPath: Assets/Firebase/Editor/CrashlyticsDependencies.xml
+    guid: be690db6bda046a89e38b20ef9bfe06c
+  - originPath: Assets/Firebase/Editor/Firebase.Crashlytics.Editor.dll
+    guid: 3781f2218eef4d5a823dba406baa434b
+  - originPath: Assets/Firebase/Editor/Firebase.Editor.dll
+    guid: 9f2edbf81053418f879076c05f816dc2
+  - originPath: Assets/Firebase/Editor/FirebaseAnalytics_version-10.1.1_manifest.txt
+    guid: e22dc38fd3424631b1ec8a0d8536e223
+  - originPath: Assets/Firebase/Editor/FirebaseCrashlytics_version-10.1.1_manifest.txt
+    guid: e348793e7dbc4a1d9f590346318a7592
+  - originPath: Assets/Firebase/Editor/generate_xml_from_google_services_json.exe
+    guid: ae88c0972b7448b5b36def1716f1d711
+  - originPath: Assets/Firebase/Editor/generate_xml_from_google_services_json.py
+    guid: 8f18ed76c0f04ce0a65736104f913ef8
+  - originPath: Assets/Firebase/Editor/network_request.exe
+    guid: d3cd5d0a941c4cdc8ab4b1b684b05191
+  - originPath: Assets/Firebase/Editor/network_request.py
+    guid: e6e32fecbfd44fab946fa160e4861924
+  - originPath: Assets/Firebase/Plugins/Firebase.Analytics.dll
+    guid: 816270c2a2a348e59cb9b7b096a24f50
+  - originPath: Assets/Firebase/Plugins/Firebase.App.dll
+    guid: 7311924048bd457bac6d713576c952da
+  - originPath: Assets/Firebase/Plugins/Firebase.Crashlytics.dll
+    guid: 4a712f6ef12f441e9d8b053a3c30ad55
+  - originPath: Assets/Firebase/Plugins/Firebase.Platform.dll
+    guid: 7d3eec03d7e241a48941e038118c5e6a
+  - originPath: Assets/Firebase/Plugins/Firebase.TaskExtension.dll
+    guid: f5d4069c578548ba9f199b46d61bf06d
+  - originPath: Assets/Firebase/Plugins/Google.MiniJson.dll
+    guid: 3ebb289656f1477fa263e62d36c6e329
+  - originPath: Assets/Firebase/Plugins/iOS/Firebase.Analytics.dll
+    guid: 52718a3a80d44aacb368bcc9d62dd804
+  - originPath: Assets/Firebase/Plugins/iOS/Firebase.App.dll
+    guid: 5f3feda1a91343759b7eb58a29b492b7
+  - originPath: Assets/Firebase/Plugins/iOS/Firebase.Crashlytics.dll
+    guid: 3c83c9a9845245cfbbab5a52932b5045
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.bundle
+    guid: 35bfcced25264151bd76b628a1dfa989
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.dll
+    guid: c48626ae27ed478483ba85fd7c81c04b
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.so
+    guid: 590090df30d142acba7e7be939fd2988
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppApp-10_1_1.bundle
+    guid: 99cd54d74cc1488f95742016fa58e0b0
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppApp-10_1_1.dll
+    guid: 79f863a70f9a4dc9b51058fe3e1324e4
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppApp-10_1_1.so
+    guid: 566c89bae6ce4c85843fe691acf785c7
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/maven-metadata.xml
+    guid: 291f81d8ae2745cf913a96d116f2e3f7
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 242fa90834b74efaa4029261ba91550a
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.srcaar
+    guid: 1a366edb56aa43d6a7b5bd1b556af446
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml
+    guid: 96337775a7c941d88ea15f8026ad6f8e
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: 68ae9f2dc5154a6aa9e98a8ebcd0add0
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.srcaar
+    guid: 1cd402452cf04f8f95061a3b873c50ff
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/maven-metadata.xml
+    guid: eda65244fc1b407e8948b25b31c17991
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: c314e5dd47954ed2a0bc65020316c776
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.srcaar
+    guid: dfdffd1552eb46529284864ad15078bd
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.aar
+    guid: b3b270a181c4641e7bba1147126c2682
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 11e903485b94441a39ebf17e56216e02
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.aar
+    guid: 5b91cd7ff905b45bbb6d6e6fa19c9689
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: c14c08f1af331418985bfb8aadc4be9a
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.aar
+    guid: 6274fe7511d7e4b0bb2397e213c40808
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: 9392aefea146d4ad6b80772916dbf730
+  - originPath: Assets/JuicySDK/Prefabs/JuicySDKManager.prefab
+    guid: b7783b0defd74b84097ca1fad71d9bdc
+  - originPath: Assets/JuicySDK/Sample/Scenes/scene_juicySDKMediationDebugger.unity
+    guid: d0e12be19cb1c44fbac0700ba1125e3a
+  - originPath: Assets/JuicySDK/Sample/Scenes/scene_juicySDKSample.unity
+    guid: 3b608082ffaf3d64b8022840d73b7f8a
+  - originPath: Assets/JuicySDK/Sample/Scenes/scene_juicySDKSampleSettings.lighting
+    guid: 03afe6f8197f0415ba1c507b6b8471f1
+  - originPath: Assets/JuicySDK/Sample/Scripts/MediationDebuggerScene.cs
+    guid: 72288043dd7054f0f9e6621bc276e638
+  - originPath: Assets/JuicySDK/Sample/Scripts/Rotate.cs
+    guid: 2802e9fdf45edc34f9febe6fc96c6330
+  - originPath: Assets/JuicySDK/Sample/Scripts/SampleABTestVariantIDDisplay.cs
+    guid: 70f37bdf29d1f4c279e77af66a7fa3f6
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/ButtonBase.cs
+    guid: 58d7b3ca5a1931d42afda51058d648c9
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_BestScore.cs
+    guid: 69ba3e8308e9b3d4c96fcf90ec8d6213
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_BuyProduct.cs
+    guid: 924c5b5c53024a2428c9a03f46633e0c
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_HideBanner.cs
+    guid: 5b9a778ae78b2b34fbb93089c36503c7
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_NotifyGameEnd.cs
+    guid: 70dfa05ffc0b1404390e604f16636aee
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_NotifyGameStart.cs
+    guid: 7a75db8aa98e001448e3e87377d225ee
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_NotifyInterstitialOpportunity.cs
+    guid: 0386d1e49f603eb4aad84c7153aeb33f
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_Reload.cs
+    guid: d5cf5934c5771ef4eb83e076eb3971d6
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_RemoveAds.cs
+    guid: 76e87138f37ba4f86bcd5b5bef6052d8
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_RestorePurchases.cs
+    guid: 1944d4051c33f70498f78fd9e1795c6f
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowBanner.cs
+    guid: 23eb1e02cd0afca4c8be5a2cb051922c
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowMediationTestSuite.cs
+    guid: ce1772a2fd0974a0bbfbc4579fdf7138
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowPrivacySettings.cs
+    guid: 7cd43a2d2be7eb24b80655d193c1a258
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowRewarded.cs
+    guid: 0dde16f19153e0141a993db58a1fbfb6
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_SimulateCrash.cs
+    guid: 90adf677aa6d14d4ea6eb48d301931d7
+  - originPath: Assets/JuicySDK/Script/JuicySDK.cs
+    guid: 4afa00eda42e66746a6c56e29fc6532d
+  - originPath: Assets/JuicySDK/Script/Analytics/EventProperty.cs
+    guid: 44d33c92f2db5754fbf7213ea77923bd
+  - originPath: Assets/JuicySDK/Script/Purchase/ProductSummary.cs
+    guid: 0eee8994ae0027941b2f4632b2408853
+  - originPath: Assets/JuicySDK/Script/Purchase/ProductType.cs
+    guid: 5f18884abfb694dfd810afbe2819114a
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/BannerInsert.prefab
+    guid: 7c877fa5037ff42508b633756516829f
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/FireBaseManager.prefab
+    guid: b1a1ff365afcc457ea1e8d1f9a5fa82a
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyABTestManager.prefab
+    guid: bd267b209dd30074c884608c75a037c4
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyAdsManager.prefab
+    guid: 9fbe2d5e91ebe0c4b97cf00f94efb9ae
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyAnalyticsManager.prefab
+    guid: 9f8803c530c48724c897a108b12a9179
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyPrivacyManager.prefab
+    guid: 63e97551a508f43f88085515813b500b
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyPurchaseManager.prefab
+    guid: daf87d67a04f34e5bb8ab6220fae54f9
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyPurchaseRemoveAdsManager.prefab
+    guid: 58a9d7c4fc04d4ed7a6a8aa27734c912
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyRatingManager.prefab
+    guid: 698c18513d2c88e469d67717bd93bed4
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyRemoveAdsManager.prefab
+    guid: 94c31e53a7fb142d8ab3aaab1da14034
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulation.prefab
+    guid: 69d1a9dec9c2946bf92b0699af6348fe
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationBanner.prefab
+    guid: 8404ca66c62b041ac9dfa149940bc7bc
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationInterstitial.prefab
+    guid: 0f5e9d39ab8be44a3a596f49ef605834
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationRewarded.prefab
+    guid: d17fcfd6d7a3b4c8d8900bbc633698f7
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyPreIOS14PopUp.prefab
+    guid: df02ccc47b64545a98b139ce413fa83d
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyUpdatePrivacyPopUpV1.prefab
+    guid: 7af791eac64894aa99559a07f57a8236
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyUpdatePrivacyPopUpV2.prefab
+    guid: 96350323dc9504f739f82ad5e9313fe1
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyWelcomePrivacyPopUpV1.prefab
+    guid: a5b9377ce9c774711b6be805adefc839
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyWelcomePrivacyPopUpV2.prefab
+    guid: ab901b65491b442618097781ff3c8434
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/PartnerPrivacyPolicyLink.prefab
+    guid: 54cf39b2b8ae9ad488ca506d06bc9bc3
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/PrivacyPolicyLink.prefab
+    guid: 329a842afbf6843608f876e4b7675ef0
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/PrivacyPopUpsInputMask.prefab
+    guid: 565661d75995741b99e47959d0cc7ad3
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/UI/PrivacyToggle.prefab
+    guid: 133f369ed90644462b99b592e77f241d
+  - originPath: Assets/JuicySDK/_Internal/Resources/JuicySDKLaunchLog.txt
+    guid: 971ac19ae95c3485a91815fd7b87729a
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicySDKManager.cs
+    guid: 4503101b10b34e3469e9bea02aab45a5
+  - originPath: Assets/JuicySDK/_Internal/Scripts/ABTest/JuicyABTestManager.cs
+    guid: cd0858e20c9813046b4621e7f993b653
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/AdsManagerBase.cs
+    guid: 906ee059216e7c849abc2eb7bd675be6
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/BannerInsert.cs
+    guid: b4931d176bb754f50b2384cd1576ecf4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/JuicyAdsManager.cs
+    guid: 62996c513cb3a3446b8aa7b6379b61c2
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyAdsEmulation.cs
+    guid: 17b4a6a45b00940e5803c00fbd691b1f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyAdsEmulationManager.cs
+    guid: 915c98f6f815240498ca53a3bf7ca258
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedBanner.cs
+    guid: 4c6349185e517462fb96813199041ebf
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedElement.cs
+    guid: 33f776dfacd0043b2ad0583dd52c14db
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedInterstitial.cs
+    guid: f1a1aa0ad76e741719c83a7a797ac02c
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedRewarded.cs
+    guid: a5326e060192648dc80e9e99c0722f7f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/JuicyAnalyticsManager.cs
+    guid: aefe79ede448efb49b64238ef3811a0c
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/JuicySnapshot.cs
+    guid: 8b1d733c36f19484589f3f4d447d1ead
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/JuicyStoredEvent.cs
+    guid: ed0258ad5dc9141a5a6d7f29756ed673
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/AppsFlyer/AppsFlyerManager.cs
+    guid: b463c01ebeabf85448af79350b9c00b7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Emulation/JuicyAnalyticsEmulationManager.cs
+    guid: 712505b7b558a474991910af7abcb8ce
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Facebook/FacebookSDKManager.cs
+    guid: 110b6c0de183b2c4e872e43347c3bb45
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/FirebaseAnalytics/FirebaseAnalyticsManager.cs
+    guid: 0c28f4884c26940e0b98432fe34eb439
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/FirebaseAnalytics/FirebaseManager.cs
+    guid: 580246c6b969f44f7a360853bce8046f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Unity/UnityAnalyticsManager.cs
+    guid: 353235b168c284d7283d2ca3deb06e34
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicyCheatCode.cs
+    guid: 5b20387f458f345ed84bae11533a23b0
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKDebug.cs
+    guid: 3177e1d168c668143805022fb8060b4b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKInternalTest.cs
+    guid: 910dc297ca42b4b75900cabb917d10df
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKLaunchLog.cs
+    guid: e3705286be9bc45dab82da7393451306
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKLog.cs
+    guid: 2881aad025b9c465289c4fa4c5a97d96
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/Editor/JuicySDKInternalTestEditor.cs
+    guid: d9c22172be2b14cd6bb7b835f42b4f76
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Editor/JuicyBaseProcessBuildManager.cs
+    guid: 442dc78083fae4d17b7cefc31e840008
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/FireBase/Sample/GoogleService-Info.juicy
+    guid: 7ab4a0392514d4983bbc0d12c172b70b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/FireBase/Sample/google-services.juicy
+    guid: 0e9a0834fc0b74697ae398e52eb2ad92
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyConfigIntegrationReport.cs
+    guid: 33a0d6f93857042b9b7a290ebc3b9c39
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyIntegrationReport.cs
+    guid: 15d521eaa9bc547a3ac959a1e0741908
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyIntegrationWindow.cs
+    guid: 59ca814baac774ff393f6d34ad1aa67b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyProjectIntegrationReport.cs
+    guid: 4f74873b193734a568e91625e17267ba
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicySettingsIntegrationReport.cs
+    guid: 3a623ce001df34b5ab72160c781eae44
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Editor/JuicyRemoveManager.cs
+    guid: 7b157018fe79547eaafdb5a58fd2ca6d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Editor/JuicyRemoveWindow.cs
+    guid: 80a1d6bffd0344ccf96d35175e6e58e9
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Resources/JuicyRemoveManager.asset
+    guid: 793b0388a53df4a489cef07888ec8387
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyEditorSettings.cs
+    guid: b8ee3296ae8d64e14bc6d9c3b5ad7766
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyEditorSettings_Inspector.cs
+    guid: 0216df0a1520848aea779a4a9c901d50
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyFirstImport.cs
+    guid: abcb48ab7044042648a638de5b9111ec
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicySDKSettingsWindow.cs
+    guid: 626c3a76d305f4bdd959ba5560565518
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicySDKSettings_Inspector.cs
+    guid: 2b553d7d27c814d7cab6c6df297dceca
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyPlugins/JuicyAndroidPlugin.cs
+    guid: f35cf1e39e946404f9444a870dbb9dcb
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyPlugins/JuicyIOSPlugin.cs
+    guid: ba1c9378309e043d98cfe058c637fe86
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/JuicyMediationPrivacyDatas.cs
+    guid: 1f7980fd242c842edb68fc48e237c737
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/JuicySDKMediationConfig.cs
+    guid: 9e9646acfd1e14e328b356ab8fdc0955
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/JuicySDKMediationLaunchLog.cs
+    guid: c4eb03b66e2974a28b1de3e7ea1f9527
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/MediationManager.cs
+    guid: 86b29b03c587948e7ad4f3cbe47606f1
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/Editor/JuicyMediationIntegrationReport.cs
+    guid: 9994d3df10e1d48859cc0c1bf5cff1f4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/Editor/JuicyMediationProcessBuildManager.cs
+    guid: 8d390aba8643d47188536d7d26a88ac4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/Button_PartnerPrivacyPolicyLink.cs
+    guid: 5433e76daa9c3ce43a27adb31de45282
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/Button_PrivacyPolicyLink.cs
+    guid: 0fb7c40b13a6c427183ee56bcf302671
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/GeolocalisationUtility.cs
+    guid: f27152e53a2858447b968096e4cd97b6
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/JuicyBasePrivacyDatas.cs
+    guid: 2dd497a58287649d48fc3db30458ba1f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/JuicyMailTo.cs
+    guid: 9f9e7de3ab16a407b97c3a1f224c5347
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/JuicyPrivacyManager.cs
+    guid: b667be4c80b37184885d4fd1bdadc48e
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PreIOSIDFATrackingPopUp.cs
+    guid: ae290b2bf68ed4d42a837f3f72b83a45
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PrivacyButtonBase.cs
+    guid: 7a0e087296844d346af114c118e10ff5
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PrivacySettingsPopUp.cs
+    guid: f4568949306e59345b20fc1579bee23d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PrivacySettingsPopUp_ScreenController.cs
+    guid: cd7a8a5cedb385b48b7e5f7bbe96e026
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/UpdatePrivacySettingsPopUpV1.cs
+    guid: f9e0dd765d88e4760993b96e8bc399d7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/UpdatePrivacySettingsPopUpV2.cs
+    guid: b65a3c831d08644f8a09c84731a2c8ed
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/WelcomePrivacySettingsPopUpV1.cs
+    guid: 2dcde601c5120455392be16340e812cd
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/WelcomePrivacySettingsPopUpV2.cs
+    guid: f7d0cfc6481774153976ab033007daa7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/JuicyPurchaseManager.cs
+    guid: fbf728fa4a1c041d4a7c8bed5502c5fc
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/ProductInfos.cs
+    guid: 297f030fa4ab2461280e36ff7f66f975
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/PurchaseManagerBase.cs
+    guid: 60ec39339330840b4ba350ede148d1bb
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/Unity/UnityPurchaseManager.cs
+    guid: ffb1f19c9464e449cb84b3e603a5ae92
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase.RemoveAds/JuicyPurchaseRemoveAdsManager.cs
+    guid: 663650723770e499899598271cd22d97
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Rating/JuicyRatingManager.cs
+    guid: 9ac01d16284079e4aa0fb310bcb72f71
+  - originPath: Assets/JuicySDK/_Internal/Scripts/RemoveAds/JuicyRemoveAdsManager.cs
+    guid: a89e8dc62c7ca49f78a511aca8fe8808
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/JuicyConfigFileManager.cs
+    guid: f64e1ee517e344126a3bfba462b4798a
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/JuicySDKConfig.cs
+    guid: 24be9e55b782a409db83e559826da9cd
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/JuicySDKSettings.cs
+    guid: 634c6ba3c8912954db960feb0cdb144a
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/Resources/JuicySDKSampleAppConfig.xml
+    guid: 4dbe14f7edef94ccb86782de5a49fcde
+  - originPath: Assets/JuicySDK/_Internal/Scripts/UI/JuicyToggleVisual.cs
+    guid: 67b2fae66eb04446481ffd49011f9cfd
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/BitUtility.cs
+    guid: 6bb65d217778e4bcfa3cf05fd7902771
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/JuicyFileSaver.cs
+    guid: 96ada553e6a1b4e2c97d3c1ca49e9147
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/JuicyPlayerPrefs.cs
+    guid: 6214db662c02a4dfa9440aaa49a2e96f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/JuicyUtility.cs
+    guid: cc7f26d69ac6cb846ba16c59c4fd92e1
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/RectTransformExtension.cs
+    guid: 1220d9af1a76542088e663368e48b0c7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/ScreenUtility.cs
+    guid: 5abd0c345afcd41deb488c8b463a51fe
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/UnityThread.cs
+    guid: 48a9e3e37bd054c01ac4eaa19ff0e918
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/XmlUtility.cs
+    guid: b85978c832a92405299a1911f4bc589b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/Editor/PBXProjectUtility.cs
+    guid: be0b19e2eec0a4523a89ff5b8ea76a30
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/Editor/PlistUtility.cs
+    guid: 2e4441fc19ba6427d98da7cc3ac640f3
+  - originPath: Assets/JuicySDK/_Internal/Sprites/LinkIcon.png
+    guid: 8b46152ed30714aad980bc26635b502c
+  - originPath: Assets/JuicySDK/_Internal/Sprites/RoundedSquare.png
+    guid: 0313685188079f14ab827d7c288a86ec
+  - originPath: Assets/JuicySDK/_Internal/Sprites/ToggleBackground.png
+    guid: 7c3fdc128f7db43c58ba343e15ec000b
+  - originPath: Assets/JuicySDK/_Internal/Sprites/WhiteCircle.png
+    guid: eb15ca428fbc041529ae126529ce7413
+  - originPath: Assets/JuicySDK/_Internal/Sprites/checkMark.png
+    guid: 8a9a5b400d1c7422ca2f144b4bfe93b9
+  - originPath: Assets/JuicySDK/_Internal/Sprites/juicyWS_Logo.png
+    guid: 80fba24613c8647028de447b5e735511
+  - originPath: Assets/JuicySDK/_Internal/Sprites/ring.png
+    guid: 6b42e24732772484bb577c8afead736a
+  - originPath: Assets/MaxSdk/AppLovin/Editor/Dependencies.xml
+    guid: 746da98302dc0402aaa37e8f7bd97e77
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/Android/applovin-max-unity-plugin.aar
+    guid: 1db980bd612824d2097f78fd779e6051
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/iOS/MAUnityAdManager.h
+    guid: 4209563f82b8a4f7dabf03705ab761c6
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/iOS/MAUnityAdManager.m
+    guid: 2973e70bd2fa74984b35aea07ae9db52
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/iOS/MAUnityPlugin.mm
+    guid: 7e373ed7168b243e6b706e991ab5a643
+  - originPath: Assets/MaxSdk/Mediation/MediationAdapters.txt
+    guid: 9a8f83e97729443c86120be3bb24190d
+  - originPath: Assets/MaxSdk/Mediation/AdColony/Editor/Dependencies.xml
+    guid: a351b114cfc11494ba8c131833b1bf74
+  - originPath: Assets/MaxSdk/Mediation/ByteDance/Editor/Dependencies.xml
+    guid: 0828555cb1ce94702a4af6f3dce3d735
+  - originPath: Assets/MaxSdk/Mediation/Chartboost/Editor/Dependencies.xml
+    guid: 93b0a4618bd884871af0981a7867bb2f
+  - originPath: Assets/MaxSdk/Mediation/Facebook/Editor/Dependencies.xml
+    guid: aea9bdf974328420db5ae118ef0d2b87
+  - originPath: Assets/MaxSdk/Mediation/Fyber/Editor/Dependencies.xml
+    guid: 5e123cdc08e804dffb2c40c4fbc83caf
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/Dependencies.xml
+    guid: 053b810d3594744e38b6fd0fa378fb57
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/MaxGoogleInitialize.cs
+    guid: 2376824a26af1414bbc62440698ccc89
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/MaxMediationGoogleUtils.cs
+    guid: 6de4e4d420b14431a7d169724e23361e
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/MaxSdk.Mediation.Google.Editor.asmdef
+    guid: 91c204b831b394f9e8639dcc4f11403a
+  - originPath: Assets/MaxSdk/Mediation/InMobi/Editor/Dependencies.xml
+    guid: bc66a0ef4503843ee9b1bf1b1e867367
+  - originPath: Assets/MaxSdk/Mediation/IronSource/Editor/Dependencies.xml
+    guid: 19262406303f04f05b14b31b3c734d35
+  - originPath: Assets/MaxSdk/Mediation/Line/Editor/Dependencies.xml
+    guid: 1358f87478e994c0fba75cf98eb06e3f
+  - originPath: Assets/MaxSdk/Mediation/Mintegral/Editor/Dependencies.xml
+    guid: 221b2a20a58a04f2cb4afb0779587206
+  - originPath: Assets/MaxSdk/Mediation/Smaato/Editor/Dependencies.xml
+    guid: f6c345cc57a514902ba5fb68436f852f
+  - originPath: Assets/MaxSdk/Mediation/Tapjoy/Editor/Dependencies.xml
+    guid: c5268a136291a461aad1c0175bccb266
+  - originPath: Assets/MaxSdk/Mediation/TencentGDT/Editor/Dependencies.xml
+    guid: 1c83d361e01b448b39d25eb389f62359
+  - originPath: Assets/MaxSdk/Mediation/UnityAds/Editor/Dependencies.xml
+    guid: 9950f1cb0da1e43efbeca604db142076
+  - originPath: Assets/MaxSdk/Mediation/VerizonAds/Editor/Dependencies.xml
+    guid: 7eff54117fa2e411d8d9e599e6f5de02
+  - originPath: Assets/MaxSdk/Mediation/Vungle/Editor/Dependencies.xml
+    guid: 0d8ad3a6ddc4f44fab2efe607fe14f26
+  - originPath: Assets/MaxSdk/Prefabs/BannerBottom.prefab
+    guid: 54c062c0526b148efa2ea2e9489b3aa0
+  - originPath: Assets/MaxSdk/Prefabs/BannerTop.prefab
+    guid: 6521750c87fd14f709d09a1e38ffde47
+  - originPath: Assets/MaxSdk/Prefabs/Interstitial.prefab
+    guid: 3fc0c2627ce8a4490b8e319326f8a535
+  - originPath: Assets/MaxSdk/Prefabs/Rewarded.prefab
+    guid: a28c1544d6f094d5eafc8da2343c9119
+  - originPath: Assets/MaxSdk/Resources/AppLovinSettings.asset
+    guid: a61f8c16e11e04b74a9b3bcbf1ad771f
+  - originPath: Assets/MaxSdk/Resources/Images/alert_icon.png
+    guid: 572fee4574afa4f6dbf2846e0c152fe8
+  - originPath: Assets/MaxSdk/Resources/Images/uninstall_icon.png
+    guid: d24994f48fdd0430692e3d49279cd782
+  - originPath: Assets/MaxSdk/Resources/Images/warning_icon.png
+    guid: b504c956e7ed744b6b0e7f014e1cac5a
+  - originPath: Assets/MaxSdk/Scripts/MaxEvents.cs
+    guid: 67ec2f620c6b0405ba16ea2c032dc9a2
+  - originPath: Assets/MaxSdk/Scripts/MaxSdk.Scripts.asmdef
+    guid: a4cfc1a18fa3a469b96d885db522f42e
+  - originPath: Assets/MaxSdk/Scripts/MaxSdk.cs
+    guid: 2fc7aa576843c44e68c7ab14b475bb82
+  - originPath: Assets/MaxSdk/Scripts/MaxSdkAndroid.cs
+    guid: 10335fad6bfef47b8819a411aa591dc8
+  - originPath: Assets/MaxSdk/Scripts/MaxSdkBase.cs
+    guid: 893e4e55a7e394274957f1034f7afc45
+  - originPath: Assets/MaxSdk/Scripts/MaxSdkCallbacks.cs
+    guid: 4dc129a60049645f7a492a0a658a6c22
+  - originPath: Assets/MaxSdk/Scripts/MaxSdkLogger.cs
+    guid: ff2b160afdfd4a74b731954323772a90
+  - originPath: Assets/MaxSdk/Scripts/MaxSdkUnityEditor.cs
+    guid: 13b3e537a64f24986bb8ffe3a0beef5c
+  - originPath: Assets/MaxSdk/Scripts/MaxSdkUtils.cs
+    guid: 47f1bc9a8eebd4d088e22e6baf00ede3
+  - originPath: Assets/MaxSdk/Scripts/MaxSdkiOS.cs
+    guid: e7c7ed6cdbdca44cd8eae28d3b60d28c
+  - originPath: Assets/MaxSdk/Scripts/MaxTargetingData.cs
+    guid: 409fe14211f31433da09f5b4bd5467b9
+  - originPath: Assets/MaxSdk/Scripts/MaxUserSegment.cs
+    guid: 8fb1f6f31b19c407b9d3fa62557d373a
+  - originPath: Assets/MaxSdk/Scripts/MaxUserServiceAndroid.cs
+    guid: d2eacd6aa14494de6809b4b06027a332
+  - originPath: Assets/MaxSdk/Scripts/MaxUserServiceUnityEditor.cs
+    guid: 16d44e29e68204f36975abec0feb1d35
+  - originPath: Assets/MaxSdk/Scripts/MaxUserServiceiOS.cs
+    guid: 6233dd3f0b4664e7dbdca14cc8904176
+  - originPath: Assets/MaxSdk/Scripts/MaxVariableServiceAndroid.cs
+    guid: 4a88b1f934b944909bf150636e251e9e
+  - originPath: Assets/MaxSdk/Scripts/MaxVariableServiceUnityEditor.cs
+    guid: b33c4c57c5a84dcd9a8a51fb701ee7b5
+  - originPath: Assets/MaxSdk/Scripts/MaxVariableServiceiOS.cs
+    guid: a586b9a3a20741a98bf8afaf5fc64201
+  - originPath: Assets/MaxSdk/Scripts/Editor/MaxInitialization.cs
+    guid: bc0c5693335e0408a95293c0d7b61137
+  - originPath: Assets/MaxSdk/Scripts/Editor/MaxPostProcessBuildAndroid.cs
+    guid: 75fed160a41749d4990cee871ee618a4
+  - originPath: Assets/MaxSdk/Scripts/Editor/MaxPostProcessBuildiOS.cs
+    guid: 29959b3cd36c484a9d57d6b7ca7f7bfa
+  - originPath: Assets/MaxSdk/Scripts/Editor/MaxSdk.Scripts.Editor.asmdef
+    guid: 691e0eb4b7a542dba2219d48c3254f1c
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinAutoUpdater.cs
+    guid: 8bcdd5226273242c5bd9ec79568202e6
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinCommandLine.cs
+    guid: 2d0aa55f9a7d2440f871dfb256372a33
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinDownloadHandler.cs
+    guid: c85c3812a13e04838951767c1285e4da
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinEditorCoroutine.cs
+    guid: 95747c688378548eeb92aeb528ac96ff
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinIntegrationManager.cs
+    guid: c5b874c1e65274159bcc0dc15d9458cc
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinIntegrationManagerWindow.cs
+    guid: 84c61b4c05e114cec91df447d1b585f8
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinMenuItems.cs
+    guid: 02c2d277874f649d18a59d382420bf65
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinPostProcessAndroidGradle.cs
+    guid: f75e54e2eb78f427ca8643c97684387b
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinPostProcessiOS.cs
+    guid: d5d209f90444f4a90830b48b5f3f3ff4
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinPreProcessAndroid.cs
+    guid: 8ccaf444d0d4f4cadb5debe7c41b20c4
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinProcessGradleBuildFile.cs
+    guid: 732b7510bc9c94aafb3fd3b8c0dc5d2d
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinSettings.cs
+    guid: ebc0ba1b5ef6b4a6b9dd53d7eadfea16
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/MaxSdk.IntegrationManager.Editor.asmdef
+    guid: a10a05a8449c42519fd80f2b8b580de3
+  - originPath: Assets/MaxSdk/Scripts/ThirdParty/MiniJSON.cs
+    guid: 52789a1d5a5754d46816fd9ed114a375
+  - originPath: Assets/Parse/Plugins/Unity.Compat.dll
+    guid: 015ef18e20f24535830f59eda9e70830
+  - originPath: Assets/Parse/Plugins/Unity.Tasks.dll
+    guid: 93324a471a6d44bb8297d17d8b191e52
+  - originPath: Assets/Parse/Plugins/dotNet45/Unity.Compat.dll
+    guid: 3db0783b58c2429b9bc1f560ba323d05
+  - originPath: Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll
+    guid: bd18eee30834e4f71bded96fd14033a9
+  - originPath: Assets/Plugins/Android/AndroidManifest.xml
+    guid: 9ff5ce456e2794ddc8d114ee10373921
+  - originPath: Assets/Plugins/Android/JuicyAndroidPlugin.aar
+    guid: 6aeed87359aff42b79facccaccf9d1ae
+  - originPath: Assets/Plugins/Android/baseProjectTemplate.gradle
+    guid: cbd7d2c363b8447c0837dc636824fdeb
+  - originPath: Assets/Plugins/Android/gradleTemplate.properties
+    guid: a2590ce802f984059b71e79bcbc67655
+  - originPath: Assets/Plugins/Android/launcherTemplate.gradle
+    guid: 15071140ffa4048a4a70a63a2ef8e8c6
+  - originPath: Assets/Plugins/Android/mainTemplate.gradle
+    guid: 63962d338fad38741bea6ea2d4053711
+  - originPath: Assets/Plugins/Android/FirebaseApp.androidlib/AndroidManifest.xml
+    guid: 764e4e5af956d4b6982ebd567d1b7c11
+  - originPath: Assets/Plugins/Android/FirebaseApp.androidlib/project.properties
+    guid: 55de9a07fa20e4c649ae326982ab03e3
+  - originPath: Assets/Plugins/Android/FirebaseApp.androidlib/res/values/google-services.xml
+    guid: 960f9cb89dc694f38aa1713e003099e9
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/AndroidManifest.xml
+    guid: 46580f2ae8aa94f97930b76546787781
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/project.properties
+    guid: 98bb78435b8c74821b8727c2a72f9947
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml
+    guid: c388863e22f0e40c399c8161a948e7aa
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_unity_version.xml
+    guid: f668be5f2cb944e718aeff65e28ec6b8
+  - originPath: Assets/Plugins/Android/MaxMediationGoogle.androidlib/AndroidManifest.xml
+    guid: cf61ddd9f6ac647d4accf8a1a1d2a690
+  - originPath: Assets/Plugins/Android/MaxMediationGoogle.androidlib/project.properties
+    guid: ccb8f1abd84ed4fa497d596a0e65ca25
+  - originPath: Assets/Plugins/UDP/UDP.dll
+    guid: 2c3078f85c1a94a82b179c36ee13484f
+  - originPath: Assets/Plugins/UDP/Android/udp.aar
+    guid: f601a629aee2545569c9921a07bb8002
+  - originPath: Assets/Plugins/UDP/Android/udpsandbox.aar
+    guid: 241214004108d45f29a106fd8fcde269
+  - originPath: Assets/Plugins/UDP/Android/utils.aar
+    guid: a9b73fc5405a44ed3b2b33f2f8276efc
+  - originPath: Assets/Plugins/UDP/Editor/AppStoreModel.cs
+    guid: 3da9878c9a6b342f2908cbdaa03514ff
+  - originPath: Assets/Plugins/UDP/Editor/AppStoreOnboardApi.cs
+    guid: bc499e152aef74f319a5bf855dcdd1ca
+  - originPath: Assets/Plugins/UDP/Editor/AppStoreSettingsEditor.cs
+    guid: e202e3d0c7dcd4c4baa6083fd591d883
+  - originPath: Assets/Plugins/UDP/Editor/BuildConfig.cs
+    guid: aaad67932b67e4cde83abb2e0d74f02a
+  - originPath: Assets/Plugins/UDP/Editor/Utils.cs
+    guid: df087e420b0724202951d2fd29d385b0
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/Common.cs
+    guid: 8064d28ca363a42f993da5d4593c51fb
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/EditorAnalytcisApi.cs
+    guid: a09e9a78b014e48e3b1c41fed70c3739
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/ProjectBuildEvent.cs
+    guid: a5ea10438fa7c47eba46e35cdda214ec
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/ProjectOpenEvent.cs
+    guid: f94d6ce17cf4c479497f9ca7c086ef65
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/SdkImportEvent.cs
+    guid: f87e6952333e546c1be3df821f9d2fcb
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/WebRequestQueue.cs
+    guid: 6c89af2274de94b7e9288dcddcf0265d
+  - originPath: Assets/Plugins/UDP/Resources/UDP Settings.asset
+    guid: 98d27448b8b7d4f6c94cba221e0f13cd
+  - originPath: Assets/Plugins/iOS/GADUAdNetworkExtras.h
+    guid: 1c0d8a6c9b36440eaa4c01518670217f
+  - originPath: Assets/Plugins/iOS/JuicyIOSPlugin.mm
+    guid: db80ebc2459e949ababd5c8382c103e1
+  - originPath: Assets/Plugins/iOS/Firebase/libCrashlyticsiOSWrapper.a
+    guid: 18fb07a8bd0b437c827b544b21591360
+  - originPath: Assets/Plugins/iOS/Firebase/libFirebaseCppAnalytics.a
+    guid: bf523cc64d194963aa7661e7d2944feb
+  - originPath: Assets/Plugins/iOS/Firebase/libFirebaseCppApp.a
+    guid: 601e8e1d2d2744929ede33676cbeccc0
+  - originPath: Assets/Plugins/iOS/Firebase/libFirebaseCppCrashlytics.a
+    guid: c9a5f5c47ed44459ae2c09b918d44344
+  - originPath: Assets/Plugins/x86_64/Firebase/FirebaseCppApp-5.4.1.dll
+    guid: 725aa9fcd30048daba58947fad7e7d23
+  - originPath: Assets/AppsFlyer/AFAdRevenueEvent.cs
+    guid: b73b301ad8b6f4b45809980800a9358a
+  - originPath: Assets/AppsFlyer/AFInAppEvents.cs
+    guid: 4075c6cf6f3d94b9a9f37f826e6a0e6f
+  - originPath: Assets/AppsFlyer/AFMiniJSON.cs
+    guid: bc3d1c806d507463e9b560eb09d8eb0e
+  - originPath: Assets/AppsFlyer/AppsFlyer.asmdef
+    guid: 2a37df438292d4903b4e5159c5de3bf9
+  - originPath: Assets/AppsFlyer/AppsFlyer.cs
+    guid: 45161025a517d427381d3d06153a5ad3
+  - originPath: Assets/AppsFlyer/AppsFlyerAdRevenue.cs
+    guid: 644005ac4602e4b78ad3a8d4d29e329d
+  - originPath: Assets/AppsFlyer/AppsFlyerAndroid.cs
+    guid: 172d18dd98e7e4ed3b30110568b0fae4
+  - originPath: Assets/AppsFlyer/AppsFlyerEventArgs.cs
+    guid: a0fc241ad5a9b43a7b461a6147dbc74c
+  - originPath: Assets/AppsFlyer/AppsFlyerObject.prefab
+    guid: 0bfe3b149145747cc92dc53bb4df4e9b
+  - originPath: Assets/AppsFlyer/AppsFlyerObjectScript.cs
+    guid: 2a2ec6ba1ee8b48749524f015ed572a6
+  - originPath: Assets/AppsFlyer/AppsFlyeriOS.cs
+    guid: b34371b3cc09641ebb007ffc4e9500f0
+  - originPath: Assets/AppsFlyer/IAppsFlyerAndroidBridge.cs
+    guid: cdf9d1bc41a8244b3bc2d249fb6cd7aa
+  - originPath: Assets/AppsFlyer/IAppsFlyerConversionData.cs
+    guid: d2f1d4dadb7cb44628f25f1ffd8fc104
+  - originPath: Assets/AppsFlyer/IAppsFlyerIOSBridge.cs
+    guid: 6847fb337898040288c165e3667101a3
+  - originPath: Assets/AppsFlyer/IAppsFlyerNativeBridge.cs
+    guid: 409b8302434664a3785ce55d075e7f58
+  - originPath: Assets/AppsFlyer/IAppsFlyerUserInvite.cs
+    guid: 5a4cdfa023cb8497b94bb39720052fef
+  - originPath: Assets/AppsFlyer/IAppsFlyerValidateReceipt.cs
+    guid: 6385b1d184efa400a98515735e1f17bc
+  - originPath: Assets/AppsFlyer/package.json
+    guid: a2b3ab5da7dda473b8791503604647b4
+  - originPath: Assets/AppsFlyer/Editor/AppsFlyer.Editor.asmdef
+    guid: d008146f00dea44d38752b4289e5f65b
+  - originPath: Assets/AppsFlyer/Editor/AppsFlyerAdRevenueDependencies.xml
+    guid: 6110ce30bf7674268814dc9e0395f8b0
+  - originPath: Assets/AppsFlyer/Editor/AppsFlyerDependencies.xml
+    guid: a03558dbbfeac45db9afe9e9c2df5a85
+  - originPath: Assets/AppsFlyer/Editor/AppsFlyerObjectEditor.cs
+    guid: d248a134cf494486fb1d6a2e95a05d87
+  - originPath: Assets/AppsFlyer/Editor/appsflyer_logo.png
+    guid: bc7fa5a6b64b944a4b2900fd877acb8b
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/Info.plist
+    guid: 58a86b0b376564c06bf8ce29e1dbfb04
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/MacOS/AppsFlyerBundle
+    guid: 0889edee891d84a8eb0b7cc87071b91e
+  - originPath: Assets/AppsFlyer/Mac/AppsFlyerBundle.bundle/Contents/_CodeSignature/CodeResources
+    guid: 724b52b308e9a4a6d889d7bf3945a2ca
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AFUnityUtils.mm
+    guid: 18a03931864e84d86bedcc99c440e060
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyer+AppController.m
+    guid: 6ae9e1f7daef2427588fab2fbf8d35d5
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAdRevenueWrapper.h
+    guid: 7fa891a95d71c459daa1e92ee7a653ab
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAdRevenueWrapper.mm
+    guid: 84d99cf0f930e4c80b4bc1858e042b70
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAppController.mm
+    guid: 2d1497a1493b24fecaa58bd3a7b707f9
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAttribution.h
+    guid: 8544dc3b3c7bb40d397b2de568df1058
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyerAttribution.m
+    guid: 1060e47d7b9e2453ba575f0b455b2bf8
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyeriOSWrapper.h
+    guid: 147104b04b5794eaa92b4195cc328e13
+  - originPath: Assets/AppsFlyer/Plugins/iOS/AppsFlyeriOSWrapper.mm
+    guid: 2bff3788f3d8747fe9679bd3818e1d76
+  - originPath: Assets/AppsFlyer/Plugins/iOS/SwiftForUnity.swift
+    guid: a631431c30cca4ac2bb4b40fc67e4005
+  - originPath: Assets/AppsFlyer/Tests/Castle.Core.dll
+    guid: 7b5b4579db85b4cfd8395bfb19aa309e
+  - originPath: Assets/AppsFlyer/Tests/NSubstitute.dll
+    guid: 642cf65ed2573419bab7e7d44fc73181
+  - originPath: Assets/AppsFlyer/Tests/System.Runtime.CompilerServices.Unsafe.dll
+    guid: 3a5ccbd864ba94a9a9ba47895ff14922
+  - originPath: Assets/AppsFlyer/Tests/System.Threading.Tasks.Extensions.dll
+    guid: ee45ae2608f3c44d08fc6e21a94d133f
+  - originPath: Assets/AppsFlyer/Tests/Tests.asmdef
+    guid: 1f155a0e4c9ab48eeb4b54b2dc0aeba7
+  - originPath: Assets/AppsFlyer/Tests/Tests_Suite.cs
+    guid: 1b1a24aa01166451d804d7c03c14a3db
+  - originPath: Assets/AppsFlyer/Windows/AppsFlyerLib.pri
+    guid: c621896ec81267f478e98555031271ef
+  - originPath: Assets/AppsFlyer/Windows/AppsFlyerLib.winmd
+    guid: 5186898c6f4665f438e46763d4cff3ae
+  - originPath: Assets/AppsFlyer/Windows/AppsFlyerWindows.cs
+    guid: 034d11e52b599954181d7f08c0d89ca8
+  - originPath: Assets/AudienceNetwork/Editor/AudienceNetworkDependencies.xml
+    guid: 53e2520257ee14884b66cb776c6a5600
+  - originPath: Assets/AudienceNetwork/Library/AdHandler.cs
+    guid: d47bb3b71586b48dd954f5cdb11b8d19
+  - originPath: Assets/AudienceNetwork/Library/AdSettings.cs
+    guid: 2c6dc3140db0d40609e64d86ea8038bc
+  - originPath: Assets/AudienceNetwork/Library/AdUtility.cs
+    guid: 50f6966ab7c694899a9a6ec5bfe13ce7
+  - originPath: Assets/AudienceNetwork/Library/AdView.cs
+    guid: ea40c685492bb4a8c8ecc98f34c52ed2
+  - originPath: Assets/AudienceNetwork/Library/AudienceNetworkAds.cs
+    guid: 4f7b3f57160c342918af28e4b32686e8
+  - originPath: Assets/AudienceNetwork/Library/ExtraHints.cs
+    guid: 327a6820e37284d458d23d5528ef137c
+  - originPath: Assets/AudienceNetwork/Library/InterstitialAd.cs
+    guid: aed5d3283123b47e9a5780a385f4e6ed
+  - originPath: Assets/AudienceNetwork/Library/RewardedVideoAd.cs
+    guid: 111ff137d27be424584e4e2160d44e80
+  - originPath: Assets/AudienceNetwork/Library/SdkVersion.cs
+    guid: 766cc4756a404418f86a9625e15090fc
+  - originPath: Assets/AudienceNetwork/Scenes/BaseScene.cs
+    guid: f8b448fe9f60a4883aa9907cc3236629
+  - originPath: Assets/AudienceNetwork/Scenes/Banner/AdViewScene.cs
+    guid: 905b751bb63e44191a5363d3ed3d31d0
+  - originPath: Assets/AudienceNetwork/Scenes/Banner/AdViewScene.unity
+    guid: cb29e86fb3daa461f8da1a6d755fe9ce
+  - originPath: Assets/AudienceNetwork/Scenes/Interstitial/InterstitialAdScene.cs
+    guid: 00d288c1305fc494882c5c1d674f6779
+  - originPath: Assets/AudienceNetwork/Scenes/Interstitial/InterstitialAdScene.unity
+    guid: f72b5a1d5965144f795ee32584534444
+  - originPath: Assets/AudienceNetwork/Scenes/RewardedVideo/RewardedVideoAdScene.cs
+    guid: 84bf87db85e7a4d18bf8422eb54ac837
+  - originPath: Assets/AudienceNetwork/Scenes/RewardedVideo/RewardedVideoAdScene.unity
+    guid: 0079f98ce8e504ce0b9d7c937e331b03
+  - originPath: Assets/AudienceNetwork/Scenes/Settings/SettingsScene.cs
+    guid: 12a33cb7aa8f042ef8bc6a44c91eed4d
+  - originPath: Assets/AudienceNetwork/Scenes/Settings/SettingsScene.unity
+    guid: d88663653ebb24580ac0c753bb4f140c
+  - originPath: Assets/Editor Default Resources/CrashlyticsSettings.asset
+    guid: 3d324cbf4eb1349ecb5175e6b87e7adf
+  - originPath: Assets/Editor Default Resources/Firebase/fb_analytics.png
+    guid: dc218b335b1d14cd5ae532f65042d829
+  - originPath: Assets/Editor Default Resources/Firebase/fb_analytics_dark.png
+    guid: 9fe4b3bd3b7d2477dac92fb7429d1d1b
+  - originPath: Assets/Editor Default Resources/Firebase/fb_auth.png
+    guid: 394b3ec4d60c24476a12e4ba696d9e5d
+  - originPath: Assets/Editor Default Resources/Firebase/fb_auth_dark.png
+    guid: 3a9e1ef6287664c389bb09e2ac1b23b7
+  - originPath: Assets/Editor Default Resources/Firebase/fb_cloud_messaging.png
+    guid: 837e8e1f35e334e81931d0857680cebf
+  - originPath: Assets/Editor Default Resources/Firebase/fb_cloud_messaging_dark.png
+    guid: 20c5b8a1f82cb4aadb77ca20683d2a6e
+  - originPath: Assets/Editor Default Resources/Firebase/fb_config.png
+    guid: 415eaec414af14d11955222a282aca08
+  - originPath: Assets/Editor Default Resources/Firebase/fb_config_dark.png
+    guid: 0ad9ef5fff5524355a9670c90a99cbba
+  - originPath: Assets/Editor Default Resources/Firebase/fb_crashlytics.png
+    guid: 008a5e76206e49f9b06d8ba144aabb38
+  - originPath: Assets/Editor Default Resources/Firebase/fb_crashlytics_dark.png
+    guid: 214009068900439da4a9cded17d58090
+  - originPath: Assets/Editor Default Resources/Firebase/fb_database.png
+    guid: 3eea7b558c67b48e18acf3c278392e3d
+  - originPath: Assets/Editor Default Resources/Firebase/fb_database_dark.png
+    guid: 9f6bfa9d8aefb40dc92461c372c73b0f
+  - originPath: Assets/Editor Default Resources/Firebase/fb_dynamic_links.png
+    guid: df6f219c396f4ad9b5048bae6944cb8e
+  - originPath: Assets/Editor Default Resources/Firebase/fb_dynamic_links_dark.png
+    guid: 9355a4671cfe4eef90879863318d1a4b
+  - originPath: Assets/Editor Default Resources/Firebase/fb_functions.png
+    guid: 953367231f9e3e22e70e5d1c91a40fe5
+  - originPath: Assets/Editor Default Resources/Firebase/fb_functions_dark.png
+    guid: b5aa3e4f7432e1c5698417cc13f85271
+  - originPath: Assets/Editor Default Resources/Firebase/fb_invites.png
+    guid: 741b269777f30488482ef4937b456b28
+  - originPath: Assets/Editor Default Resources/Firebase/fb_invites_dark.png
+    guid: a734ad7414926404e90f8b5be37b7e23
+  - originPath: Assets/Editor Default Resources/Firebase/fb_storage.png
+    guid: 573eb851c99f948f4bf2de49322bfd53
+  - originPath: Assets/Editor Default Resources/Firebase/fb_storage_dark.png
+    guid: 2955864b938094f579ea9902b65ac10c
+  - originPath: Assets/Editor Default Resources/Firebase/firebase_lockup.png
+    guid: 9f058f25e8e2d47cfb894951d4d7e48a
+  - originPath: Assets/Editor Default Resources/Firebase/firebase_lockup_dark.png
+    guid: b93330fc8ea08407dbc514b5101afa14
+  - originPath: Assets/ExternalDependencyManager/Editor/CHANGELOG.md
+    guid: 3d9f779dd5e74fcc9e05e0c450716999
+  - originPath: Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll
+    guid: 2010dfbbc3ff4f499e6892f6681a37df
+  - originPath: Assets/ExternalDependencyManager/Editor/Google.VersionHandler.dll.mdb
+    guid: c3f725ddd3494ddf9818ee51153c40da
+  - originPath: Assets/ExternalDependencyManager/Editor/LICENSE
+    guid: b5a2636858c0483bab69644a94d03b42
+  - originPath: Assets/ExternalDependencyManager/Editor/README.md
+    guid: 8899dd41fdfd4ebc88ca6ef5951c6eb1
+  - originPath: Assets/ExternalDependencyManager/Editor/external-dependency-manager_version-1.2.175_manifest.txt
+    guid: 3e27eb74b8d448cd9aa7688085c8ad76
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.IOSResolver.dll
+    guid: 8b333f9c2c3c4d5c94788fa0722edc5c
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.IOSResolver.dll.mdb
+    guid: 40c95e810ae744be90cd10e34487fb0b
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.JarResolver.dll
+    guid: af3ced639768447f9ece45f038c5ee35
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.JarResolver.dll.mdb
+    guid: 1a83ae0712954d449d6b500769245b70
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.PackageManagerResolver.dll
+    guid: 64763f5d36d84f789a31f8dbcc26cac9
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.PackageManagerResolver.dll.mdb
+    guid: 05f38fc976de49d0a8bac11b0591b35c
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.VersionHandlerImpl.dll
+    guid: 9e005ad5be4449918b55dae042a3b4b0
+  - originPath: Assets/ExternalDependencyManager/Editor/1.2.175/Google.VersionHandlerImpl.dll.mdb
+    guid: 87e3f1c0087b4dcb96128c54eeba905c
+  - originPath: Assets/FacebookSDK/link.xml
+    guid: 51f4619c385224a23a3edb9092c7d49b
+  - originPath: Assets/FacebookSDK/Plugins/Facebook.Unity.dll
+    guid: 32ac168169845443ea64cc9b98cdb544
+  - originPath: Assets/FacebookSDK/Plugins/Android/Facebook.Unity.Android.dll
+    guid: 68e44ed084bbd4f04b624895f5638a32
+  - originPath: Assets/FacebookSDK/Plugins/Android/libs/facebook-android-wrapper-14.0.0.aar
+    guid: 06a06c5fe53c44ca08d35e31bd5f9136
+  - originPath: Assets/FacebookSDK/Plugins/Editor/Dependencies.xml
+    guid: 1543e5f9bab73423c96b42cab90363ab
+  - originPath: Assets/FacebookSDK/Plugins/Editor/Facebook.Unity.Editor.dll
+    guid: 9a99583abb89745ad8fd4e048c8cf091
+  - originPath: Assets/FacebookSDK/Plugins/Settings/Facebook.Unity.Settings.dll
+    guid: 6abda14e0211045ac9a37fef71208602
+  - originPath: Assets/FacebookSDK/Plugins/iOS/Facebook.Unity.IOS.dll
+    guid: e0db24ad3974947d8a17eea7e1f764e9
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBSDK+Internal.h
+    guid: 66952bdb75cae4c348f3d0521da59bfd
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.h
+    guid: 511e95bcdad89425999ccbb3e315246a
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityInterface.mm
+    guid: 4c29c5d59509848c4bc24c13ac976932
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.h
+    guid: 7461bcc2e2c714a03a3f60d68ec79369
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnitySDKDelegate.m
+    guid: fbc51482e3ca248329707d61959f9d9d
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.h
+    guid: b4469d6625a664618b68231ee0dcc093
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/FBUnityUtility.mm
+    guid: 5cafb2af7ca9641f58022a816236d1ad
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/fixup.projmods
+    guid: aead30834362b490ea67fdd7fd0351c5
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKShareTournamentDialog.swift
+    guid: e8b68c3227d0545b0baf196182ca495c
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournament.swift
+    guid: 40782e83ff8774bfb8280e20c134e6c2
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentFetcher.swift
+    guid: a2bf9c24f7d8f4c83b760043d97deadf
+  - originPath: Assets/FacebookSDK/SDK/Editor/iOS/Swift/FBSDKTournamentUpdater.swift
+    guid: aa01d6bdb7c7f4c52bf29c7adbee61fd
+  - originPath: Assets/FacebookSDK/SDK/Resources/FacebookSettings.asset
+    guid: 97cc5c2c440894aca8637dcb8d0a780a
+  - originPath: Assets/Firebase/Editor/AnalyticsDependencies.xml
+    guid: 1e3c2da79be842cd838a9ddd70d20fa9
+  - originPath: Assets/Firebase/Editor/AppDependencies.xml
+    guid: 9b63af95d9364af4a3d8ce58738b6223
+  - originPath: Assets/Firebase/Editor/CrashlyticsDependencies.xml
+    guid: be690db6bda046a89e38b20ef9bfe06c
+  - originPath: Assets/Firebase/Editor/Firebase.Crashlytics.Editor.dll
+    guid: 3781f2218eef4d5a823dba406baa434b
+  - originPath: Assets/Firebase/Editor/Firebase.Editor.dll
+    guid: 9f2edbf81053418f879076c05f816dc2
+  - originPath: Assets/Firebase/Editor/FirebaseAnalytics_version-10.1.1_manifest.txt
+    guid: e22dc38fd3424631b1ec8a0d8536e223
+  - originPath: Assets/Firebase/Editor/FirebaseCrashlytics_version-10.1.1_manifest.txt
+    guid: e348793e7dbc4a1d9f590346318a7592
+  - originPath: Assets/Firebase/Editor/generate_xml_from_google_services_json.exe
+    guid: ae88c0972b7448b5b36def1716f1d711
+  - originPath: Assets/Firebase/Editor/generate_xml_from_google_services_json.py
+    guid: 8f18ed76c0f04ce0a65736104f913ef8
+  - originPath: Assets/Firebase/Editor/network_request.exe
+    guid: d3cd5d0a941c4cdc8ab4b1b684b05191
+  - originPath: Assets/Firebase/Editor/network_request.py
+    guid: e6e32fecbfd44fab946fa160e4861924
+  - originPath: Assets/Firebase/Plugins/Firebase.Analytics.dll
+    guid: 816270c2a2a348e59cb9b7b096a24f50
+  - originPath: Assets/Firebase/Plugins/Firebase.App.dll
+    guid: 7311924048bd457bac6d713576c952da
+  - originPath: Assets/Firebase/Plugins/Firebase.Crashlytics.dll
+    guid: 4a712f6ef12f441e9d8b053a3c30ad55
+  - originPath: Assets/Firebase/Plugins/Firebase.Platform.dll
+    guid: 7d3eec03d7e241a48941e038118c5e6a
+  - originPath: Assets/Firebase/Plugins/Firebase.TaskExtension.dll
+    guid: f5d4069c578548ba9f199b46d61bf06d
+  - originPath: Assets/Firebase/Plugins/Google.MiniJson.dll
+    guid: 3ebb289656f1477fa263e62d36c6e329
+  - originPath: Assets/Firebase/Plugins/iOS/Firebase.Analytics.dll
+    guid: 52718a3a80d44aacb368bcc9d62dd804
+  - originPath: Assets/Firebase/Plugins/iOS/Firebase.App.dll
+    guid: 5f3feda1a91343759b7eb58a29b492b7
+  - originPath: Assets/Firebase/Plugins/iOS/Firebase.Crashlytics.dll
+    guid: 3c83c9a9845245cfbbab5a52932b5045
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.bundle
+    guid: 35bfcced25264151bd76b628a1dfa989
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.dll
+    guid: c48626ae27ed478483ba85fd7c81c04b
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppAnalytics.so
+    guid: 590090df30d142acba7e7be939fd2988
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppApp-10_1_1.bundle
+    guid: 99cd54d74cc1488f95742016fa58e0b0
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppApp-10_1_1.dll
+    guid: 79f863a70f9a4dc9b51058fe3e1324e4
+  - originPath: Assets/Firebase/Plugins/x86_64/FirebaseCppApp-10_1_1.so
+    guid: 566c89bae6ce4c85843fe691acf785c7
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/maven-metadata.xml
+    guid: 291f81d8ae2745cf913a96d116f2e3f7
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 242fa90834b74efaa4029261ba91550a
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.srcaar
+    guid: 1a366edb56aa43d6a7b5bd1b556af446
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/maven-metadata.xml
+    guid: 96337775a7c941d88ea15f8026ad6f8e
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: 68ae9f2dc5154a6aa9e98a8ebcd0add0
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.srcaar
+    guid: 1cd402452cf04f8f95061a3b873c50ff
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/maven-metadata.xml
+    guid: eda65244fc1b407e8948b25b31c17991
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: c314e5dd47954ed2a0bc65020316c776
+  - originPath: Assets/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.srcaar
+    guid: dfdffd1552eb46529284864ad15078bd
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.aar
+    guid: b3b270a181c4641e7bba1147126c2682
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-analytics-unity/10.1.1/firebase-analytics-unity-10.1.1.pom
+    guid: 11e903485b94441a39ebf17e56216e02
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.aar
+    guid: 5b91cd7ff905b45bbb6d6e6fa19c9689
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-app-unity/10.1.1/firebase-app-unity-10.1.1.pom
+    guid: c14c08f1af331418985bfb8aadc4be9a
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.aar
+    guid: 6274fe7511d7e4b0bb2397e213c40808
+  - originPath: Assets/GeneratedLocalRepo/Firebase/m2repository/com/google/firebase/firebase-crashlytics-unity/10.1.1/firebase-crashlytics-unity-10.1.1.pom
+    guid: 9392aefea146d4ad6b80772916dbf730
+  - originPath: Assets/JuicySDK/Prefabs/JuicySDKManager.prefab
+    guid: b7783b0defd74b84097ca1fad71d9bdc
+  - originPath: Assets/JuicySDK/Sample/Scenes/scene_juicySDKMediationDebugger.unity
+    guid: d0e12be19cb1c44fbac0700ba1125e3a
+  - originPath: Assets/JuicySDK/Sample/Scenes/scene_juicySDKSample.unity
+    guid: 3b608082ffaf3d64b8022840d73b7f8a
+  - originPath: Assets/JuicySDK/Sample/Scenes/scene_juicySDKSampleSettings.lighting
+    guid: 03afe6f8197f0415ba1c507b6b8471f1
+  - originPath: Assets/JuicySDK/Sample/Scripts/MediationDebuggerScene.cs
+    guid: 72288043dd7054f0f9e6621bc276e638
+  - originPath: Assets/JuicySDK/Sample/Scripts/Rotate.cs
+    guid: 2802e9fdf45edc34f9febe6fc96c6330
+  - originPath: Assets/JuicySDK/Sample/Scripts/SampleABTestVariantIDDisplay.cs
+    guid: 70f37bdf29d1f4c279e77af66a7fa3f6
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/ButtonBase.cs
+    guid: 58d7b3ca5a1931d42afda51058d648c9
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_BestScore.cs
+    guid: 69ba3e8308e9b3d4c96fcf90ec8d6213
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_BuyProduct.cs
+    guid: 924c5b5c53024a2428c9a03f46633e0c
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_HideBanner.cs
+    guid: 5b9a778ae78b2b34fbb93089c36503c7
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_NotifyGameEnd.cs
+    guid: 70dfa05ffc0b1404390e604f16636aee
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_NotifyGameStart.cs
+    guid: 7a75db8aa98e001448e3e87377d225ee
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_NotifyInterstitialOpportunity.cs
+    guid: 0386d1e49f603eb4aad84c7153aeb33f
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_Reload.cs
+    guid: d5cf5934c5771ef4eb83e076eb3971d6
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_RemoveAds.cs
+    guid: 76e87138f37ba4f86bcd5b5bef6052d8
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_RestorePurchases.cs
+    guid: 1944d4051c33f70498f78fd9e1795c6f
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowBanner.cs
+    guid: 23eb1e02cd0afca4c8be5a2cb051922c
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowMediationTestSuite.cs
+    guid: ce1772a2fd0974a0bbfbc4579fdf7138
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowPrivacySettings.cs
+    guid: 7cd43a2d2be7eb24b80655d193c1a258
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_ShowRewarded.cs
+    guid: 0dde16f19153e0141a993db58a1fbfb6
+  - originPath: Assets/JuicySDK/Sample/Scripts/Buttons/Button_SimulateCrash.cs
+    guid: 90adf677aa6d14d4ea6eb48d301931d7
+  - originPath: Assets/JuicySDK/Script/JuicySDK.cs
+    guid: 4afa00eda42e66746a6c56e29fc6532d
+  - originPath: Assets/JuicySDK/Script/Analytics/EventProperty.cs
+    guid: 44d33c92f2db5754fbf7213ea77923bd
+  - originPath: Assets/JuicySDK/Script/Purchase/ProductSummary.cs
+    guid: 0eee8994ae0027941b2f4632b2408853
+  - originPath: Assets/JuicySDK/Script/Purchase/ProductType.cs
+    guid: 5f18884abfb694dfd810afbe2819114a
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/BannerInsert.prefab
+    guid: 7c877fa5037ff42508b633756516829f
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/FireBaseManager.prefab
+    guid: b1a1ff365afcc457ea1e8d1f9a5fa82a
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyABTestManager.prefab
+    guid: bd267b209dd30074c884608c75a037c4
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyAdsManager.prefab
+    guid: 9fbe2d5e91ebe0c4b97cf00f94efb9ae
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyAnalyticsManager.prefab
+    guid: 9f8803c530c48724c897a108b12a9179
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyPrivacyManager.prefab
+    guid: 63e97551a508f43f88085515813b500b
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyPurchaseManager.prefab
+    guid: daf87d67a04f34e5bb8ab6220fae54f9
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyPurchaseRemoveAdsManager.prefab
+    guid: 58a9d7c4fc04d4ed7a6a8aa27734c912
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyRatingManager.prefab
+    guid: 698c18513d2c88e469d67717bd93bed4
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/JuicyRemoveAdsManager.prefab
+    guid: 94c31e53a7fb142d8ab3aaab1da14034
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulation.prefab
+    guid: 69d1a9dec9c2946bf92b0699af6348fe
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationBanner.prefab
+    guid: 8404ca66c62b041ac9dfa149940bc7bc
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationInterstitial.prefab
+    guid: 0f5e9d39ab8be44a3a596f49ef605834
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Emulation/Ads/JuicyAdsEmulationRewarded.prefab
+    guid: d17fcfd6d7a3b4c8d8900bbc633698f7
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyPreIOS14PopUp.prefab
+    guid: df02ccc47b64545a98b139ce413fa83d
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyUpdatePrivacyPopUpV1.prefab
+    guid: 7af791eac64894aa99559a07f57a8236
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyUpdatePrivacyPopUpV2.prefab
+    guid: 96350323dc9504f739f82ad5e9313fe1
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyWelcomePrivacyPopUpV1.prefab
+    guid: a5b9377ce9c774711b6be805adefc839
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/JuicyWelcomePrivacyPopUpV2.prefab
+    guid: ab901b65491b442618097781ff3c8434
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/PartnerPrivacyPolicyLink.prefab
+    guid: 54cf39b2b8ae9ad488ca506d06bc9bc3
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/PrivacyPolicyLink.prefab
+    guid: 329a842afbf6843608f876e4b7675ef0
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/Privacy/PrivacyPopUpsInputMask.prefab
+    guid: 565661d75995741b99e47959d0cc7ad3
+  - originPath: Assets/JuicySDK/_Internal/Prefabs/UI/PrivacyToggle.prefab
+    guid: 133f369ed90644462b99b592e77f241d
+  - originPath: Assets/JuicySDK/_Internal/Resources/JuicySDKLaunchLog.txt
+    guid: 971ac19ae95c3485a91815fd7b87729a
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicySDKManager.cs
+    guid: 4503101b10b34e3469e9bea02aab45a5
+  - originPath: Assets/JuicySDK/_Internal/Scripts/ABTest/JuicyABTestManager.cs
+    guid: cd0858e20c9813046b4621e7f993b653
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/AdsManagerBase.cs
+    guid: 906ee059216e7c849abc2eb7bd675be6
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/BannerInsert.cs
+    guid: b4931d176bb754f50b2384cd1576ecf4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/JuicyAdsManager.cs
+    guid: 62996c513cb3a3446b8aa7b6379b61c2
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyAdsEmulation.cs
+    guid: 17b4a6a45b00940e5803c00fbd691b1f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyAdsEmulationManager.cs
+    guid: 915c98f6f815240498ca53a3bf7ca258
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedBanner.cs
+    guid: 4c6349185e517462fb96813199041ebf
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedElement.cs
+    guid: 33f776dfacd0043b2ad0583dd52c14db
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedInterstitial.cs
+    guid: f1a1aa0ad76e741719c83a7a797ac02c
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Ads/Emulation/JuicyEmulatedRewarded.cs
+    guid: a5326e060192648dc80e9e99c0722f7f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/JuicyAnalyticsManager.cs
+    guid: aefe79ede448efb49b64238ef3811a0c
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/JuicySnapshot.cs
+    guid: 8b1d733c36f19484589f3f4d447d1ead
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/JuicyStoredEvent.cs
+    guid: ed0258ad5dc9141a5a6d7f29756ed673
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/AppsFlyer/AppsFlyerManager.cs
+    guid: b463c01ebeabf85448af79350b9c00b7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Emulation/JuicyAnalyticsEmulationManager.cs
+    guid: 712505b7b558a474991910af7abcb8ce
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Facebook/FacebookSDKManager.cs
+    guid: 110b6c0de183b2c4e872e43347c3bb45
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/FirebaseAnalytics/FirebaseAnalyticsManager.cs
+    guid: 0c28f4884c26940e0b98432fe34eb439
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/FirebaseAnalytics/FirebaseManager.cs
+    guid: 580246c6b969f44f7a360853bce8046f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Analytics/Unity/UnityAnalyticsManager.cs
+    guid: 353235b168c284d7283d2ca3deb06e34
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicyCheatCode.cs
+    guid: 5b20387f458f345ed84bae11533a23b0
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKDebug.cs
+    guid: 3177e1d168c668143805022fb8060b4b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKInternalTest.cs
+    guid: 910dc297ca42b4b75900cabb917d10df
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKLaunchLog.cs
+    guid: e3705286be9bc45dab82da7393451306
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/JuicySDKLog.cs
+    guid: 2881aad025b9c465289c4fa4c5a97d96
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Debug/Editor/JuicySDKInternalTestEditor.cs
+    guid: d9c22172be2b14cd6bb7b835f42b4f76
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Editor/JuicyBaseProcessBuildManager.cs
+    guid: 442dc78083fae4d17b7cefc31e840008
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/FireBase/Sample/GoogleService-Info.juicy
+    guid: 7ab4a0392514d4983bbc0d12c172b70b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/FireBase/Sample/google-services.juicy
+    guid: 0e9a0834fc0b74697ae398e52eb2ad92
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyConfigIntegrationReport.cs
+    guid: 33a0d6f93857042b9b7a290ebc3b9c39
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyIntegrationReport.cs
+    guid: 15d521eaa9bc547a3ac959a1e0741908
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyIntegrationWindow.cs
+    guid: 59ca814baac774ff393f6d34ad1aa67b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicyProjectIntegrationReport.cs
+    guid: 4f74873b193734a568e91625e17267ba
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Integration/Editor/JuicySettingsIntegrationReport.cs
+    guid: 3a623ce001df34b5ab72160c781eae44
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Editor/JuicyRemoveManager.cs
+    guid: 7b157018fe79547eaafdb5a58fd2ca6d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Editor/JuicyRemoveWindow.cs
+    guid: 80a1d6bffd0344ccf96d35175e6e58e9
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Remove/Resources/JuicyRemoveManager.asset
+    guid: 793b0388a53df4a489cef07888ec8387
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyEditorSettings.cs
+    guid: b8ee3296ae8d64e14bc6d9c3b5ad7766
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyEditorSettings_Inspector.cs
+    guid: 0216df0a1520848aea779a4a9c901d50
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicyFirstImport.cs
+    guid: abcb48ab7044042648a638de5b9111ec
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicySDKSettingsWindow.cs
+    guid: 626c3a76d305f4bdd959ba5560565518
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyEditor/Settings/Editor/JuicySDKSettings_Inspector.cs
+    guid: 2b553d7d27c814d7cab6c6df297dceca
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyPlugins/JuicyAndroidPlugin.cs
+    guid: f35cf1e39e946404f9444a870dbb9dcb
+  - originPath: Assets/JuicySDK/_Internal/Scripts/JuicyPlugins/JuicyIOSPlugin.cs
+    guid: ba1c9378309e043d98cfe058c637fe86
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/JuicyMediationPrivacyDatas.cs
+    guid: 1f7980fd242c842edb68fc48e237c737
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/JuicySDKMediationConfig.cs
+    guid: 9e9646acfd1e14e328b356ab8fdc0955
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/JuicySDKMediationLaunchLog.cs
+    guid: c4eb03b66e2974a28b1de3e7ea1f9527
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/MediationManager.cs
+    guid: 86b29b03c587948e7ad4f3cbe47606f1
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/Editor/JuicyMediationIntegrationReport.cs
+    guid: 9994d3df10e1d48859cc0c1bf5cff1f4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Mediation/Editor/JuicyMediationProcessBuildManager.cs
+    guid: 8d390aba8643d47188536d7d26a88ac4
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/Button_PartnerPrivacyPolicyLink.cs
+    guid: 5433e76daa9c3ce43a27adb31de45282
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/Button_PrivacyPolicyLink.cs
+    guid: 0fb7c40b13a6c427183ee56bcf302671
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/GeolocalisationUtility.cs
+    guid: f27152e53a2858447b968096e4cd97b6
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/JuicyBasePrivacyDatas.cs
+    guid: 2dd497a58287649d48fc3db30458ba1f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/JuicyMailTo.cs
+    guid: 9f9e7de3ab16a407b97c3a1f224c5347
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/JuicyPrivacyManager.cs
+    guid: b667be4c80b37184885d4fd1bdadc48e
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PreIOSIDFATrackingPopUp.cs
+    guid: ae290b2bf68ed4d42a837f3f72b83a45
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PrivacyButtonBase.cs
+    guid: 7a0e087296844d346af114c118e10ff5
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PrivacySettingsPopUp.cs
+    guid: f4568949306e59345b20fc1579bee23d
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/PrivacySettingsPopUp_ScreenController.cs
+    guid: cd7a8a5cedb385b48b7e5f7bbe96e026
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/UpdatePrivacySettingsPopUpV1.cs
+    guid: f9e0dd765d88e4760993b96e8bc399d7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/UpdatePrivacySettingsPopUpV2.cs
+    guid: b65a3c831d08644f8a09c84731a2c8ed
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/WelcomePrivacySettingsPopUpV1.cs
+    guid: 2dcde601c5120455392be16340e812cd
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Privacy/WelcomePrivacySettingsPopUpV2.cs
+    guid: f7d0cfc6481774153976ab033007daa7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/JuicyPurchaseManager.cs
+    guid: fbf728fa4a1c041d4a7c8bed5502c5fc
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/ProductInfos.cs
+    guid: 297f030fa4ab2461280e36ff7f66f975
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/PurchaseManagerBase.cs
+    guid: 60ec39339330840b4ba350ede148d1bb
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase/Unity/UnityPurchaseManager.cs
+    guid: ffb1f19c9464e449cb84b3e603a5ae92
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Purchase.RemoveAds/JuicyPurchaseRemoveAdsManager.cs
+    guid: 663650723770e499899598271cd22d97
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Rating/JuicyRatingManager.cs
+    guid: 9ac01d16284079e4aa0fb310bcb72f71
+  - originPath: Assets/JuicySDK/_Internal/Scripts/RemoveAds/JuicyRemoveAdsManager.cs
+    guid: a89e8dc62c7ca49f78a511aca8fe8808
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/JuicyConfigFileManager.cs
+    guid: f64e1ee517e344126a3bfba462b4798a
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/JuicySDKConfig.cs
+    guid: 24be9e55b782a409db83e559826da9cd
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/JuicySDKSettings.cs
+    guid: 634c6ba3c8912954db960feb0cdb144a
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Settings/Resources/JuicySDKSampleAppConfig.xml
+    guid: 4dbe14f7edef94ccb86782de5a49fcde
+  - originPath: Assets/JuicySDK/_Internal/Scripts/UI/JuicyToggleVisual.cs
+    guid: 67b2fae66eb04446481ffd49011f9cfd
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/BitUtility.cs
+    guid: 6bb65d217778e4bcfa3cf05fd7902771
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/JuicyFileSaver.cs
+    guid: 96ada553e6a1b4e2c97d3c1ca49e9147
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/JuicyPlayerPrefs.cs
+    guid: 6214db662c02a4dfa9440aaa49a2e96f
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/JuicyUtility.cs
+    guid: cc7f26d69ac6cb846ba16c59c4fd92e1
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/RectTransformExtension.cs
+    guid: 1220d9af1a76542088e663368e48b0c7
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/ScreenUtility.cs
+    guid: 5abd0c345afcd41deb488c8b463a51fe
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/UnityThread.cs
+    guid: 48a9e3e37bd054c01ac4eaa19ff0e918
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/XmlUtility.cs
+    guid: b85978c832a92405299a1911f4bc589b
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/Editor/PBXProjectUtility.cs
+    guid: be0b19e2eec0a4523a89ff5b8ea76a30
+  - originPath: Assets/JuicySDK/_Internal/Scripts/Utility/Editor/PlistUtility.cs
+    guid: 2e4441fc19ba6427d98da7cc3ac640f3
+  - originPath: Assets/JuicySDK/_Internal/Sprites/LinkIcon.png
+    guid: 8b46152ed30714aad980bc26635b502c
+  - originPath: Assets/JuicySDK/_Internal/Sprites/RoundedSquare.png
+    guid: 0313685188079f14ab827d7c288a86ec
+  - originPath: Assets/JuicySDK/_Internal/Sprites/ToggleBackground.png
+    guid: 7c3fdc128f7db43c58ba343e15ec000b
+  - originPath: Assets/JuicySDK/_Internal/Sprites/WhiteCircle.png
+    guid: eb15ca428fbc041529ae126529ce7413
+  - originPath: Assets/JuicySDK/_Internal/Sprites/checkMark.png
+    guid: 8a9a5b400d1c7422ca2f144b4bfe93b9
+  - originPath: Assets/JuicySDK/_Internal/Sprites/juicyWS_Logo.png
+    guid: 80fba24613c8647028de447b5e735511
+  - originPath: Assets/JuicySDK/_Internal/Sprites/ring.png
+    guid: 6b42e24732772484bb577c8afead736a
+  - originPath: Assets/MaxSdk/Version.md
+    guid: 8a6ad2e147c3a4553bda59a84413f07b
+  - originPath: Assets/MaxSdk/AppLovin/Editor/Dependencies.xml
+    guid: 746da98302dc0402aaa37e8f7bd97e77
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/Android/applovin-max-unity-plugin.aar
+    guid: 1db980bd612824d2097f78fd779e6051
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/iOS/MAUnityAdManager.h
+    guid: 4209563f82b8a4f7dabf03705ab761c6
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/iOS/MAUnityAdManager.m
+    guid: 2973e70bd2fa74984b35aea07ae9db52
+  - originPath: Assets/MaxSdk/AppLovin/Plugins/iOS/MAUnityPlugin.mm
+    guid: 7e373ed7168b243e6b706e991ab5a643
+  - originPath: Assets/MaxSdk/Mediation/MediationAdapters.txt
+    guid: 9a8f83e97729443c86120be3bb24190d
+  - originPath: Assets/MaxSdk/Mediation/AdColony/Editor/Dependencies.xml
+    guid: a351b114cfc11494ba8c131833b1bf74
+  - originPath: Assets/MaxSdk/Mediation/ByteDance/Editor/Dependencies.xml
+    guid: 0828555cb1ce94702a4af6f3dce3d735
+  - originPath: Assets/MaxSdk/Mediation/Chartboost/Editor/Dependencies.xml
+    guid: 93b0a4618bd884871af0981a7867bb2f
+  - originPath: Assets/MaxSdk/Mediation/Facebook/Editor/Dependencies.xml
+    guid: aea9bdf974328420db5ae118ef0d2b87
+  - originPath: Assets/MaxSdk/Mediation/Fyber/Editor/Dependencies.xml
+    guid: 5e123cdc08e804dffb2c40c4fbc83caf
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/Dependencies.xml
+    guid: 053b810d3594744e38b6fd0fa378fb57
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/MaxGoogleInitialize.cs
+    guid: 2376824a26af1414bbc62440698ccc89
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/MaxMediationGoogleUtils.cs
+    guid: 6de4e4d420b14431a7d169724e23361e
+  - originPath: Assets/MaxSdk/Mediation/Google/Editor/MaxSdk.Mediation.Google.Editor.asmdef
+    guid: 91c204b831b394f9e8639dcc4f11403a
+  - originPath: Assets/MaxSdk/Mediation/InMobi/Editor/Dependencies.xml
+    guid: bc66a0ef4503843ee9b1bf1b1e867367
+  - originPath: Assets/MaxSdk/Mediation/IronSource/Editor/Dependencies.xml
+    guid: 19262406303f04f05b14b31b3c734d35
+  - originPath: Assets/MaxSdk/Mediation/Line/Editor/Dependencies.xml
+    guid: 1358f87478e994c0fba75cf98eb06e3f
+  - originPath: Assets/MaxSdk/Mediation/Mintegral/Editor/Dependencies.xml
+    guid: 221b2a20a58a04f2cb4afb0779587206
+  - originPath: Assets/MaxSdk/Mediation/Smaato/Editor/Dependencies.xml
+    guid: f6c345cc57a514902ba5fb68436f852f
+  - originPath: Assets/MaxSdk/Mediation/Tapjoy/Editor/Dependencies.xml
+    guid: c5268a136291a461aad1c0175bccb266
+  - originPath: Assets/MaxSdk/Mediation/TencentGDT/Editor/Dependencies.xml
+    guid: 1c83d361e01b448b39d25eb389f62359
+  - originPath: Assets/MaxSdk/Mediation/UnityAds/Editor/Dependencies.xml
+    guid: 9950f1cb0da1e43efbeca604db142076
+  - originPath: Assets/MaxSdk/Mediation/VerizonAds/Editor/Dependencies.xml
+    guid: 7eff54117fa2e411d8d9e599e6f5de02
+  - originPath: Assets/MaxSdk/Mediation/Vungle/Editor/Dependencies.xml
+    guid: 0d8ad3a6ddc4f44fab2efe607fe14f26
+  - originPath: Assets/MaxSdk/Prefabs/BannerBottom.prefab
+    guid: 54c062c0526b148efa2ea2e9489b3aa0
+  - originPath: Assets/MaxSdk/Prefabs/BannerTop.prefab
+    guid: 6521750c87fd14f709d09a1e38ffde47
+  - originPath: Assets/MaxSdk/Prefabs/Interstitial.prefab
+    guid: 3fc0c2627ce8a4490b8e319326f8a535
+  - originPath: Assets/MaxSdk/Prefabs/Rewarded.prefab
+    guid: a28c1544d6f094d5eafc8da2343c9119
+  - originPath: Assets/MaxSdk/Resources/AppLovinSettings.asset
+    guid: a61f8c16e11e04b74a9b3bcbf1ad771f
+  - originPath: Assets/MaxSdk/Resources/Images/alert_icon.png
+    guid: 572fee4574afa4f6dbf2846e0c152fe8
+  - originPath: Assets/MaxSdk/Resources/Images/uninstall_icon.png
+    guid: d24994f48fdd0430692e3d49279cd782
+  - originPath: Assets/MaxSdk/Resources/Images/warning_icon.png
+    guid: b504c956e7ed744b6b0e7f014e1cac5a
+  - originPath: Assets/MaxSdk/Scripts/MaxEvents.cs
+    guid: 67ec2f620c6b0405ba16ea2c032dc9a2
+  - originPath: Assets/MaxSdk/Scripts/MaxSdk.Scripts.asmdef
+    guid: a4cfc1a18fa3a469b96d885db522f42e
+  - originPath: Assets/MaxSdk/Scripts/MaxSdk.cs
+    guid: 2fc7aa576843c44e68c7ab14b475bb82
+  - originPath: Assets/MaxSdk/Scripts/MaxSdkAndroid.cs
+    guid: 10335fad6bfef47b8819a411aa591dc8
+  - originPath: Assets/MaxSdk/Scripts/MaxSdkBase.cs
+    guid: 893e4e55a7e394274957f1034f7afc45
+  - originPath: Assets/MaxSdk/Scripts/MaxSdkCallbacks.cs
+    guid: 4dc129a60049645f7a492a0a658a6c22
+  - originPath: Assets/MaxSdk/Scripts/MaxSdkLogger.cs
+    guid: ff2b160afdfd4a74b731954323772a90
+  - originPath: Assets/MaxSdk/Scripts/MaxSdkUnityEditor.cs
+    guid: 13b3e537a64f24986bb8ffe3a0beef5c
+  - originPath: Assets/MaxSdk/Scripts/MaxSdkUtils.cs
+    guid: 47f1bc9a8eebd4d088e22e6baf00ede3
+  - originPath: Assets/MaxSdk/Scripts/MaxSdkiOS.cs
+    guid: e7c7ed6cdbdca44cd8eae28d3b60d28c
+  - originPath: Assets/MaxSdk/Scripts/MaxTargetingData.cs
+    guid: 409fe14211f31433da09f5b4bd5467b9
+  - originPath: Assets/MaxSdk/Scripts/MaxUserSegment.cs
+    guid: 8fb1f6f31b19c407b9d3fa62557d373a
+  - originPath: Assets/MaxSdk/Scripts/MaxUserServiceAndroid.cs
+    guid: d2eacd6aa14494de6809b4b06027a332
+  - originPath: Assets/MaxSdk/Scripts/MaxUserServiceUnityEditor.cs
+    guid: 16d44e29e68204f36975abec0feb1d35
+  - originPath: Assets/MaxSdk/Scripts/MaxUserServiceiOS.cs
+    guid: 6233dd3f0b4664e7dbdca14cc8904176
+  - originPath: Assets/MaxSdk/Scripts/MaxVariableServiceAndroid.cs
+    guid: 4a88b1f934b944909bf150636e251e9e
+  - originPath: Assets/MaxSdk/Scripts/MaxVariableServiceUnityEditor.cs
+    guid: b33c4c57c5a84dcd9a8a51fb701ee7b5
+  - originPath: Assets/MaxSdk/Scripts/MaxVariableServiceiOS.cs
+    guid: a586b9a3a20741a98bf8afaf5fc64201
+  - originPath: Assets/MaxSdk/Scripts/Editor/MaxInitialization.cs
+    guid: bc0c5693335e0408a95293c0d7b61137
+  - originPath: Assets/MaxSdk/Scripts/Editor/MaxPostProcessBuildAndroid.cs
+    guid: 75fed160a41749d4990cee871ee618a4
+  - originPath: Assets/MaxSdk/Scripts/Editor/MaxPostProcessBuildiOS.cs
+    guid: 29959b3cd36c484a9d57d6b7ca7f7bfa
+  - originPath: Assets/MaxSdk/Scripts/Editor/MaxSdk.Scripts.Editor.asmdef
+    guid: 691e0eb4b7a542dba2219d48c3254f1c
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinAutoUpdater.cs
+    guid: 8bcdd5226273242c5bd9ec79568202e6
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinCommandLine.cs
+    guid: 2d0aa55f9a7d2440f871dfb256372a33
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinDownloadHandler.cs
+    guid: c85c3812a13e04838951767c1285e4da
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinEditorCoroutine.cs
+    guid: 95747c688378548eeb92aeb528ac96ff
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinIntegrationManager.cs
+    guid: c5b874c1e65274159bcc0dc15d9458cc
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinIntegrationManagerWindow.cs
+    guid: 84c61b4c05e114cec91df447d1b585f8
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinMenuItems.cs
+    guid: 02c2d277874f649d18a59d382420bf65
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinPostProcessAndroidGradle.cs
+    guid: f75e54e2eb78f427ca8643c97684387b
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinPostProcessiOS.cs
+    guid: d5d209f90444f4a90830b48b5f3f3ff4
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinPreProcessAndroid.cs
+    guid: 8ccaf444d0d4f4cadb5debe7c41b20c4
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinProcessGradleBuildFile.cs
+    guid: 732b7510bc9c94aafb3fd3b8c0dc5d2d
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/AppLovinSettings.cs
+    guid: ebc0ba1b5ef6b4a6b9dd53d7eadfea16
+  - originPath: Assets/MaxSdk/Scripts/IntegrationManager/Editor/MaxSdk.IntegrationManager.Editor.asmdef
+    guid: a10a05a8449c42519fd80f2b8b580de3
+  - originPath: Assets/MaxSdk/Scripts/ThirdParty/MiniJSON.cs
+    guid: 52789a1d5a5754d46816fd9ed114a375
+  - originPath: Assets/Parse/Plugins/Unity.Compat.dll
+    guid: 015ef18e20f24535830f59eda9e70830
+  - originPath: Assets/Parse/Plugins/Unity.Tasks.dll
+    guid: 93324a471a6d44bb8297d17d8b191e52
+  - originPath: Assets/Parse/Plugins/dotNet45/Unity.Compat.dll
+    guid: 3db0783b58c2429b9bc1f560ba323d05
+  - originPath: Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll
+    guid: bd18eee30834e4f71bded96fd14033a9
+  - originPath: Assets/Plugins/Android/AndroidManifest.xml
+    guid: 9ff5ce456e2794ddc8d114ee10373921
+  - originPath: Assets/Plugins/Android/JuicyAndroidPlugin.aar
+    guid: 6aeed87359aff42b79facccaccf9d1ae
+  - originPath: Assets/Plugins/Android/baseProjectTemplate.gradle
+    guid: cbd7d2c363b8447c0837dc636824fdeb
+  - originPath: Assets/Plugins/Android/gradleTemplate.properties
+    guid: a2590ce802f984059b71e79bcbc67655
+  - originPath: Assets/Plugins/Android/launcherTemplate.gradle
+    guid: 15071140ffa4048a4a70a63a2ef8e8c6
+  - originPath: Assets/Plugins/Android/mainTemplate.gradle
+    guid: 63962d338fad38741bea6ea2d4053711
+  - originPath: Assets/Plugins/Android/FirebaseApp.androidlib/AndroidManifest.xml
+    guid: 764e4e5af956d4b6982ebd567d1b7c11
+  - originPath: Assets/Plugins/Android/FirebaseApp.androidlib/project.properties
+    guid: 55de9a07fa20e4c649ae326982ab03e3
+  - originPath: Assets/Plugins/Android/FirebaseApp.androidlib/res/values/google-services.xml
+    guid: 960f9cb89dc694f38aa1713e003099e9
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/AndroidManifest.xml
+    guid: 46580f2ae8aa94f97930b76546787781
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/project.properties
+    guid: 98bb78435b8c74821b8727c2a72f9947
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_build_id.xml
+    guid: c388863e22f0e40c399c8161a948e7aa
+  - originPath: Assets/Plugins/Android/FirebaseCrashlytics.androidlib/res/values/crashlytics_unity_version.xml
+    guid: f668be5f2cb944e718aeff65e28ec6b8
+  - originPath: Assets/Plugins/Android/MaxMediationGoogle.androidlib/AndroidManifest.xml
+    guid: cf61ddd9f6ac647d4accf8a1a1d2a690
+  - originPath: Assets/Plugins/Android/MaxMediationGoogle.androidlib/project.properties
+    guid: ccb8f1abd84ed4fa497d596a0e65ca25
+  - originPath: Assets/Plugins/UDP/UDP.dll
+    guid: 2c3078f85c1a94a82b179c36ee13484f
+  - originPath: Assets/Plugins/UDP/Android/udp.aar
+    guid: f601a629aee2545569c9921a07bb8002
+  - originPath: Assets/Plugins/UDP/Android/udpsandbox.aar
+    guid: 241214004108d45f29a106fd8fcde269
+  - originPath: Assets/Plugins/UDP/Android/utils.aar
+    guid: a9b73fc5405a44ed3b2b33f2f8276efc
+  - originPath: Assets/Plugins/UDP/Editor/AppStoreModel.cs
+    guid: 3da9878c9a6b342f2908cbdaa03514ff
+  - originPath: Assets/Plugins/UDP/Editor/AppStoreOnboardApi.cs
+    guid: bc499e152aef74f319a5bf855dcdd1ca
+  - originPath: Assets/Plugins/UDP/Editor/AppStoreSettingsEditor.cs
+    guid: e202e3d0c7dcd4c4baa6083fd591d883
+  - originPath: Assets/Plugins/UDP/Editor/BuildConfig.cs
+    guid: aaad67932b67e4cde83abb2e0d74f02a
+  - originPath: Assets/Plugins/UDP/Editor/Utils.cs
+    guid: df087e420b0724202951d2fd29d385b0
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/Common.cs
+    guid: 8064d28ca363a42f993da5d4593c51fb
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/EditorAnalytcisApi.cs
+    guid: a09e9a78b014e48e3b1c41fed70c3739
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/ProjectBuildEvent.cs
+    guid: a5ea10438fa7c47eba46e35cdda214ec
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/ProjectOpenEvent.cs
+    guid: f94d6ce17cf4c479497f9ca7c086ef65
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/SdkImportEvent.cs
+    guid: f87e6952333e546c1be3df821f9d2fcb
+  - originPath: Assets/Plugins/UDP/Editor/Analytics/WebRequestQueue.cs
+    guid: 6c89af2274de94b7e9288dcddcf0265d
+  - originPath: Assets/Plugins/UDP/Resources/UDP Settings.asset
+    guid: 98d27448b8b7d4f6c94cba221e0f13cd
+  - originPath: Assets/Plugins/iOS/GADUAdNetworkExtras.h
+    guid: 1c0d8a6c9b36440eaa4c01518670217f
+  - originPath: Assets/Plugins/iOS/JuicyIOSPlugin.mm
+    guid: db80ebc2459e949ababd5c8382c103e1
+  - originPath: Assets/Plugins/iOS/Firebase/libCrashlyticsiOSWrapper.a
+    guid: 18fb07a8bd0b437c827b544b21591360
+  - originPath: Assets/Plugins/iOS/Firebase/libFirebaseCppAnalytics.a
+    guid: bf523cc64d194963aa7661e7d2944feb
+  - originPath: Assets/Plugins/iOS/Firebase/libFirebaseCppApp.a
+    guid: 601e8e1d2d2744929ede33676cbeccc0
+  - originPath: Assets/Plugins/iOS/Firebase/libFirebaseCppCrashlytics.a
+    guid: c9a5f5c47ed44459ae2c09b918d44344
+  - originPath: Assets/Plugins/x86_64/Firebase/FirebaseCppApp-5.4.1.dll
+    guid: 725aa9fcd30048daba58947fad7e7d23
+  - originPath: Assets/Resources/BillingMode.json
+    guid: c6788b67d34224cf6bc956d9e8794586
+  - originPath: Assets/StreamingAssets/google-services-desktop.json
+    guid: e306ae924a86f4a4bb957c249a79c248
+  - originPath: Assets/StreamingAssets/meta-logo.png
+    guid: 0d21613618d660742a8799bee37104d2
+  - originPath: Assets/StreamingAssets/meta.mp4
+    guid: d1af671404848704f8d30617ff8f4643
